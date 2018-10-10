@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<application xmlns="http://java.sun.com/xml/ns/javaee"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/application_6.xsd"
+             version="6">
+
+    <module>
+        <web>
+            <web-uri>project2-code-web-0.0.1-SNAPSHOT.war</web-uri>
+            <context-root>/</context-root>
+        </web>
+    </module>
+    <module>
+        <ejb>project2-code-business-0.0.1-SNAPSHOT.jar</ejb>
+    </module>
+    <module>
+        <ejb>project2-code-data-0.0.1-SNAPSHOT.jar</ejb>
+    </module>
+</application>
