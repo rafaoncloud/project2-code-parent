@@ -10,16 +10,6 @@ import java.util.List;
 @Table(name = "MultimediaContent")
 public class MultimediaContentEntity implements Serializable {
 
-    public enum EMultimediaContentCategory {
-        ACTION,
-        ADVENTURE,
-        COMEDY,
-        CRIME,
-        DRAMA,
-        FANTASY,
-        HISTORICAL,
-    }
-
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private long id;
