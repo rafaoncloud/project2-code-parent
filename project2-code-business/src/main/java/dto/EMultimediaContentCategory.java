@@ -7,5 +7,5 @@ public enum EMultimediaContentCategory {
     CRIME,
     DRAMA,
     FANTASY,
-    HISTORICAL
+    HISTORICAL;
 }

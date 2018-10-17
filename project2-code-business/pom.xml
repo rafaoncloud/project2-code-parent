@@ -62,7 +62,6 @@
 			<artifactId>activation</artifactId>
 		</dependency>
 
-
 	</dependencies>
 
 	<build>

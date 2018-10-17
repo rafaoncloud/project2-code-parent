@@ -1,8 +1,5 @@
 package dto;
 
-import data.EMultimediaContentCategory;
-import data.User;
-
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
@@ -13,13 +10,13 @@ public class MultimediaContent {
     private String contentPath;
     private String title;
     private EMultimediaContentCategory category;
-    private Date yearOfRelease;
+    private int yearOfRelease;
     private String directorName;
     private List<User> users;
 
     public MultimediaContent(){ }
 
-    public MultimediaContent(long id, String contentPath, String title, EMultimediaContentCategory category, Date yearOfRelease, String directorName,
+    public MultimediaContent(long id, String contentPath, String title, EMultimediaContentCategory category, int yearOfRelease, String directorName,
                              List<User> users) {
         this.id = id;
         this.contentPath = contentPath;
@@ -30,7 +27,7 @@ public class MultimediaContent {
         this.users = users;
     }
 
-    public MultimediaContent(long id, String contentPath, String title, EMultimediaContentCategory category, Date yearOfRelease, String directorName) {
+    public MultimediaContent(long id, String contentPath, String title, EMultimediaContentCategory category, int yearOfRelease, String directorName) {
         this.id = id;
         this.contentPath = contentPath;
         this.title = title;
@@ -72,11 +69,11 @@ public class MultimediaContent {
         this.category = category;
     }
 
-    public Date getYearOfRelease() {
+    public int getYearOfRelease() {
         return yearOfRelease;
     }
 
-    public void setYearOfRelease(Date yearOfRelease) {
+    public void setYearOfRelease(int yearOfRelease) {
         this.yearOfRelease = yearOfRelease;
     }
 

@@ -1,1 +1,7 @@
-servlet/HelloWorld.class
+servlet/MultimediaContent.class
+utils/Credentials.class
+servlet/WebflixService.class
+servlet/UserManager.class
+servlet/Auth.class
+servlet/ApplicationConfig.class
+servlet/WatchList.class

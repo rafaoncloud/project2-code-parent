@@ -1,3 +1,5 @@
-data/MultimediaContentEntity.class
+data/Manager.class
+data/MultimediaContent.class
 data/EMultimediaContentCategory.class
-data/UserEntity.class
+data/User.class
+data/GenericUser.class
