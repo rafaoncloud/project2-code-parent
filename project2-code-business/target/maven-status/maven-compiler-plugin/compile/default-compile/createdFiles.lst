@@ -1,3 +1,11 @@
+ejb/multimediacontent/IMultimediaContentLocal.class
+ejb/multimediacontent/MultimediaContentBean.class
+ejb/multimediacontent/IMultimediaContentRemote.class
 DTO/MultimediaContentDTO.class
+ejb/user/IUser.class
 DTO/EMultimediaContentCategory.class
 DTO/UserDTO.class
+ejb/user/IUserLocal.class
+ejb/user/IUserRemote.class
+ejb/user/UserBean.class
+ejb/multimediacontent/IMultimediaContent.class
