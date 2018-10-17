@@ -1,8 +1,9 @@
 package dto;
 
+import java.io.Serializable;
 import java.util.Date;
 
-public class Manager extends GenericUser {
+public class Manager extends GenericUser implements Serializable {
 
     public Manager() { }
 

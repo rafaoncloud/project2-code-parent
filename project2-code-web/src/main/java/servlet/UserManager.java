@@ -1,7 +1,7 @@
 package servlet;
 
 import dto.User;
-import ejb.user.UserEJB;
+import ejb.UserEJB;
 
 import javax.ejb.EJB;
 import javax.validation.constraints.NotNull;

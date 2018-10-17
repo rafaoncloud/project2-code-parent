@@ -1,8 +1,9 @@
 package dto;
 
+import java.io.Serializable;
 import java.util.Date;
 
-public class GenericUser {
+public class GenericUser implements Serializable {
 
     protected long id;
     protected String email;

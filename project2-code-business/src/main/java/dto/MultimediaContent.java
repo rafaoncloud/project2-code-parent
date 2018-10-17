@@ -1,10 +1,11 @@
 package dto;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
-public class MultimediaContent {
+public class MultimediaContent implements Serializable {
 
     private long id;
     private String contentPath;
@@ -91,5 +92,21 @@ public class MultimediaContent {
 
     public void setUsers(List<User> users) {
         this.users = users;
+    }
+
+    @Override
+    public String toString() {
+        String text = "[Multimedia Content]";
+
+        text += "\nId: " + id + "\nPath: " + contentPath + "\nTitle: " + title + "\nCategory: " + category +
+                "\nYear of Release: " + yearOfRelease + "\nDirector Name: " + directorName +
+                "\nUsers: ";
+
+        if(users == null)
+            text += "0";
+        else
+            text += users.size();
+
+        return text;
     }
 }

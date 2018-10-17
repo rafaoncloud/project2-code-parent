@@ -3,10 +3,11 @@ package dto;
 
 import data.MultimediaContent;
 
+import java.io.Serializable;
 import java.util.Date;
 import java.util.List;
 
-public class User extends GenericUser{
+public class User extends GenericUser implements Serializable {
 
     private String creditCardNumber;
     private Boolean hasSubscriptionUpToDate;

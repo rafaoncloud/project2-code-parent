@@ -1,21 +1,19 @@
 package servlet;
 
 import dto.EMultimediaContentCategory;
-import ejb.multimediacontent.MultimediaContentEJB;
+import ejb.MultimediaContentEJB;
 
 import javax.ejb.EJB;
 import javax.validation.constraints.NotNull;
-import javax.validation.constraints.Null;
 import javax.ws.rs.*;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
-import java.util.Date;
 import java.util.List;
 
 @Path("/content")
 public class MultimediaContent {
 
-    //@EJB
+    @EJB //(lookup = "java:app/project2-code-business/ejb.MultimediaContentEJB")
     private MultimediaContentEJB multimediaContentEJB;
 
     @GET
@@ -44,7 +42,7 @@ public class MultimediaContent {
 
     @GET
     @Produces(MediaType.APPLICATION_JSON)
-    public Response getMultimediaContent(@NotNull @QueryParam("token") final String token, @QueryParam("order") final String order){
+    public Response getAllMultimediaContent(@NotNull @QueryParam("token") final String token, final String order){
 
         Boolean isOrderAsc = orderByAscOrDesc(order);
         if(isOrderAsc == null) // User wrote some wrong order string value (not asc or desc)
@@ -81,7 +79,7 @@ public class MultimediaContent {
     @GET
     @Produces(MediaType.APPLICATION_JSON)
     public Response getMultimediaContentByDirectorName(@NotNull @QueryParam("token") final String token,
-                                         @NotNull @QueryParam("director") final String director, @QueryParam("order") String order){
+                                         @NotNull @QueryParam("director") final String director, String order){
         Boolean isOrderAsc = orderByAscOrDesc(order);
         if(isOrderAsc == null) // User wrote some wrong order string value (not asc or desc)
             return Response.status(Response.Status.NOT_ACCEPTABLE).build();
@@ -98,8 +96,8 @@ public class MultimediaContent {
 
     @GET
     @Produces(MediaType.APPLICATION_JSON)
-    public Response getMultimediaContent(@NotNull @QueryParam("token") final String token,
-                                         @NotNull @QueryParam("category") final String category, @QueryParam("order") String order){
+    public Response getMultimediaContentByCategory(@NotNull @QueryParam("token") final String token,
+                                         @NotNull @QueryParam("category") final String category, String order){
         Boolean isOrderAsc = orderByAscOrDesc(order);
         if(isOrderAsc == null) // User wrote some wrong order string value (not asc or desc)
             return Response.status(Response.Status.NOT_ACCEPTABLE).build();

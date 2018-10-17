@@ -1,6 +1,8 @@
 package dto;
 
-public enum EMultimediaContentCategory {
+import java.io.Serializable;
+
+public enum EMultimediaContentCategory implements Serializable {
     ACTION,
     ADVENTURE,
     COMEDY,

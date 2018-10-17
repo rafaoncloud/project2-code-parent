@@ -22,9 +22,7 @@ public class MultimediaContent implements Serializable {
     @ManyToMany(mappedBy = "watchList")
     private List<User> users;
 
-    public MultimediaContent(){
-
-    }
+    public MultimediaContent(){ }
 
     public MultimediaContent(String contentPath, String title, EMultimediaContentCategory category, Date yearOfRelease, String directorName) {
         this.contentPath = contentPath;
