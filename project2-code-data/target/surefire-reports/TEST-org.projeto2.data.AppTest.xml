@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="1" failures="0" name="org.projeto2.data.AppTest" time="0.003" errors="0" skipped="0">
+<testsuite tests="1" failures="0" name="org.projeto2.data.AppTest" time="0.004" errors="0" skipped="0">
   <properties>
     <property name="idea.version" value="2018.1.6"/>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="java.vm.version" value="10.0.2+13"/>
     <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk-10.0.2.jdk/Contents/Home/lib"/>
     <property name="gopherProxySet" value="false"/>
-    <property name="maven.multiModuleProjectDirectory" value="/Users/rafa/Desktop/IS/Assigment-2/project2-code-parent"/>
+    <property name="maven.multiModuleProjectDirectory" value="/Users/rafa/Documents/GitHub/project2-code-parent"/>
     <property name="java.vm.vendor" value="&quot;Oracle Corporation&quot;"/>
     <property name="java.vendor.url" value="http://java.oracle.com/"/>
     <property name="guice.disable.misplaced.annotation.check" value="true"/>
@@ -17,7 +17,7 @@
     <property name="user.country" value="PT"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
-    <property name="user.dir" value="/Users/rafa/Desktop/IS/Assigment-2/project2-code-parent"/>
+    <property name="user.dir" value="/Users/rafa/Documents/GitHub/project2-code-parent"/>
     <property name="java.vm.compressedOopsMode" value="Zero based"/>
     <property name="java.runtime.version" value="10.0.2+13"/>
     <property name="java.awt.graphicsenv" value="sun.awt.CGraphicsEnvironment"/>
@@ -64,5 +64,5 @@
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase classname="org.projeto2.data.AppTest" name="testApp" time="0.003"/>
+  <testcase classname="org.projeto2.data.AppTest" name="testApp" time="0.004"/>
 </testsuite>

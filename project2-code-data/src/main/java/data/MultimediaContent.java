@@ -85,6 +85,8 @@ public class MultimediaContent implements Serializable {
         return users;
     }
 
+    public void setUsers(List<data.User> users) { this.users = users; }
+
     public void removeUser(User user){
         this.users.remove(user);
     }

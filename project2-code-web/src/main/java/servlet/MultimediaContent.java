@@ -4,6 +4,7 @@ import dto.EMultimediaContentCategory;
 import ejb.MultimediaContentEJB;
 
 import javax.ejb.EJB;
+import javax.inject.Inject;
 import javax.validation.constraints.NotNull;
 import javax.ws.rs.*;
 import javax.ws.rs.core.MediaType;
@@ -22,7 +23,7 @@ public class MultimediaContent {
     public Response getMultimediaContent(@PathParam("id") final long id, @QueryParam("token") final String token){
 
         try {
-            //dto.MultimediaContent content =  multimediaContentEJB.getMultimediaContent("aa",id);
+            //dto.MultimediaContent content1 =  multimediaContentEJB.getMultimediaContent("aa",id);
 
             dto.MultimediaContent content = new dto.MultimediaContent();
             content.setId(id);
@@ -44,12 +45,12 @@ public class MultimediaContent {
     @Produces(MediaType.APPLICATION_JSON)
     public Response getAllMultimediaContent(@NotNull @QueryParam("token") final String token, final String order){
 
-        Boolean isOrderAsc = orderByAscOrDesc(order);
-        if(isOrderAsc == null) // User wrote some wrong order string value (not asc or desc)
-            return Response.status(Response.Status.NOT_ACCEPTABLE).build();
+        //Boolean isOrderAsc = orderByAscOrDesc(order);
+        //if(isOrderAsc == null) // User wrote some wrong order string value (not asc or desc)
+        //    return Response.status(Response.Status.NOT_ACCEPTABLE).build();
 
         try {
-            List<dto.MultimediaContent> contentList = multimediaContentEJB.getMultimediaContent(token,isOrderAsc);
+            List<dto.MultimediaContent> contentList = multimediaContentEJB.getAllMultimediaContent(token,true);
             return Response.ok(contentList).build();
         } catch (Exception e) {
             e.printStackTrace();
@@ -132,10 +133,9 @@ public class MultimediaContent {
     @Produces(MediaType.APPLICATION_JSON)
     public Response addMultimediaContent(@NotNull @QueryParam("token") final String token, @NotNull final dto.MultimediaContent content){
 
-        System.out.println(content.toString()); // Debug
-
         try {
             multimediaContentEJB.addMultimediaContent(token,content);
+
             return Response.accepted(content).build();
         } catch (Exception e) {
             e.printStackTrace();

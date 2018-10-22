@@ -14,8 +14,7 @@ public class Utils {
 
     public static final String[] USERS_TABLE = {"Manager", "User"};
 
-    public static Logger getLogger()
-    {
+    public static Logger getLogger() {
         //Singleton
         if (loggerSingleton == null)
             loggerSingleton = LoggerFactory.getLogger("BussinessLayer");
@@ -23,12 +22,18 @@ public class Utils {
         return loggerSingleton;
     }
 
-    public static DozerBeanMapper getDozerBeanMapper()
-    {
+    public static DozerBeanMapper getDozerBeanMapper() {
         //Singleton
         if (dozerBeanMapperSingleton == null)
             dozerBeanMapperSingleton = new DozerBeanMapper();
 
         return dozerBeanMapperSingleton;
+    }
+
+    public static String ascOrDesc(boolean ascend) {
+        if (ascend)
+            return " asc";
+
+        return " desc";
     }
 }

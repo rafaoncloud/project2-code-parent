@@ -1,5 +1,7 @@
 package ejb;
 
+import data.EMultimediaContentCategory;
+import data.User;
 import dto.MultimediaContent;
 import utils.Utils;
 
@@ -7,6 +9,8 @@ import javax.ejb.LocalBean;
 import javax.ejb.Stateless;
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
+import javax.persistence.Query;
+import java.util.ArrayList;
 import java.util.List;
 
 @Stateless
@@ -17,93 +21,268 @@ public class MultimediaContentEJB /*implements IMultimediaContentRemote/*, IMult
     private EntityManager em;
 
 
-    public MultimediaContentEJB(){ }
+    public MultimediaContentEJB() {
+    }
 
     public void addMultimediaContent(String token, MultimediaContent multimediaContent) throws Exception {
 
-        // Convert to JPA Entity
-        data.MultimediaContent contentEntity = new data.MultimediaContent();
-        Utils.getDozerBeanMapper().map(multimediaContent,contentEntity);
+        try{
 
+            data.MultimediaContent multimediaContentEntity = new data.MultimediaContent();
 
+            Utils.getDozerBeanMapper().map(multimediaContent,multimediaContentEntity);
 
-        // CRUD Operation
-        try {
-            em.persist(multimediaContent);
-            Utils.getLogger().info(multimediaContent.getTitle() + "multimedia content created.");
-        }catch (Exception e){
-                Utils.getLogger().error(e.getMessage());
-                throw e;
+            addMultimediaContentCRUD(token,multimediaContentEntity);
+
+            Utils.getLogger().info("Multimedia Content " + multimediaContent.getTitle() + " added.");
+        }catch(Exception e){
+            Utils.getLogger().error(e.getMessage());
+            throw e;
         }
+
     }
 
     public MultimediaContent getMultimediaContent(String token, long id) throws Exception {
 
-
-        // CRUD Operation
         try {
-            data.MultimediaContent content = getMultimediaContentCRUD(token, id);
+            data.MultimediaContent multimediaContentEntity = getMultimediaContentCRUD(token,id);
+
             MultimediaContent multimediaContent = new MultimediaContent();
 
-            Utils.getDozerBeanMapper().map(content, multimediaContent);
+            Utils.getDozerBeanMapper().map(multimediaContentEntity,multimediaContent);
 
             return multimediaContent;
-        }catch (Exception e){
+        } catch (Exception e) {
+            Utils.getLogger().error(e.getMessage());
             throw e;
         }
     }
 
-    public List<MultimediaContent> getMultimediaContent(String token, boolean ascend) throws Exception {
-        return null;
+    public List<MultimediaContent> getAllMultimediaContent(String token, boolean ascend) throws Exception {
+
+        try {
+            List<data.MultimediaContent> multimediaContentEntities = getAllMultimediaContentCRUD(token,ascend);
+
+            List<MultimediaContent> multimediaContents = new ArrayList<>();
+
+            for(data.MultimediaContent contentEntity : multimediaContentEntities){
+                MultimediaContent content = new MultimediaContent();
+                Utils.getDozerBeanMapper().map(contentEntity, content);
+                multimediaContents.add(content);
+            }
+
+            return multimediaContents;
+        } catch (Exception e) {
+            Utils.getLogger().error(e.getMessage());
+            throw e;
+        }
     }
 
     public List<MultimediaContent> getMultimediaContentFromCategory(String token, dto.EMultimediaContentCategory category, boolean ascend) throws Exception {
-        return null;
+        try {
+            List<data.MultimediaContent> multimediaContentEntities = getAllMultimediaContentByCategoryCRUD(token,data.EMultimediaContentCategory.valueOf(category.name()),ascend);
+
+            List<MultimediaContent> multimediaContents = new ArrayList<>();
+
+            for(data.MultimediaContent contentEntity : multimediaContentEntities){
+                MultimediaContent content = new MultimediaContent();
+                Utils.getDozerBeanMapper().map(contentEntity, content);
+                multimediaContents.add(content);
+            }
+            return multimediaContents;
+        } catch (Exception e) {
+            Utils.getLogger().error(e.getMessage());
+            throw e;
+        }
     }
 
     public List<MultimediaContent> getMultimediaContentFromDirector(String token, String directorName, boolean ascend) throws Exception {
-        return null;
+        try {
+            List<data.MultimediaContent> multimediaContentEntities = getAllMultimediaContentByDirectorNameCRUD(token,directorName,ascend);
+
+            List<MultimediaContent> multimediaContents = new ArrayList<>();
+
+            for(data.MultimediaContent contentEntity : multimediaContentEntities){
+                MultimediaContent content = new MultimediaContent();
+                Utils.getDozerBeanMapper().map(contentEntity, content);
+                multimediaContents.add(content);
+            }
+            return multimediaContents;
+        } catch (Exception e) {
+            Utils.getLogger().error(e.getMessage());
+            throw e;
+        }
     }
 
     public List<MultimediaContent> getMultimediaContentBetweenYearsRange(String token, int minYear, int maxYear, boolean ascend) throws Exception {
-        return null;
+        try {
+            List<data.MultimediaContent> multimediaContentEntities = getAllMultimediaByYearRangeContentCRUD(token,minYear,maxYear,ascend);
+
+            List<MultimediaContent> multimediaContents = new ArrayList<>();
+
+            for(data.MultimediaContent contentEntity : multimediaContentEntities){
+                MultimediaContent content = new MultimediaContent();
+                Utils.getDozerBeanMapper().map(contentEntity, content);
+                multimediaContents.add(content);
+            }
+            return multimediaContents;
+        } catch (Exception e) {
+            Utils.getLogger().error(e.getMessage());
+            throw e;
+        }
     }
 
     public void updateMultimediaContent(String token, MultimediaContent multimediaContent) throws Exception {
 
-    }
+        try {
+            data.MultimediaContent multimediaContentEntity = new data.MultimediaContent();
 
-    public void deleteMultimediaContent(String token, long id) throws Exception {
-        deleteMultimediaContentCRUD(token,id);
-    }
+            Utils.getDozerBeanMapper().map(multimediaContent, multimediaContentEntity);
 
-    //
-    //CRUD Operations
-    //
-    private data.MultimediaContent getMultimediaContentCRUD(String token, long id) throws Exception{
+            updateMultimediaContentCRUD(token, multimediaContentEntity);
 
-        // CRUD Operation
-        data.MultimediaContent content = null;
-        try{
-            content = em.find(data.MultimediaContent.class, id);
-
-            if(content == null){
-                throw new Exception("Multimedia Content with " + id + " not found.");
-            }
-
-            return content;
+            Utils.getLogger().info("Multimedia Content " + multimediaContent.getTitle() + " edited.");
         }catch(Exception e){
             Utils.getLogger().error(e.getMessage());
             throw e;
         }
     }
-    private void deleteMultimediaContentCRUD(String token, long id) throws Exception{
+
+    public void deleteMultimediaContent(String token, long id) throws Exception {
+        try{
+            deleteMultimediaContentCRUD(token, id);
+
+            Utils.getLogger().info("Multimedia Content " + id + " deleted.");
+        }catch (Exception e){
+            Utils.getLogger().error(e.getMessage());
+            throw e;
+        }
+    }
+
+    //
+    // CRUD Operations
+    //
+    private void addMultimediaContentCRUD(String token, data.MultimediaContent multimediaContent) throws Exception {
+        // CRUD Operation
+        try {
+            em.persist(multimediaContent);
+            Utils.getLogger().info(multimediaContent.getTitle() + "multimedia content created.");
+        } catch (Exception e) {
+            Utils.getLogger().error(e.getMessage());
+            throw e;
+        }
+    }
+
+    private data.MultimediaContent getMultimediaContentCRUD(String token, long id) throws Exception {
+
+        // CRUD Operation
+        data.MultimediaContent content = null;
+        try {
+            content = em.find(data.MultimediaContent.class, id);
+
+            if (content == null) {
+                throw new Exception("Multimedia Content with " + id + " not found.");
+            }
+
+            return content;
+        } catch (Exception e) {
+            Utils.getLogger().error(e.getMessage());
+            throw e;
+        }
+    }
+
+    private List<data.MultimediaContent> getAllMultimediaContentCRUD(String token, boolean ascend) throws Exception {
+        // CRUD Operation
+
+        try {
+            String isAsc = Utils.ascOrDesc(ascend);
+            String queryText = "from MultimediaContent c order by c.title " + isAsc;
+            Query query = em.createQuery(queryText);
+
+            return query.getResultList();
+        } catch (Exception e) {
+            Utils.getLogger().error(e.getMessage());
+            throw e;
+        }
+    }
+
+    private List<data.MultimediaContent> getAllMultimediaContentByCategoryCRUD(String token, EMultimediaContentCategory category, boolean ascend) throws Exception {
+        // CRUD Operation
+        try {
+            String isAsc = Utils.ascOrDesc(ascend);
+            String queryText = "from MultimediaContent c where c.category = :category order by c.title " + isAsc;
+
+            Query query = em.createQuery(queryText);
+            query.setParameter("category", category);
+
+            return query.getResultList();
+        } catch (Exception e) {
+            Utils.getLogger().error(e.getMessage());
+            throw e;
+        }
+    }
+
+    private List<data.MultimediaContent> getAllMultimediaContentByDirectorNameCRUD(String token, String dirName, boolean ascend) throws Exception {
+        // CRUD Operation
+        try {
+            String isAsc = Utils.ascOrDesc(ascend);
+            String queryText = "from MultimediaContent c where c.directorName = :directorName order by c.title " + isAsc;
+
+            Query query = em.createQuery(queryText);
+            query.setParameter("directorName", dirName);
+
+            return query.getResultList();
+        } catch (Exception e) {
+            Utils.getLogger().error(e.getMessage());
+            throw e;
+        }
+    }
+
+    private List<data.MultimediaContent> getAllMultimediaByYearRangeContentCRUD(String token, int minYear,int maxYear, boolean ascend) throws Exception {
+        // CRUD Operation
+        try {
+            String isAsc = Utils.ascOrDesc(ascend);
+            String queryText = "from MultimediaContent c where c.minYear >= :minYear, c.maxYear <= :maxYear order by c.title " + isAsc;
+            Query query = em.createQuery(queryText);
+
+            query.setParameter("minYear",minYear);
+            query.setParameter("maxYear",maxYear);
+
+            return query.getResultList();
+        } catch (Exception e) {
+            Utils.getLogger().error(e.getMessage());
+            throw e;
+        }
+    }
+
+    private void updateMultimediaContentCRUD(String token, data.MultimediaContent multimediaContent) throws Exception {
+        //CRUD Operation
+        try {
+            // Get the Multimedia Content Entity from the Database
+            data.MultimediaContent multimediaContentEntity = getMultimediaContentCRUD(token, multimediaContent.getId());
+
+            // Erase the relationed users and create new entry to add Users
+            // multimediaContentEntity.setUsers(new ArrayList<>());
+
+            List<User> users = multimediaContentEntity.getUsers();
+            Utils.getDozerBeanMapper().map(multimediaContent, multimediaContentEntity);
+            multimediaContentEntity.setUsers(users);
+
+            Utils.getLogger().info("ID " + multimediaContentEntity.getId() + " Multimedia Content was updated.");
+        } catch (Exception ex) {
+            Utils.getLogger().error(ex.getMessage());
+            throw ex;
+        }
+    }
+
+    private void deleteMultimediaContentCRUD(String token, long id) throws Exception {
 
         // CRUD Operation
         try {
-            MultimediaContent multimediaContent = getMultimediaContent(token,id);
-            Utils.getLogger().info(multimediaContent.getTitle() + "multimedia content created.");
-        }catch (Exception e){
+            em.remove(getMultimediaContentCRUD(token, id));
+
+            Utils.getLogger().info(id + " ID multimedia content deleted.");
+        } catch (Exception e) {
             Utils.getLogger().error(e.getMessage());
             throw e;
         }

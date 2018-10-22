@@ -6,7 +6,7 @@
     <property name="java.vm.version" value="10.0.2+13"/>
     <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk-10.0.2.jdk/Contents/Home/lib"/>
     <property name="gopherProxySet" value="false"/>
-    <property name="maven.multiModuleProjectDirectory" value="/Users/rafa/Desktop/IS/Assigment-2/project2-code-parent"/>
+    <property name="maven.multiModuleProjectDirectory" value="/Users/rafa/Documents/GitHub/project2-code-parent"/>
     <property name="java.vm.vendor" value="&quot;Oracle Corporation&quot;"/>
     <property name="java.vendor.url" value="http://java.oracle.com/"/>
     <property name="path.separator" value=":"/>
@@ -16,7 +16,7 @@
     <property name="user.country" value="PT"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.os.patch.level" value="unknown"/>
-    <property name="user.dir" value="/Users/rafa/Desktop/IS/Assigment-2/project2-code-parent"/>
+    <property name="user.dir" value="/Users/rafa/Documents/GitHub/project2-code-parent"/>
     <property name="java.vm.compressedOopsMode" value="Zero based"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
     <property name="java.runtime.version" value="10.0.2+13"/>
