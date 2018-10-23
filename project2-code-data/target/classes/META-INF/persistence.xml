@@ -8,8 +8,10 @@
 		<provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
 		<jta-data-source>java:/MySqlDS</jta-data-source>
 		<class>data.User</class>
+		<!--class>data.GenericUser</class-->
 		<class>data.Manager</class>
 		<class>data.MultimediaContent</class>
+		<class>data.Test</class>
 		<properties>
 			<property name="hibernate.dialect"
 				value="org.hibernate.dialect.MySQL8Dialect" />

@@ -1,5 +1,6 @@
-data/Manager.class
+data/Test.class
 data/MultimediaContent.class
 data/EMultimediaContentCategory.class
 data/User.class
+data/Manager.class
 data/GenericUser.class

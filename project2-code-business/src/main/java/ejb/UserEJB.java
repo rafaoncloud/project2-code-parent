@@ -21,6 +21,27 @@ public class UserEJB /*implements IUserRemote, IUserLocal*/ {
 
     public void addUser(User user) throws Exception {
 
+        try{
+            user.setId(null);
+            data.User userEntity = new data.User();
+
+            Utils.getDozerBeanMapper().map(user,userEntity);
+
+            //System.out.println("1:" + user.toString());
+            //System.out.println("2:" + user.toString());
+
+            //data.Test test = new data.Test();
+            //test.setId(null);
+            //test.setName("Rafa");
+            //em.persist(test);
+
+            addUserCRUD(userEntity);
+
+            Utils.getLogger().info("User " + user.getEmail() + " created.");
+        }catch(Exception e){
+            Utils.getLogger().error(e.getMessage());
+            throw e;
+        }
     }
 
     public List<User> getAllUsers(String token) throws Exception {
@@ -55,5 +76,37 @@ public class UserEJB /*implements IUserRemote, IUserLocal*/ {
                 return true;
         }
         return false;
+    }
+
+    //
+    // CRUD Operations
+    //
+    private void addUserCRUD(data.User user) throws Exception {
+        // CRUD Operation
+        try {
+            System.out.println("add User before\n");
+            em.persist(user);
+            System.out.println("add User after\n");
+            Utils.getLogger().info(user.getEmail() + " User Created.");
+        } catch (Exception e) {
+            Utils.getLogger().error(e.getMessage());
+            throw e;
+        }
+    }
+
+    private List<User> getAllUsersCRUD(String token) throws Exception {
+        return null;
+    }
+
+    private User getUserCRUD(String token, long id) throws Exception {
+        return null;
+    }
+
+    private void updateUserCRUD(String token, User user) throws Exception {
+
+    }
+
+    private void deleteUserCRUD(String token, long id) throws Exception {
+
     }
 }

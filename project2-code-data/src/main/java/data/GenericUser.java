@@ -9,8 +9,8 @@ import java.util.List;
 public class GenericUser implements Serializable {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    protected long id;
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    protected Long id;
     protected String email;
     protected String password; // Is it needed
     protected String token;
@@ -24,7 +24,6 @@ public class GenericUser implements Serializable {
     protected Date createdOn = new Date();
 
     public GenericUser() {
-
     }
 
     public GenericUser(String email, String password, String name, Date birthDate, String address, String phoneNumber, String creditCardNumber) {

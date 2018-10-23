@@ -10,13 +10,13 @@ import java.util.List;
 public class MultimediaContent implements Serializable {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private long id;
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    private Long id;
     private String contentPath;
     private String title;
     private EMultimediaContentCategory category;
-    @Temporal(TemporalType.DATE)
-    private Date yearOfRelease;
+    //@Temporal(TemporalType.DATE)
+    private int yearOfRelease;
     private String directorName;
     // The UserEntity is the owner of the relation
     @ManyToMany(mappedBy = "watchList")
@@ -24,7 +24,7 @@ public class MultimediaContent implements Serializable {
 
     public MultimediaContent(){ }
 
-    public MultimediaContent(String contentPath, String title, EMultimediaContentCategory category, Date yearOfRelease, String directorName) {
+    public MultimediaContent(String contentPath, String title, EMultimediaContentCategory category, int yearOfRelease, String directorName) {
         this.contentPath = contentPath;
         this.title = title;
         this.category = category;
@@ -73,11 +73,11 @@ public class MultimediaContent implements Serializable {
         this.directorName = directorName;
     }
 
-    public Date getYearOfRelease() {
+    public int getYearOfRelease() {
         return yearOfRelease;
     }
 
-    public void setYearOfRelease(Date yearOfRelease) {
+    public void setYearOfRelease(int yearOfRelease) {
         this.yearOfRelease = yearOfRelease;
     }
 
@@ -89,5 +89,21 @@ public class MultimediaContent implements Serializable {
 
     public void removeUser(User user){
         this.users.remove(user);
+    }
+
+    @Override
+    public String toString() {
+        String text = "[Multimedia Content]";
+
+        text += "\nId: " + id + "\nPath: " + contentPath + "\nTitle: " + title + "\nCategory: " + category +
+                "\nYear of Release: " + yearOfRelease + "\nDirector Name: " + directorName +
+                "\nUsers: ";
+
+        if(users == null)
+            text += "0";
+        else
+            text += users.size();
+
+        return text;
     }
 }

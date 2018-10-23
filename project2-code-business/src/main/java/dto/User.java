@@ -13,6 +13,10 @@ public class User extends GenericUser implements Serializable {
     private Boolean hasSubscriptionUpToDate;
     private List<MultimediaContent> watchList;
 
+    public User(){
+
+    }
+
     public User(String creditCardNumber, List<MultimediaContent> watchList) {
         this.creditCardNumber = creditCardNumber;
         this.watchList = watchList;

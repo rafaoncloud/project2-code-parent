@@ -5,7 +5,7 @@ import java.util.Date;
 
 public class GenericUser implements Serializable {
 
-    protected long id;
+    protected Long id;
     protected String email;
     protected String password; // Is it needed
     protected String token;
@@ -28,11 +28,11 @@ public class GenericUser implements Serializable {
         this.phoneNumber = phoneNumber;
     }
 
-    public long getId() {
+    public Long getId() {
         return id;
     }
 
-    public void setId(long id) {
+    public void setId(Long id) {
         this.id = id;
     }
 

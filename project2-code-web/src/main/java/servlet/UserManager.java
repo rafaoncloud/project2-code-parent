@@ -4,18 +4,22 @@ import dto.User;
 import ejb.UserEJB;
 
 import javax.ejb.EJB;
+import javax.enterprise.context.RequestScoped;
+import javax.inject.Inject;
 import javax.validation.constraints.NotNull;
 import javax.ws.rs.*;
+import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 
 @Path("/user")
 public class UserManager {
 
-    //@EJB
+    @Inject
     UserEJB userEJB;
 
     @POST
-    public Response addUser(@NotNull final User user){
+    @Consumes(MediaType.APPLICATION_JSON)
+    public Response addUser(@NotNull final dto.User user){
 
         try {
             userEJB.addUser(user);

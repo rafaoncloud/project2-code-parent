@@ -31,10 +31,13 @@ public class MultimediaContentEJB /*implements IMultimediaContentRemote/*, IMult
     public void addMultimediaContent(String token, MultimediaContent multimediaContent) throws Exception {
 
         try{
-            multimediaContent.setId(-1);
+            multimediaContent.setId(null);
             data.MultimediaContent multimediaContentEntity = new data.MultimediaContent();
 
             Utils.getDozerBeanMapper().map(multimediaContent,multimediaContentEntity);
+
+            System.out.println("1:" + multimediaContent.toString());
+            System.out.println("2:" + multimediaContentEntity.toString());
 
             addMultimediaContentCRUD(token,multimediaContentEntity);
 
@@ -169,7 +172,9 @@ public class MultimediaContentEJB /*implements IMultimediaContentRemote/*, IMult
     private void addMultimediaContentCRUD(String token, data.MultimediaContent multimediaContent) throws Exception {
         // CRUD Operation
         try {
+            System.out.println("111\n");
             em.persist(multimediaContent);
+            System.out.println("222\n");
             Utils.getLogger().info(multimediaContent.getTitle() + "multimedia content created.");
         } catch (Exception e) {
             Utils.getLogger().error(e.getMessage());

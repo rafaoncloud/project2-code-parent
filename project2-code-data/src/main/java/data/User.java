@@ -1,14 +1,16 @@
 package data;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Entity;
 import javax.persistence.ManyToMany;
 import javax.persistence.Temporal;
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
 @Entity
-public class User extends GenericUser {
+public class User extends GenericUser implements Serializable {
 
     private String creditCardNumber;
     private Boolean hasSubscriptionUpToDate;

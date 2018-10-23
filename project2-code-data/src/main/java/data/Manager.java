@@ -1,8 +1,11 @@
 package data;
 
+import javax.persistence.Entity;
+import java.io.Serializable;
 import java.util.Date;
 
-public class Manager extends GenericUser{
+@Entity
+public class Manager extends GenericUser implements Serializable {
 
     public Manager(){ }
 
