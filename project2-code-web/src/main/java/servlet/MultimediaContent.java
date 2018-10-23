@@ -14,8 +14,15 @@ import java.util.List;
 @Path("/content")
 public class MultimediaContent {
 
-    @EJB //(lookup = "java:app/project2-code-business/ejb.MultimediaContentEJB")
+    @Inject //(lookup = "java:app/project2-code-business/ejb.MultimediaContentEJB")
     private MultimediaContentEJB multimediaContentEJB;
+
+    @GET
+    @Path("/echo")
+    @Produces(MediaType.APPLICATION_JSON)
+    public Response getMultimediaContent(@QueryParam("token") final String token){
+        return Response.ok().entity(multimediaContentEJB.echo(token)).build();
+    }
 
     @GET
     @Path("/{id}")
@@ -23,7 +30,7 @@ public class MultimediaContent {
     public Response getMultimediaContent(@PathParam("id") final long id, @QueryParam("token") final String token){
 
         try {
-            //dto.MultimediaContent content1 =  multimediaContentEJB.getMultimediaContent("aa",id);
+            dto.MultimediaContent content1 =  multimediaContentEJB.getMultimediaContent("aa",id);
 
             dto.MultimediaContent content = new dto.MultimediaContent();
             content.setId(id);
@@ -34,7 +41,9 @@ public class MultimediaContent {
             content.setDirectorName("Roar Uthaug");
             content.setUsers(null);
 
+
             return Response.ok(content).build();
+            //return Response.ok(helloService.createHelloService(token)).build();
         } catch (Exception e) {
             e.printStackTrace();
         }

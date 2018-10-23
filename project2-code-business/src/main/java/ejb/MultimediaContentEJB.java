@@ -24,10 +24,14 @@ public class MultimediaContentEJB /*implements IMultimediaContentRemote/*, IMult
     public MultimediaContentEJB() {
     }
 
+    public String echo(String name){
+        return "Test echo: " + name;
+    }
+
     public void addMultimediaContent(String token, MultimediaContent multimediaContent) throws Exception {
 
         try{
-
+            multimediaContent.setId(-1);
             data.MultimediaContent multimediaContentEntity = new data.MultimediaContent();
 
             Utils.getDozerBeanMapper().map(multimediaContent,multimediaContentEntity);

@@ -54,34 +54,6 @@
 		</dependency>
 
 
-		<!-- Java Web Framework - JSF (Java Server Faces) supported by Oracle -->
-		<dependency>
-			<groupId>com.sun.faces</groupId>
-			<artifactId>jsf-api</artifactId>
-			<version>2.1.7</version>
-		</dependency>
-
-		<dependency>
-			<groupId>com.sun.faces</groupId>
-			<artifactId>jsf-impl</artifactId>
-			<version>2.1.7</version>
-		</dependency>
-
-		<!-- resteasy from JBoss | Wildfly from JBoss | So works ok -->
-		<!-- https://mvnrepository.com/artifact/org.jboss.resteasy/jaxrs-api -->
-		<dependency>
-			<groupId>org.jboss.resteasy</groupId>
-			<artifactId>jaxrs-api</artifactId>
-			<version>3.0.12.Final</version>
-			<scope>provided</scope>
-		</dependency>
-		<!-- JSON conversion -->
-		<dependency>
-			<groupId>org.jboss.resteasy</groupId>
-			<artifactId>resteasy-jackson-provider</artifactId>
-			<version>3.0.4.Final</version>
-            <scope>provided</scope>
-		</dependency>
 	</dependencies>
 
 	<build>
