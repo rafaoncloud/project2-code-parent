@@ -14,6 +14,7 @@ public class MultimediaContent implements Serializable {
     private Long id;
     private String contentPath;
     private String title;
+    @Enumerated
     private EMultimediaContentCategory category;
     //@Temporal(TemporalType.DATE)
     private int yearOfRelease;
