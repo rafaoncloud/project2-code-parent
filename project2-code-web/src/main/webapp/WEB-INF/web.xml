@@ -1,4 +1,6 @@
 <web-app>
+
+
     <display-name>Webflix</display-name>
     <context-param>
         <param-name>resteasy.scan</param-name>
@@ -27,6 +29,7 @@
         <servlet-name>resteasy-servlet</servlet-name>
         <url-pattern>/api/*</url-pattern>
     </servlet-mapping>
+
 
 </web-app>
 

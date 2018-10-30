@@ -1,10 +1,16 @@
 package utils;
 
+
 import org.dozer.DozerBeanMapper;
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import java.util.List;
+import java.io.UnsupportedEncodingException;
+import java.math.BigInteger;
+import java.security.MessageDigest;
+import java.security.NoSuchAlgorithmException;
+
 
 public class Utils {
 
@@ -17,7 +23,7 @@ public class Utils {
     public static Logger getLogger() {
         //Singleton
         if (loggerSingleton == null)
-            loggerSingleton = LoggerFactory.getLogger("BussinessLayer");
+            loggerSingleton = LoggerFactory.getLogger( "BussinessLayer" );
 
         return loggerSingleton;
     }
@@ -35,5 +41,15 @@ public class Utils {
             return " asc";
 
         return " desc";
+    }
+
+
+    public static String sha1(String text) throws NoSuchAlgorithmException, UnsupportedEncodingException {
+        MessageDigest crypt = MessageDigest.getInstance( "SHA-1" );
+        crypt.reset();
+        crypt.update( text.getBytes( "UTF-8" ) );
+
+        return new BigInteger( 1, crypt.digest() ).toString( 16 );
+
     }
 }

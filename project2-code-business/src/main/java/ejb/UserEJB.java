@@ -9,6 +9,7 @@ import javax.persistence.Query;
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 import java.util.List;
+import java.util.Date;
 
 @Stateless
 @LocalBean
@@ -19,28 +20,38 @@ public class UserEJB /*implements IUserRemote, IUserLocal*/ {
 
     public UserEJB(){ }
 
-    public void addUser(User user) throws Exception {
+    public User login(String email, String password) throws Exception {
 
         try{
-            user.setId(null);
+            dto.User dtoUser= new dto.User(  );
+            data.User user = loginCRUD(email,password);
+
+            Utils.getDozerBeanMapper().map(user,dtoUser);
+
+            return dtoUser;
+
+        }catch(Exception e){
+            Utils.getLogger().error(e.getMessage());
+            throw e;
+        }
+    }
+
+    public void addUser(User user) throws Exception {
+
+        try
+        {
+
             data.User userEntity = new data.User();
-
             Utils.getDozerBeanMapper().map(user,userEntity);
-
-            //System.out.println("1:" + user.toString());
-            //System.out.println("2:" + user.toString());
-
-            //data.Test test = new data.Test();
-            //test.setId(null);
-            //test.setName("Rafa");
-            //em.persist(test);
 
             addUserCRUD(userEntity);
 
             Utils.getLogger().info("User " + user.getEmail() + " created.");
-        }catch(Exception e){
-            Utils.getLogger().error(e.getMessage());
-            throw e;
+        }
+        catch(Exception ex)
+        {
+            Utils.getLogger().error(ex.getMessage());
+            throw ex;
         }
     }
 
@@ -49,7 +60,15 @@ public class UserEJB /*implements IUserRemote, IUserLocal*/ {
     }
 
     public User getUser(String token, long id) throws Exception {
-        return null;
+
+        if(token.length() == 0)
+            throw new Exception("Authentication Fail.");
+
+        dto.User dtoUser = new dto.User();
+
+        utils.Utils.getDozerBeanMapper().map(getUserCRUD( id ), dtoUser);
+
+        return dtoUser;
     }
 
     public void updateUser(String token, User user) throws Exception {
@@ -83,10 +102,14 @@ public class UserEJB /*implements IUserRemote, IUserLocal*/ {
     //
     private void addUserCRUD(data.User user) throws Exception {
         // CRUD Operation
-        try {
-            System.out.println("add User before\n");
+        try
+        {
+            //Verificar se o email já existe na BD
+            if(GetUserByEmailCRUD(user.getEmail()) != null)
+                throw new Exception("Account already exists!");
+
             em.persist(user);
-            System.out.println("add User after\n");
+
             Utils.getLogger().info(user.getEmail() + " User Created.");
         } catch (Exception e) {
             Utils.getLogger().error(e.getMessage());
@@ -94,11 +117,83 @@ public class UserEJB /*implements IUserRemote, IUserLocal*/ {
         }
     }
 
-    private List<User> getAllUsersCRUD(String token) throws Exception {
+    private data.User loginCRUD (String email, String password) throws Exception
+    {
+
+        try
+        {
+            String queryText = "Select distinct u from User u Where u.email = :email and u.password = :password";
+
+            Query query = em.createQuery(queryText);
+
+            query.setParameter("email", email);
+            query.setParameter("password", password);
+
+            List<data.User> users = query.getResultList();
+
+            if (users != null && users.size() == 1)
+            {
+                String token = Utils.sha1(new Date().toString() + users.get(0).getId());
+                users.get(0).setToken(token);
+                em.persist(users.get(0));
+                return users.get(0);
+            }
+        }
+        catch (Exception ex)
+        {
+            throw ex;
+        }
+
         return null;
     }
 
-    private User getUserCRUD(String token, long id) throws Exception {
+    private List<data.User> getAllUsersCRUD(String token) throws Exception {
+        return null;
+    }
+
+    private data.User getUserCRUD(long id) throws Exception {
+        try
+        {
+            data.User user = em.find(data.User.class , id);
+
+            if (user == null)
+                throw new Exception("User with ID " + id + " not found.");
+
+            return user;
+        }
+        catch (Exception ex)
+        {
+            throw ex;
+        }
+    }
+
+
+    private data.User GetUserByEmailCRUD (String email) throws Exception
+    {
+
+        try
+        {
+            String queryText = "Select distinct u from User u Where u.email = :email";
+
+            Query query = em.createQuery(queryText);
+
+            query.setParameter("email", email);
+
+            List<data.User> users = query.getResultList();
+
+            if (users != null && users.size() == 1)
+            {
+                String token = Utils.sha1(new Date().toString() + users.get(0).getId());
+                users.get(0).setToken(token);
+                em.persist(users.get(0));
+                return users.get(0);
+            }
+        }
+        catch (Exception ex)
+        {
+            throw ex;
+        }
+
         return null;
     }
 

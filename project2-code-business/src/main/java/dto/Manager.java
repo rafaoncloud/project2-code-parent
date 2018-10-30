@@ -7,7 +7,7 @@ public class Manager extends GenericUser implements Serializable {
 
     public Manager() { }
 
-    public Manager(long id, String email, String password, String token, String name, Date birthDate, String address, String phoneNumber) {
-        super(id, email, password, token, name, birthDate, address, phoneNumber);
+    public Manager(long id, String email, String password, String name, Date birthDate, String address, String phoneNumber, String token, Date createdOn, Country country) {
+        super(id, email, password, name, birthDate, address, phoneNumber, token, createdOn ,country);
     }
 }

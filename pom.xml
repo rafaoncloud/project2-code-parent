@@ -202,7 +202,6 @@
 				<version>${activation}</version>
 			</dependency>
 
-
 		</dependencies>
 	</dependencyManagement>
 

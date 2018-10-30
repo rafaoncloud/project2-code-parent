@@ -13,7 +13,6 @@ public class GenericUser implements Serializable {
     protected Long id;
     protected String email;
     protected String password; // Is it needed
-    protected String token;
     protected String name;
     @Temporal(TemporalType.DATE)
     protected Date birthDate;
@@ -21,18 +20,25 @@ public class GenericUser implements Serializable {
     protected String phoneNumber;
     @Column(name = "createdOn")
     @Temporal(TemporalType.TIMESTAMP)
-    protected Date createdOn = new Date();
+    protected Date createdOn; // = new Date();
+    protected String token;
+    @ManyToOne
+    protected Country country;
 
     public GenericUser() {
     }
 
-    public GenericUser(String email, String password, String name, Date birthDate, String address, String phoneNumber, String creditCardNumber) {
+    public GenericUser(long id, String email, String password, String name, Date birthDate, String address, String phoneNumber, Date createdOn, String token, Country country) {
+        this.id = id;
         this.email = email;
         this.password = password;
         this.name = name;
         this.birthDate = birthDate;
         this.address = address;
         this.phoneNumber = phoneNumber;
+        this.token = token;
+        this.country = country;
+        this.createdOn = createdOn;
     }
 
     public long getId() {
@@ -67,20 +73,13 @@ public class GenericUser implements Serializable {
         this.createdOn = createdOn;
     }
 
-    public Date getCreatedOn() {
-        return createdOn;
-    }
-
-    public void setCreatedOn(Date createdOn) {
-        this.createdOn = createdOn;
-    }
 
     public String getToken() {
         return token;
     }
 
-    public void setToken(String token) {
-        this.token = token;
+     public void setToken(String token) {
+       this.token = token;
     }
 
     public String getName() {
@@ -91,6 +90,14 @@ public class GenericUser implements Serializable {
         this.name = name;
     }
 
+    public String getAddress() {
+        return address;
+    }
+
+    public void setAddress(String address) {
+        this.address = address;
+    }
+
     public Date getBirthdate() {
         return birthDate;
     }
@@ -98,4 +105,13 @@ public class GenericUser implements Serializable {
     public void setBirthdate(Date birthdate) {
         this.birthDate = birthdate;
     }
+
+    public Country getCountry() {
+        return country;
+    }
+
+    public void setCountry(Country country) {
+        this.country = country;
+    }
+
 }
