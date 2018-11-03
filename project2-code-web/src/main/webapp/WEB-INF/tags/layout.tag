@@ -5,16 +5,13 @@
   Time: 00:49
   To change this template use File | Settings | File Templates.
 --%>
-
-<!DOCTYPE html>
-
 <%@tag description="Template" pageEncoding="UTF-8" %>
 
-<%@attribute name="title" %>
+<%@attribute name="title"%>
 <%@attribute name="head_area" fragment="true" %>
 <!--%@attribute name="body_area" fragment="true" %-->
 
-
+<!DOCTYPE html >
 <html>
 
 <head>
@@ -25,7 +22,7 @@
 <!-- Navigation -->
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
     <div class="container">
-        <a class="navbar-brand" href="index.jsp">Webflix</a>
+        <a class="navbar-brand" href="${pageContext.request.contextPath}/">Webflix</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
                 aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -33,19 +30,19 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item active">
-                    <a class="nav-link" href="index.jsp">Home
+                    <a class="nav-link" href="${pageContext.request.contextPath}/">Home
                         <span class="sr-only">(current)</span>
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="register.jsp">Register</a>
+                    <a class="nav-link" href="${pageContext.request.contextPath}/register">Register</a>
                 </li>
 
                 <%
                     if (session.getAttribute("id") != null) {
                 %>
                 <li class="nav-item">
-                    <a class="nav-link" href="edit.jsp">Edit Account</a>
+                    <a class="nav-link" href="${pageContext.request.contextPath}/edit">Edit Account</a>
                 </li>
 
                 <li class="nav-item">
@@ -57,7 +54,7 @@
                 } else {
                 %>
                 <li class="nav-item">
-                    <a class="nav-link" href="login.jsp">Login</a>
+                    <a class="nav-link" href="${pageContext.request.contextPath}/login">Login</a>
                 </li>
                 <%
                     }

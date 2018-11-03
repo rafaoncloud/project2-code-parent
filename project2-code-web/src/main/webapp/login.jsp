@@ -6,16 +6,14 @@
 
 <html lang="en">
 
-<mt:layout title="Login - Webflix">
+<mt:layout title="Register - Webflix">
 
 <jsp:attribute name="head_area">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
-
-    <title>Home - Webflix</title>
-
+    <title>Register - Webflix</title>
     <!-- Bootstrap core CSS -->
     <link href="bootstrap/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
@@ -31,7 +29,7 @@
         <h3 class="omb_authTitle">Login</h3>
         <div class="row omb_row-sm-offset-3">
             <div class="col-xs-12 col-sm-6">
-                <form class="omb_loginForm" id="Login" name="Login" method="POST" action="Login">
+                <form class="omb_loginForm" id="Login" name="Login" method="POST" action="login">
                     <div class="input-group">
                         <span class="input-group-addon"><i class="fa fa-user"></i></span>
                         <input type="text" class="form-control" name="username" id="username"

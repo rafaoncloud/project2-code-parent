@@ -1,37 +1,30 @@
-<!DOCTYPE html>
-
 <%@ page import="dto.Country" %>
 <%@ page import="java.util.List" %>
 <%@ page contentType="text/html;charset=UTF-8" %>
 <%@taglib prefix="mt" tagdir="/WEB-INF/tags" %>
+<%@ taglib prefix = "c" uri = "http://java.sun.com/jsp/jstl/core" %>
 
-
-<html lang="en">
+<c:set var="contriesChooseRegister">
+    <% for (Country c : (List<Country>) request.getAttribute("Countries")) { %>
+    <option value=<%= c.getCountryId() %>>
+        <%= c.getCountryName() %>
+    </option>
+    <% } %>
+</c:set>
 
 <mt:layout title="Register - Webflix">
 
-<c:set var="fillWithCountriesRegister">
 
-        <% for (Country c : (List<Country>) request.getAttribute("Countries")) { %>
-            <option value=<%= c.getCountryId() %>>
-                <%= c.getCountryName() %>
-            </option>
-        <% } %>
-</c:set>
-
-<jsp:attribute name="head_area">
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="description" content="">
-<meta name="author" content="">
-
-<title>Home - Webflix</title>
-
-<!-- Bootstrap core CSS -->
-<link href="bootstrap/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
-<!-- Custom styles for this template -->
-<link href="css/Index.css" rel="stylesheet">
+    <jsp:attribute name="head_area">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <title>Home - Webflix</title>
+        <!-- Bootstrap core CSS -->
+        <link href="bootstrap/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+        <!-- Custom styles for this template -->
+        <link href="css/Index.css" rel="stylesheet">
 </jsp:attribute>
 
 <jsp:body>
@@ -52,7 +45,7 @@
                     <br/>
                     <br/>
                     <br/>
-                    <form id="RegisterForm" name="RegisterForm" method="post" action="Register">
+                    <form id="RegisterForm" name="RegisterForm" method="post" action="register">
                         <div class="form-group">
                             <label for="name" class="cols-sm-2 control-label">Name</label>
                             <div class="cols-sm-10">
@@ -108,7 +101,7 @@
                                     <select class="form-control" name="country" id="country"
                                             placeholder="Please select your Country">
                                         <option>-select-</option>
-                                        ${fillWithCountriesRegister}
+                                            ${contriesChooseRegister}
                                     </select>
                                 </div>
                             </div>

@@ -17,7 +17,7 @@ import java.util.Date;
 import java.util.List;
 
 
-@WebServlet("/account/register")
+@WebServlet("/register")
 public class Register extends HttpServlet
 {
     @Inject
@@ -29,17 +29,18 @@ public class Register extends HttpServlet
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException
     {
-        try
-        {
+        //try
+        //{
             List<Country> countries  = countryEJB.getAllCountries( "" ,false);
             request.setAttribute("Countries",countries);
-
             request.getRequestDispatcher("register.jsp").forward(request, response);
-        }
-        catch (Exception e)
-        {
-            response.sendRedirect("index.jsp");
-        }
+            //response.sendRedirect("register.jsp");
+        //}
+        //catch (Exception e)
+        //{
+            //e.printStackTrace();
+            //response.sendRedirect("login.jsp");
+        //}
     }
 
     @Override

@@ -1,5 +1,3 @@
-<!DOCTYPE html>
-
 <%@ page import="java.util.List" %>
 <%@ page import="dto.Country" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
@@ -10,25 +8,19 @@
         response.sendRedirect("index.jsp");
 %>
 
-
-
-<html lang="en">
-
 <mt:layout title="Edit - Webflix">
 
 <jsp:attribute name="head_area">
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="description" content="">
-<meta name="author" content="">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Edit - Webflix</title>
+    <!-- Bootstrap core CSS -->
+    <link href="bootstrap/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
-<title>Home - Webflix</title>
-
-<!-- Bootstrap core CSS -->
-<link href="bootstrap/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
-<!-- Custom styles for this template -->
-<link href="css/Index.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="css/Index.css" rel="stylesheet">
 </jsp:attribute>
 
 <jsp:body>
@@ -49,7 +41,7 @@
                     <br/>
                     <br/>
                     <br/>
-                    <form id="EditForm" name="EditForm" method="post" action="Edit">
+                    <form id="EditForm" name="EditForm" method="post" action="edit">
                         <div class="form-group">
                             <label for="name" class="cols-sm-2 control-label">Name</label>
                             <div class="cols-sm-10">

@@ -13,7 +13,7 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.util.List;
 
-@WebServlet("/account/edit")
+@WebServlet("/edit")
 public class Edit extends HttpServlet
 {
     @Inject
@@ -29,7 +29,7 @@ public class Edit extends HttpServlet
         {
             if (request.getSession().getAttribute("id") == null || request.getSession().getAttribute("token") == null)
             {
-                response.sendRedirect("../index.jsp");
+                response.sendRedirect("index.jsp");
                 return;
             }
 
@@ -58,7 +58,7 @@ public class Edit extends HttpServlet
         }
         catch (Exception e)
         {
-            response.sendRedirect("../index.jsp");
+            response.sendRedirect("index.jsp");
         }
     }
 
