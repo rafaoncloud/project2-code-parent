@@ -1,9 +1,8 @@
-
 <!DOCTYPE html>
 
 <%@ page import="dto.Country" %>
 <%@ page import="java.util.List" %>
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ page contentType="text/html;charset=UTF-8" %>
 <%@taglib prefix="mt" tagdir="/WEB-INF/tags" %>
 
 
@@ -11,19 +10,28 @@
 
 <mt:layout title="Register - Webflix">
 
+<c:set var="fillWithCountriesRegister">
+
+        <% for (Country c : (List<Country>) request.getAttribute("Countries")) { %>
+            <option value=<%= c.getCountryId() %>>
+                <%= c.getCountryName() %>
+            </option>
+        <% } %>
+</c:set>
+
 <jsp:attribute name="head_area">
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="description" content="">
+<meta name="author" content="">
 
-    <title>Home - Webflix</title>
+<title>Home - Webflix</title>
 
-    <!-- Bootstrap core CSS -->
-    <link href="bootstrap/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<!-- Bootstrap core CSS -->
+<link href="bootstrap/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Custom styles for this template -->
-    <link href="css/Index.css" rel="stylesheet">
+<!-- Custom styles for this template -->
+<link href="css/Index.css" rel="stylesheet">
 </jsp:attribute>
 
 <jsp:body>
@@ -83,7 +91,8 @@
                             <label for="phoneNumber" class="cols-sm-2 control-label required">Phone Number</label>
                             <div class="cols-sm-10">
                                 <div class="input-group">
-                                    <span class="input-group-addon"><i class="fa fa-phone-square" aria-hidden="true"></i></span>
+                                    <span class="input-group-addon"><i class="fa fa-phone-square"
+                                                                       aria-hidden="true"></i></span>
                                     <input type="text" class="form-control" name="phoneNumber" id="phoneNumber"
                                            placeholder="Your Phone Number"/>
                                 </div>
@@ -99,15 +108,7 @@
                                     <select class="form-control" name="country" id="country"
                                             placeholder="Please select your Country">
                                         <option>-select-</option>
-                                        <%
-                                            for (Country c : (List<Country>) request.getAttribute("Countries")) {
-                                        %>
-                                        <option value=<%= c.getCountryId() %>>
-                                            <%= c.getCountryName() %>
-                                        </option>
-                                        <%
-                                            }
-                                        %>
+                                        ${fillWithCountriesRegister}
                                     </select>
                                 </div>
                             </div>
@@ -129,7 +130,8 @@
                             <label for="brithDate" class="cols-sm-2 control-label required">Brith Date</label>
                             <div class="cols-sm-10">
                                 <div class="input-group">
-                                    <span class="input-group-addon"><i class="fa fa-calendar "aria-hidden="true"></i></span>
+                                    <span class="input-group-addon"><i class="fa fa-calendar "
+                                                                       aria-hidden="true"></i></span>
                                     <input type="date" class="form-control" name="brithDate" id="brithDate"
                                            placeholder="Your Brith Date"/>
                                 </div>
@@ -141,7 +143,8 @@
                                 Number</label>
                             <div class="cols-sm-10">
                                 <div class="input-group">
-                                    <span class="input-group-addon"><i class="fa fa-credit-card-alt" aria-hidden="true"></i></span>
+                                    <span class="input-group-addon"><i class="fa fa-credit-card-alt"
+                                                                       aria-hidden="true"></i></span>
                                     <input type="number " class="form-control" name="crediCardNumber"
                                            id="crediCardNumber" placeholder="Your Credi Card Number"/>
                                 </div>
