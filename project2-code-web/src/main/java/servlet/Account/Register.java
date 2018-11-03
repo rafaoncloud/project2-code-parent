@@ -17,15 +17,16 @@ import java.util.Date;
 import java.util.List;
 
 
-@WebServlet("/Account/Register")
+@WebServlet("/account/register")
 public class Register extends HttpServlet
 {
     @Inject
     CountryEJB countryEJB;
 
     @Inject
-    UserEJB urserEJB;
+    UserEJB userEJB;
 
+    @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException
     {
         try
@@ -33,14 +34,15 @@ public class Register extends HttpServlet
             List<Country> countries  = countryEJB.getAllCountries( "" ,false);
             request.setAttribute("Countries",countries);
 
-            request.getRequestDispatcher("Register.jsp").forward(request, response);
+            request.getRequestDispatcher("register.jsp").forward(request, response);
         }
         catch (Exception e)
         {
-            response.sendRedirect("Index.jsp");
+            response.sendRedirect("index.jsp");
         }
     }
 
+    @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException
     {
         try
@@ -64,15 +66,15 @@ public class Register extends HttpServlet
                 Country country = countryEJB.getCountry( "", Long.parseLong(request.getParameter( "country" ) ));
                 user.setCountry( country );
             }
-            urserEJB.addUser(user);
+            userEJB.addUser(user);
 
         }
         catch (Exception e)
         {
-            response.sendRedirect("../Index.jsp");
+            response.sendRedirect("index.jsp");
         }
 
-        response.sendRedirect("../Index.jsp");
+        response.sendRedirect("index.jsp");
     }
 
 

@@ -24,6 +24,7 @@
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>
 		</dependency>
+
 		<dependency>
 			<groupId>javax.enterprise</groupId>
 			<artifactId>cdi-api</artifactId>
@@ -33,6 +34,7 @@
 			<groupId>javax.xml.bind</groupId>
 			<artifactId>jaxb-api</artifactId>
 		</dependency>
+
 		<!-- https://mvnrepository.com/artifact/com.sun.xml.bind/jaxb-core -->
 		<dependency>
 			<groupId>com.sun.xml.bind</groupId>
@@ -59,6 +61,14 @@
 			<artifactId>commons-codec</artifactId>
 			<version>1.9</version>
 		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/org.sitemesh/sitemesh -->
+		<!--dependency>
+			<groupId>org.sitemesh</groupId>
+			<artifactId>sitemesh</artifactId>
+			<version>3.0.1</version>
+		</dependency-->
+
 	</dependencies>
 
 	<build>

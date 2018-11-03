@@ -1,14 +1,67 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7a3593f0-4940-49f7-814d-49057fc3eebc" name="Default" comment="RestEasy Service Added (From )">
+    <list default="true" id="bc1cf98c-b6db-4f1e-9737-352e37b88cd3" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/project2-code-web/src/main/java/servlet/Index.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project2-code-web/src/main/webapp/WEB-INF/tags/layout.tag" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project2-code-web/src/main/webapp/edit.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project2-code-web/src/main/webapp/login.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project2-code-web/src/main/webapp/register.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitattributes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.settings/org.eclipse.core.resources.prefs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.settings/org.eclipse.jdt.core.prefs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.settings/org.eclipse.m2e.core.prefs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.settings/org.jboss.ide.eclipse.as.core.prefs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project2-code-business/project2-code-business.iml" beforeDir="false" afterPath="$PROJECT_DIR$/project2-code-business/project2-code-business.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project2-code-business/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/project2-code-business/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project2-code-business/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/project2-code-business/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project2-code-business/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/project2-code-business/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project2-code-business/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/project2-code-business/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project2-code-business/target/project2-code-business.jar" beforeDir="false" afterPath="$PROJECT_DIR$/project2-code-business/target/project2-code-business.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project2-code-business/target/surefire-reports/TEST-org.projeto2.business.AppTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/project2-code-business/target/surefire-reports/TEST-org.projeto2.business.AppTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project2-code-business/target/surefire-reports/org.projeto2.business.AppTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/project2-code-business/target/surefire-reports/org.projeto2.business.AppTest.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project2-code-data/project2-code-data.iml" beforeDir="false" afterPath="$PROJECT_DIR$/project2-code-data/project2-code-data.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/project2-code-data/src/main/java/data/GenericUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/project2-code-data/src/main/java/data/GenericUser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project2-code-data/src/main/java/data/MultimediaContent.java" beforeDir="false" afterPath="$PROJECT_DIR$/project2-code-data/src/main/java/data/MultimediaContent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project2-code-data/target/classes/data/MultimediaContent.class" beforeDir="false" afterPath="$PROJECT_DIR$/project2-code-data/target/classes/data/MultimediaContent.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project2-code-data/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/project2-code-data/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project2-code-data/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/project2-code-data/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project2-code-data/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/project2-code-data/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project2-code-data/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/project2-code-data/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project2-code-data/target/project2-code-data.jar" beforeDir="false" afterPath="$PROJECT_DIR$/project2-code-data/target/project2-code-data.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project2-code-data/target/surefire-reports/TEST-org.projeto2.data.AppTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/project2-code-data/target/surefire-reports/TEST-org.projeto2.data.AppTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project2-code-data/target/surefire-reports/org.projeto2.data.AppTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/project2-code-data/target/surefire-reports/org.projeto2.data.AppTest.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project2-code-ear/project2-code-ear.iml" beforeDir="false" afterPath="$PROJECT_DIR$/project2-code-ear/project2-code-ear.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project2-code-ear/target/project2-code-ear-0.0.1-SNAPSHOT/IS-project2-code-business-0.0.1-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/project2-code-ear/target/project2-code-ear-0.0.1-SNAPSHOT/IS-project2-code-business-0.0.1-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project2-code-ear/target/project2-code-ear-0.0.1-SNAPSHOT/IS-project2-code-data-0.0.1-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/project2-code-ear/target/project2-code-ear-0.0.1-SNAPSHOT/IS-project2-code-data-0.0.1-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project2-code-ear/target/project2-code-ear-0.0.1-SNAPSHOT/IS-project2-code-web-0.0.1-SNAPSHOT.war" beforeDir="false" afterPath="$PROJECT_DIR$/project2-code-ear/target/project2-code-ear-0.0.1-SNAPSHOT/IS-project2-code-web-0.0.1-SNAPSHOT.war" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project2-code-ear/target/project2-code-ear.ear" beforeDir="false" afterPath="$PROJECT_DIR$/project2-code-ear/target/project2-code-ear.ear" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project2-code-web/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/project2-code-web/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project2-code-web/project2-code-web.iml" beforeDir="false" afterPath="$PROJECT_DIR$/project2-code-web/project2-code-web.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project2-code-web/src/main/java/servlet/Account/Edit.java" beforeDir="false" afterPath="$PROJECT_DIR$/project2-code-web/src/main/java/servlet/Account/Edit.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project2-code-web/src/main/java/servlet/Account/Login.java" beforeDir="false" afterPath="$PROJECT_DIR$/project2-code-web/src/main/java/servlet/Account/Login.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project2-code-web/src/main/java/servlet/Account/Register.java" beforeDir="false" afterPath="$PROJECT_DIR$/project2-code-web/src/main/java/servlet/Account/Register.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project2-code-web/src/main/webapp/Index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/project2-code-web/src/main/webapp/Index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project2-code-web/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/project2-code-web/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project2-code-web/src/main/webapp/account/Edit.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project2-code-web/src/main/webapp/account/Login.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project2-code-web/src/main/webapp/account/Register.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project2-code-web/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/project2-code-web/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project2-code-web/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/project2-code-web/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project2-code-web/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/project2-code-web/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project2-code-web/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/project2-code-web/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project2-code-web/target/project2-code-web.war" beforeDir="false" afterPath="$PROJECT_DIR$/project2-code-web/target/project2-code-web.war" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project2-code-web/target/project2-code-web/WEB-INF/lib/project2-code-business-0.0.1-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/project2-code-web/target/project2-code-web/WEB-INF/lib/project2-code-business-0.0.1-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project2-code-web/target/project2-code-web/WEB-INF/lib/project2-code-data-0.0.1-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/project2-code-web/target/project2-code-web/WEB-INF/lib/project2-code-data-0.0.1-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project2-code-web/target/project2-code-web/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/project2-code-web/target/project2-code-web/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project2-code-web/target/surefire-reports/TEST-org.projeto2.web.AppTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/project2-code-web/target/surefire-reports/TEST-org.projeto2.web.AppTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project2-code-web/target/surefire-reports/org.projeto2.web.AppTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/project2-code-web/target/surefire-reports/org.projeto2.web.AppTest.txt" afterDir="false" />
     </list>
-    <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/project2-code-data/target/" />
     <ignored path="$PROJECT_DIR$/project2-code-web/target/" />
+    <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/project2-code-ear/target/" />
     <ignored path="$PROJECT_DIR$/project2-code-business/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -17,286 +70,190 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="DatabaseView">
-    <option name="SHOW_INTERMEDIATE" value="true" />
-    <option name="GROUP_DATA_SOURCES" value="true" />
-    <option name="GROUP_SCHEMA" value="true" />
-    <option name="GROUP_CONTENTS" value="false" />
-    <option name="SORT_POSITIONED" value="false" />
-    <option name="SHOW_EMPTY_GROUPS" value="false" />
-    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
-    <option name="HIDDEN_KINDS">
-      <set />
-    </option>
-    <expand />
-    <select />
-  </component>
   <component name="FUSProjectUsageTrigger">
-    <session id="856831266">
+    <session id="896953635">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="5" />
-          <entry key="project.open.time.0" value="1" />
-          <entry key="project.open.time.1" value="2" />
-          <entry key="project.open.time.2" value="2" />
-          <entry key="project.open.time.8" value="1" />
-          <entry key="project.opened" value="6" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.open">
-        <counts>
-          <entry key="class" value="4" />
-          <entry key="css" value="6" />
-          <entry key="java" value="200" />
-          <entry key="js" value="1" />
-          <entry key="jsp" value="35" />
-          <entry key="tag" value="1" />
-          <entry key="xml" value="26" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.open">
-        <counts>
-          <entry key="CLASS" value="4" />
-          <entry key="CSS" value="6" />
-          <entry key="JAVA" value="200" />
-          <entry key="JSP" value="36" />
-          <entry key="JavaScript" value="1" />
-          <entry key="XML" value="26" />
+          <entry key="project.open.time.3" value="1" />
+          <entry key="project.opened" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="css" value="18" />
-          <entry key="java" value="4251" />
-          <entry key="jsp" value="1065" />
-          <entry key="xml" value="108" />
+          <entry key="java" value="108" />
+          <entry key="jsp" value="473" />
+          <entry key="tag" value="90" />
+          <entry key="txt" value="29" />
+          <entry key="xml" value="86" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="CSS" value="18" />
-          <entry key="JAVA" value="4251" />
-          <entry key="JSP" value="1065" />
-          <entry key="XML" value="108" />
+          <entry key="JAVA" value="108" />
+          <entry key="JSP" value="563" />
+          <entry key="PLAIN_TEXT" value="29" />
+          <entry key="XML" value="86" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="css" value="4" />
+          <entry key="java" value="26" />
+          <entry key="js" value="1" />
+          <entry key="jsp" value="13" />
+          <entry key="tag" value="2" />
+          <entry key="xml" value="8" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="CSS" value="4" />
+          <entry key="JAVA" value="26" />
+          <entry key="JSP" value="15" />
+          <entry key="JavaScript" value="1" />
+          <entry key="XML" value="8" />
         </counts>
       </usages-collector>
     </session>
   </component>
-  <component name="FavoritesManager">
-    <favorites_list name="CodeIris Favorites" />
-  </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/project2-code-business/src/main/java/ejb/UserEJB.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="208">
-              <caret line="70" selection-start-line="70" selection-end-line="70" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="method#getAllUsers#0;class#UserEJB#0" />
-                <element signature="method#updateUser#0;class#UserEJB#0" />
-                <element signature="method#deleteUser#0;class#UserEJB#0" />
-                <element signature="method#userAlreadyExists#0;class#UserEJB#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/project2-code-data/src/main/java/data/Test.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="16" column="19" selection-start-line="16" selection-start-column="19" selection-end-line="16" selection-end-column="19" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/project2-code-data/src/main/java/data/GenericUser.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="108" column="1" selection-start-line="108" selection-start-column="1" selection-end-line="114" selection-end-column="5" />
-              <folding>
-                <element signature="e#1052#1053#0" expanded="true" />
-                <element signature="e#1077#1078#0" expanded="true" />
-                <element signature="e#1111#1112#0" expanded="true" />
-                <element signature="e#1139#1140#0" expanded="true" />
-                <element signature="e#1171#1172#0" expanded="true" />
-                <element signature="e#1199#1200#0" expanded="true" />
-                <element signature="e#1241#1242#0" expanded="true" />
-                <element signature="e#1275#1276#0" expanded="true" />
-                <element signature="e#1310#1311#0" expanded="true" />
-                <element signature="e#1341#1342#0" expanded="true" />
-                <element signature="e#1389#1390#0" expanded="true" />
-                <element signature="e#1429#1430#0" expanded="true" />
-                <element signature="e#1464#1465#0" expanded="true" />
-                <element signature="e#1496#1497#0" expanded="true" />
-                <element signature="e#1545#1546#0" expanded="true" />
-                <element signature="e#1587#1588#0" expanded="true" />
-                <element signature="e#1775#1776#0" expanded="true" />
-                <element signature="e#1803#1804#0" expanded="true" />
-                <element signature="e#1846#1847#0" expanded="true" />
-                <element signature="e#1879#1880#0" expanded="true" />
-                <element signature="e#1910#1911#0" expanded="true" />
-                <element signature="e#1937#1938#0" expanded="true" />
-                <element signature="e#1977#1978#0" expanded="true" />
-                <element signature="e#2009#2010#0" expanded="true" />
-                <element signature="e#2085#2086#0" expanded="true" />
-                <element signature="e#2112#2113#0" expanded="true" />
-                <element signature="e#2152#2153#0" expanded="true" />
-                <element signature="e#2184#2185#0" expanded="true" />
-                <element signature="e#2232#2233#0" expanded="true" />
-                <element signature="e#2262#2263#0" expanded="true" />
-                <element signature="e#2308#2309#0" expanded="true" />
-                <element signature="e#2346#2347#0" expanded="true" />
-                <element signature="e#2138#2139#0" expanded="true" />
-                <element signature="e#2170#2171#0" expanded="true" />
-                <element signature="e#2123#2124#0" expanded="true" />
-                <element signature="e#2165#2166#0" expanded="true" />
-                <element signature="e#2302#2303#0" expanded="true" />
-                <element signature="e#2334#2335#0" expanded="true" />
-                <element signature="e#2382#2383#0" expanded="true" />
-                <element signature="e#2424#2425#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/project2-code-data/src/main/java/data/EMultimediaContentCategory.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" column="14" lean-forward="true" selection-start-line="9" selection-start-column="14" selection-end-line="9" selection-end-column="14" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/project2-code-data/src/main/java/data/MultimediaContent.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="16" column="15" selection-start-line="16" selection-start-column="15" selection-end-line="16" selection-end-column="15" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/project2-code-business/src/main/java/dto/GenericUser.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="71" column="28" selection-start-line="71" selection-start-column="16" selection-end-line="71" selection-end-column="28" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/project2-code-web/src/main/java/servlet/Account/Login.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="30" selection-start-line="30" selection-end-line="30" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/project2-code-data/src/main/java/data/User.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="292">
-              <caret line="20" column="59" selection-start-line="20" selection-start-column="52" selection-end-line="20" selection-end-column="59" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#908#909#0" expanded="true" />
-                <element signature="e#947#948#0" expanded="true" />
-                <element signature="e#1011#1012#0" expanded="true" />
-                <element signature="e#1067#1068#0" expanded="true" />
-                <element signature="e#1118#1119#0" expanded="true" />
-                <element signature="e#1164#1165#0" expanded="true" />
-                <element signature="e#1366#1367#0" expanded="true" />
-                <element signature="e#1398#1399#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/project2-code-web/src/main/java/servlet/Account/Edit.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="337">
-              <caret line="59" selection-start-line="59" selection-end-line="59" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/project2-code-web/src/main/java/servlet/Account/Register.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="174">
-              <caret line="51" selection-start-line="51" selection-end-line="51" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <splitter split-orientation="horizontal" split-proportion="0.52081054">
+      <split-first>
+        <leaf>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/project2-code-web/src/main/webapp/edit.jsp">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="375">
+                  <caret line="25" column="37" selection-start-line="25" selection-start-column="37" selection-end-line="25" selection-end-column="37" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/project2-code-web/src/main/webapp/index.jsp">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="210">
+                  <caret line="14" column="31" lean-forward="true" selection-start-line="14" selection-start-column="31" selection-end-line="14" selection-end-column="31" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/project2-code-web/src/main/java/servlet/Account/Edit.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="360">
+                  <caret line="24" column="13" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/project2-code-web/src/main/webapp/WEB-INF/web.xml">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="60">
+                  <caret line="4" column="21" selection-start-line="4" selection-start-column="21" selection-end-line="4" selection-end-column="21" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/project2-code-web/src/main/webapp/WEB-INF/tags/layout.tag">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="245">
+                  <caret line="27" column="38" lean-forward="true" selection-start-line="27" selection-start-column="38" selection-end-line="27" selection-end-column="38" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/project2-code-web/src/main/java/servlet/Index.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="135">
+                  <caret line="9" column="14" selection-start-line="9" selection-start-column="14" selection-end-line="9" selection-end-column="14" />
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/project2-code-web/src/main/java/servlet/UserManager.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="75">
+                  <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/project2-code-web/src/main/java/servlet/WatchList.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="75">
+                  <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/project2-code-web/src/main/java/servlet/Account/Register.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="810">
+                  <caret line="68" column="13" lean-forward="true" selection-start-line="68" selection-start-column="13" selection-end-line="68" selection-end-column="13" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/project2-code-web/src/main/java/servlet/Account/Login.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="510">
+                  <caret line="43" lean-forward="true" selection-start-line="43" selection-end-line="43" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/project2-code-web/src/main/webapp/login.jsp">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="300">
+                  <caret line="20" selection-start-line="20" selection-end-line="20" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/project2-code-web/src/main/webapp/register.jsp">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="75">
+                  <caret line="5" column="65" lean-forward="true" selection-start-line="5" selection-start-column="65" selection-end-line="5" selection-end-column="65" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-second>
+    </splitter>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JUnit5 Test Class" />
-        <option value="package-info" />
-        <option value="JUnit4 Test Class" />
-        <option value="Enum" />
-        <option value="XHTML File" />
-        <option value="Interface" />
+        <option value="Jsp File" />
         <option value="Class" />
       </list>
     </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>10</find>
-      <find>business</find>
-      <find>data</find>
-      <find>PUT</find>
-      <find>ejb</find>
-      <find>cdi</find>
-      <find>add</find>
-      <find>project22018</find>
-      <find>sitemesh</find>
-      <find>dto</find>
-      <find>getMultimediaContentCRUD</find>
-      <find>CountyName</find>
-      <find>em</find>
-      <find>getallcountry</find>
-      <find>Country</find>
-      <find>countryCreditCardNumber</find>
-      <find>vendor</find>
-      <find>s</find>
-      <find>panel-heading</find>
-      <find>Shop Name</find>
-      <find>regis</find>
-      <find>Start Bootstrap</find>
-      <find>servlet</find>
-      <find>creditCardNumber</find>
-      <find>address</find>
-      <find>birthDate</find>
-      <find>phoneNumber</find>
+      <find>Login</find>
     </findStrings>
-    <dirStrings>
-      <dir>$PROJECT_DIR$/project2-code-web/src/main/java/servlet</dir>
-    </dirStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -304,64 +261,39 @@
   <component name="GradleLocalSettings">
     <option name="projectSyncType">
       <map>
-        <entry key="$USER_HOME$/Traineship Mac/Code Generated/Break-Squeeze-Swagger-v6/client/restlet-JavaSDK/AndroidSDK" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../../Traineship Mac/Code Generated/Break-Squeeze-Swagger-v6/client/restlet-JavaSDK/AndroidSDK" value="PREVIEW" />
       </map>
     </option>
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/project2-code-business/src/main/java/ejb/ManagerEJB.java" />
-        <option value="$PROJECT_DIR$/project2-code-web/src/main/java/servlet/ApplicationConfig.java" />
-        <option value="$PROJECT_DIR$/project2-code-web/src/main/java/servlet/MultimediaContent.java" />
-        <option value="$PROJECT_DIR$/project2-code-web/src/main/java/servlet/HelloService.java" />
-        <option value="$PROJECT_DIR$/project2-code-web/src/main/java/servlet/UserManager.java" />
-        <option value="$PROJECT_DIR$/project2-code-data/src/main/java/data/Test.java" />
-        <option value="$PROJECT_DIR$/project2-code-business/src/main/java/dto/MultimediaContent.java" />
-        <option value="$PROJECT_DIR$/project2-code-business/src/main/java/ejb/MultimediaContentEJB.java" />
-        <option value="$PROJECT_DIR$/project2-code-web/src/main/java/servlet/Login.java" />
-        <option value="$PROJECT_DIR$/project2-code-web/src/main/java/servlet/teste.java" />
-        <option value="$PROJECT_DIR$/project2-code-data/src/main/resources/META-INF/persistence.xml" />
-        <option value="$PROJECT_DIR$/project2-code-web/src/main/webapp/WEB-INF/tags/master.tag" />
-        <option value="$PROJECT_DIR$/project2-code-web/src/main/webapp/WEB-INF/tags/index.jsp" />
-        <option value="$PROJECT_DIR$/project2-code-web/src/main/webapp/masterpage.jsp" />
-        <option value="$PROJECT_DIR$/project2-code-web/src/main/webapp/WEB-INF/decorators.xml" />
-        <option value="$PROJECT_DIR$/project2-code-web/src/main/webapp/index.jsp" />
-        <option value="$PROJECT_DIR$/project2-code-data/src/main/java/ejbCRUD/CountryEJB.java" />
-        <option value="$PROJECT_DIR$/project2-code-data/src/main/java/data/Country.java" />
-        <option value="$PROJECT_DIR$/project2-code-web/src/main/java/servlet/WebflixService.java" />
-        <option value="$PROJECT_DIR$/project2-code-business/src/main/java/dto/Country.java" />
-        <option value="$PROJECT_DIR$/project2-code-web/src/main/java/servlet/UserAdd.java" />
-        <option value="$PROJECT_DIR$/project2-code-web/src/main/java/servlet/User/UserAdd.java" />
-        <option value="$PROJECT_DIR$/project2-code-web/src/main/webapp/Register.jsp" />
-        <option value="$PROJECT_DIR$/project2-code-web/src/main/java/servlet/Register.java" />
-        <option value="$PROJECT_DIR$/project2-code-web/src/main/webapp/css/shop-homepage.css" />
-        <option value="$PROJECT_DIR$/project2-code-web/src/main/webapp/css/index.css" />
-        <option value="$PROJECT_DIR$/project2-code-web/src/main/webapp/css/Login.css" />
-        <option value="$PROJECT_DIR$/project2-code-web/src/main/webapp/css/Index.css" />
-        <option value="$PROJECT_DIR$/project2-code-business/src/main/java/utils/Utils.java" />
-        <option value="$PROJECT_DIR$/project2-code-web/src/main/webapp/WEB-INF/web.xml" />
-        <option value="$PROJECT_DIR$/project2-code-web/src/main/java/servlet/Account/Login.java" />
-        <option value="$PROJECT_DIR$/project2-code-web/src/main/webapp/Account/EditUser.jsp" />
-        <option value="$PROJECT_DIR$/project2-code-web/src/main/java/servlet/Account/EditAccount.java" />
-        <option value="$PROJECT_DIR$/project2-code-web/src/main/java/utils/Utils.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/project2-code-web/src/main/webapp/WEB-INF/sitemesh3.xml" />
+        <option value="$PROJECT_DIR$/project2-code-web/src/main/webapp/WEB-INF/Index.jsp" />
+        <option value="$PROJECT_DIR$/project2-code-web/src/main/webapp/navigator.jsp" />
+        <option value="$PROJECT_DIR$/project2-code-web/src/main/webapp/WEB-INF/tags/navigator.jsp" />
+        <option value="$PROJECT_DIR$/project2-code-web/src/main/webapp/WEB-INF/tags/layouts.jsp" />
+        <option value="$PROJECT_DIR$/project2-code-web/src/main/webapp/WEB-INF/tags/genericpage.tag" />
+        <option value="$PROJECT_DIR$/project2-code-web/src/main/webapp/WEB-INF/layouts/layout.jsp" />
         <option value="$PROJECT_DIR$/project2-code-web/pom.xml" />
-        <option value="$PROJECT_DIR$/project2-code-web/src/main/webapp/Index.jsp" />
-        <option value="$PROJECT_DIR$/project2-code-web/src/main/webapp/Account/Register.jsp" />
+        <option value="$PROJECT_DIR$/project2-code-web/src/main/webapp/WEB-INF/tags/layout.jsp" />
+        <option value="$PROJECT_DIR$/project2-code-web/src/main/webapp/WEB-INF/tags/template.tag" />
+        <option value="$PROJECT_DIR$/project2-code-web/src/main/webapp/WEB-INF/tags/template.jsp" />
         <option value="$PROJECT_DIR$/project2-code-web/src/main/webapp/Account/Login.jsp" />
+        <option value="$PROJECT_DIR$/project2-code-web/src/main/webapp/Account/Register.jsp" />
+        <option value="$PROJECT_DIR$/project2-code-web/src/main/webapp/Index.jsp" />
         <option value="$PROJECT_DIR$/project2-code-web/src/main/webapp/Account/Edit.jsp" />
+        <option value="$PROJECT_DIR$/project2-code-web/src/main/webapp/index.jsp" />
+        <option value="$PROJECT_DIR$/project2-code-web/src/main/webapp/account/edit.jsp" />
+        <option value="$PROJECT_DIR$/project2-code-web/src/main/webapp/account/login.jsp" />
         <option value="$PROJECT_DIR$/project2-code-web/src/main/java/servlet/Account/Edit.java" />
-        <option value="$PROJECT_DIR$/project2-code-business/src/main/java/ejb/CountryEJB.java" />
-        <option value="$PROJECT_DIR$/project2-code-business/src/main/java/ejb/UserEJB.java" />
-        <option value="$PROJECT_DIR$/project2-code-business/src/main/java/dto/Manager.java" />
-        <option value="$PROJECT_DIR$/project2-code-business/src/main/java/dto/User.java" />
-        <option value="$PROJECT_DIR$/project2-code-business/src/main/java/dto/GenericUser.java" />
-        <option value="$PROJECT_DIR$/project2-code-data/src/main/java/data/Manager.java" />
+        <option value="$PROJECT_DIR$/project2-code-web/src/main/webapp/account/register.jsp" />
+        <option value="$PROJECT_DIR$/project2-code-web/src/main/java/servlet/Index.java" />
+        <option value="$PROJECT_DIR$/project2-code-web/src/main/webapp/WEB-INF/tags/layout.tag" />
+        <option value="$PROJECT_DIR$/project2-code-web/src/main/java/servlet/Account/Login.java" />
         <option value="$PROJECT_DIR$/project2-code-web/src/main/java/servlet/Account/Register.java" />
-        <option value="$PROJECT_DIR$/project2-code-data/src/main/java/data/User.java" />
-        <option value="$PROJECT_DIR$/project2-code-data/src/main/java/data/GenericUser.java" />
-        <option value="$PROJECT_DIR$/project2-code-data/src/main/java/data/MultimediaContent.java" />
+        <option value="$PROJECT_DIR$/project2-code-web/src/main/webapp/WEB-INF/web.xml" />
+        <option value="$PROJECT_DIR$/project2-code-web/src/main/webapp/register.jsp" />
       </list>
     </option>
   </component>
@@ -371,19 +303,11 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="MavenProjectNavigator">
-    <treeState>
-      <expand />
-      <select />
-    </treeState>
-  </component>
-  <component name="NodePackageJsonFileManager">
-    <packageJsonPaths />
-  </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="953" />
-    <option name="width" value="974" />
-    <option name="height" value="1057" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="163" />
+    <option name="y" value="23" />
+    <option name="width" value="2231" />
+    <option name="height" value="1332" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -391,7 +315,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
@@ -408,67 +331,7 @@
             <path>
               <item name="project2-code-parent" type="b2602c69:ProjectViewProjectNode" />
               <item name="project2-code-parent" type="462c0819:PsiDirectoryNode" />
-              <item name="project2-code-business" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="project2-code-parent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="project2-code-parent" type="462c0819:PsiDirectoryNode" />
-              <item name="project2-code-business" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="project2-code-parent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="project2-code-parent" type="462c0819:PsiDirectoryNode" />
-              <item name="project2-code-business" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="project2-code-parent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="project2-code-parent" type="462c0819:PsiDirectoryNode" />
-              <item name="project2-code-business" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="dto" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="project2-code-parent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="project2-code-parent" type="462c0819:PsiDirectoryNode" />
               <item name="project2-code-data" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="project2-code-parent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="project2-code-parent" type="462c0819:PsiDirectoryNode" />
-              <item name="project2-code-data" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="project2-code-parent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="project2-code-parent" type="462c0819:PsiDirectoryNode" />
-              <item name="project2-code-data" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="project2-code-parent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="project2-code-parent" type="462c0819:PsiDirectoryNode" />
-              <item name="project2-code-data" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="project2-code-parent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="project2-code-parent" type="462c0819:PsiDirectoryNode" />
-              <item name="project2-code-data" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="data" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="project2-code-parent" type="b2602c69:ProjectViewProjectNode" />
@@ -535,55 +398,80 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="Account" type="462c0819:PsiDirectoryNode" />
+              <item name="bootstrap" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="project2-code-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="project2-code-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="project2-code-web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="bootstrap" type="462c0819:PsiDirectoryNode" />
+              <item name="bootstrap" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="project2-code-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="project2-code-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="project2-code-web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="bootstrap" type="462c0819:PsiDirectoryNode" />
+              <item name="bootstrap" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="project2-code-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="project2-code-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="project2-code-web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="project2-code-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="project2-code-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="project2-code-web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="project2-code-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="project2-code-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="project2-code-web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
+              <item name="tags" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="DefaultHtmlFileTemplate" value="XHTML File" />
-    <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file:///Users/rafa/Desktop/IS/Assigment-2/project2-code-parent/project2-code-web/src/main/java/servlet/MultimediaContent.java" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1540925038586" />
-    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
-    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
-    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/UC/IS/2016/Project2_2016200676_2015219356" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1541248696590" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="project.structure.last.edited" value="Modules" />
-    <property name="project.structure.proportion" value="0.15" />
-    <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
   </component>
   <component name="RecentsManager">
-    <key name="CreateTestDialog.RecentsKey">
-      <recent name="data" />
-    </key>
-    <key name="CreateTestDialog.Recents.Supers">
-      <recent name="" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\AntonioFernandes\IdeaProjects\project2-code-parent\project2-code-web\src\main\webapp" />
-      <recent name="C:\Users\AntonioFernandes\IdeaProjects\project2-code-parent\project2-code-web\src\main\webapp\Account" />
-      <recent name="C:\Users\AntonioFernandes\IdeaProjects\project2-code-parent\project2-code-web\src\main\webapp\WEB-INF\template" />
-      <recent name="C:\Users\AntonioFernandes\IdeaProjects\project2-code-parent\project2-code-web\src\main\webapp\WEB-INF\tags" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="data" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\AntonioFernandes\IdeaProjects\project2-code-parent\project2-code-web\src\main\java\servlet" />
-      <recent name="C:\Users\AntonioFernandes\IdeaProjects\project2-code-parent\project2-code-web\src\main\webapp\WEB-INF" />
-      <recent name="C:\Users\AntonioFernandes\IdeaProjects\project2-code-parent\project2-code-web\src\main\webapp" />
-      <recent name="$PROJECT_DIR$/project2-code-web/src/main/java/servlet" />
-    </key>
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="data" />
+      <recent name="$PROJECT_DIR$/project2-code-web/src/main/webapp" />
+      <recent name="$PROJECT_DIR$/project2-code-web/src/main/webapp/WEB-INF/tags" />
+      <recent name="$PROJECT_DIR$/project2-code-web/src/main/webapp/WEB-INF" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -598,7 +486,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Remote.Unnamed">
+  <component name="RunManager">
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <method v="2">
@@ -649,8 +537,9 @@
             </option>
             <option name="goals">
               <list>
-                <option value="-Xdebug" />
-                <option value="-Xrunjdwp:transport=dt_socket,server=y,suspend=n,address=1044" />
+                <option value="clean" />
+                <option value="install" />
+                <option value="wildfly:deploy" />
               </list>
             </option>
             <option name="pomFileName" />
@@ -664,28 +553,6 @@
       </MavenSettings>
       <method v="2" />
     </configuration>
-    <configuration name="Unnamed" type="Remote" factoryName="Remote">
-      <module name="project2-code-parent" />
-      <option name="USE_SOCKET_TRANSPORT" value="true" />
-      <option name="SERVER_MODE" value="false" />
-      <option name="SHMEM_ADDRESS" />
-      <option name="HOST" value="localhost" />
-      <option name="PORT" value="8787" />
-      <RunnerSettings RunnerId="Debug">
-        <option name="DEBUG_PORT" value="8787" />
-        <option name="LOCAL" value="false" />
-      </RunnerSettings>
-      <method v="2" />
-    </configuration>
-    <configuration default="true" type="Remote" factoryName="Remote">
-      <module name="project2-code-parent" />
-      <option name="USE_SOCKET_TRANSPORT" value="true" />
-      <option name="SERVER_MODE" value="false" />
-      <option name="SHMEM_ADDRESS" />
-      <option name="HOST" value="localhost" />
-      <option name="PORT" value="8787" />
-      <method v="2" />
-    </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
       <properties />
@@ -694,53 +561,23 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <list>
-      <item itemvalue="Maven.Deploy to Wildfly" />
-      <item itemvalue="Remote.Unnamed" />
-    </list>
-  </component>
-  <component name="StructureViewFactory">
-    <option name="AUTOSCROLL_FROM_SOURCE" value="true" />
   </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="7a3593f0-4940-49f7-814d-49057fc3eebc" name="Default" comment="" />
-      <created>1539106938953</created>
+      <changelist id="bc1cf98c-b6db-4f1e-9737-352e37b88cd3" name="Default Changelist" comment="" />
+      <created>1541202098810</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1539106938953</updated>
-      <workItem from="1539106940307" duration="1558000" />
-      <workItem from="1539108751047" duration="3455000" />
-      <workItem from="1539188253782" duration="6212000" />
-      <workItem from="1539257319521" duration="1607000" />
-      <workItem from="1539423527374" duration="757000" />
-      <workItem from="1539537851457" duration="599000" />
-      <workItem from="1539709718944" duration="46056000" />
-      <workItem from="1540212840071" duration="849000" />
-      <workItem from="1540314364904" duration="9268000" />
+      <updated>1541202098810</updated>
+      <workItem from="1541202102615" duration="14409000" />
     </task>
-    <task id="LOCAL-00001" summary="RestEasy Service Added (From )">
-      <created>1540923273449</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1540923273450</updated>
-    </task>
-    <task id="LOCAL-00002" summary="RestEasy Service Added (From )">
-      <created>1540923347766</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1540923347766</updated>
-    </task>
-    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="70361000" />
+    <option name="totallyTimeSpent" value="14409000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -752,637 +589,168 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
+    <frame x="163" y="23" width="2231" height="1332" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4946695" visible="true" weight="0.17590618" />
-      <window_info id="Capture Tool" order="1" />
-      <window_info id="Designer" order="2" />
-      <window_info id="UI Designer" order="3" />
-      <window_info id="Image Layers" order="4" />
-      <window_info id="Web" order="5" side_tool="true" />
-      <window_info id="Learn" order="6" />
-      <window_info id="EJB" order="7" side_tool="true" />
-      <window_info id="JavaEE:App" order="8" side_tool="true" />
-      <window_info id="Favorites" order="9" sideWeight="0.50319827" side_tool="true" weight="0.2249191" />
-      <window_info id="Persistence" order="10" side_tool="true" />
+      <window_info id="Persistence" side_tool="true" />
+      <window_info id="Designer" />
+      <window_info id="Image Layers" />
+      <window_info id="UI Designer" />
+      <window_info id="Favorites" side_tool="true" />
+      <window_info id="Capture Tool" />
+      <window_info id="Web" side_tool="true" />
+      <window_info id="Learn" />
+      <window_info id="EJB" side_tool="true" />
+      <window_info id="JavaEE:App" side_tool="true" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16582915" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Terminal" sideWeight="0.4995229" weight="0.32983872" />
+      <window_info anchor="bottom" id="Event Log" sideWeight="0.47375953" side_tool="true" weight="0.32983872" />
+      <window_info anchor="bottom" id="Messages" weight="0.32983872" />
+      <window_info anchor="bottom" id="Java Enterprise" sideWeight="0.4995229" weight="0.32983872" />
+      <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" show_stripe_button="false" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32939914" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.57995737" weight="0.4667382" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.54317695" visible="true" weight="0.38626608" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32983872" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.52624047" visible="true" weight="0.2717742" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.32941177" />
-      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.42004263" side_tool="true" weight="0.4667382" />
-      <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Java Enterprise" order="9" weight="0.32941177" />
-      <window_info anchor="bottom" id="Version Control" order="10" weight="0.32941177" />
-      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.49919093" weight="0.75735295" />
-      <window_info anchor="bottom" id="Messages" order="12" weight="0.32832617" />
-      <window_info anchor="bottom" id="Spring" order="13" />
+      <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.4995229" weight="0.32983872" />
+      <window_info anchor="right" id="Palette" />
+      <window_info anchor="right" id="JSF" />
+      <window_info anchor="right" id="Capture Analysis" />
+      <window_info anchor="right" id="CDI" />
+      <window_info anchor="right" id="Database" />
+      <window_info anchor="right" id="Maven Projects" />
+      <window_info anchor="right" id="Palette&#9;" />
+      <window_info anchor="right" id="Theme Preview" />
+      <window_info anchor="right" id="Bean Validation" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.24959612" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="right" id="Maven Projects" order="4" weight="0.32956383" />
-      <window_info anchor="right" id="CDI" order="5" weight="0.32956383" />
-      <window_info anchor="right" id="Database" order="6" weight="0.32956383" />
-      <window_info anchor="right" id="JSF" order="7" weight="0.32956383" />
-      <window_info anchor="right" id="Palette&#9;" order="8" />
-      <window_info anchor="right" id="Capture Analysis" order="9" />
-      <window_info anchor="right" id="Bean Validation" order="10" weight="0.32956383" />
-      <window_info anchor="right" id="Theme Preview" order="11" />
-      <window_info anchor="right" id="Code Iris" order="12" weight="0.32956383" />
-      <window_info anchor="right" id="Structure" order="13" sideWeight="0.30339807" weight="0.20960188" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State>
-              <option name="RECENTLY_FILTERED_USER_GROUPS">
-                <collection />
-              </option>
-              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
-                <collection />
-              </option>
-              <option name="COLUMN_ORDER">
-                <list>
-                  <option value="0" />
-                  <option value="1" />
-                  <option value="2" />
-                  <option value="3" />
-                </list>
-              </option>
-            </State>
-          </value>
-        </entry>
-      </map>
-    </option>
-  </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="RestEasy Service Added (From )" />
-    <option name="LAST_COMMIT_MESSAGE" value="RestEasy Service Added (From )" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/project2-code-web/src/main/java/servlet/WebflixService.java</url>
-          <line>22</line>
-          <properties />
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/project2-code-web/src/main/java/servlet/Account/Register.java</url>
-          <line>51</line>
-          <properties />
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/project2-code-business/src/main/java/ejb/CountryEJB.java</url>
-          <line>43</line>
-          <properties />
-          <option name="timeStamp" value="6" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/project2-code-business/src/main/java/ejb/CountryEJB.java</url>
-          <line>86</line>
-          <properties />
-          <option name="timeStamp" value="7" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/project2-code-business/src/main/java/ejb/CountryEJB.java</url>
-          <line>52</line>
-          <properties />
-          <option name="timeStamp" value="8" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/project2-code-web/src/main/java/servlet/Account/Register.java</url>
-          <line>67</line>
-          <properties />
-          <option name="timeStamp" value="14" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/project2-code-web/src/main/java/servlet/Account/Register.java</url>
-          <line>29</line>
-          <properties />
-          <option name="timeStamp" value="15" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/project2-code-web/src/main/java/servlet/Account/Login.java</url>
-          <line>29</line>
-          <properties />
-          <option name="timeStamp" value="18" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/project2-code-business/src/main/java/ejb/UserEJB.java</url>
-          <line>25</line>
-          <properties />
-          <option name="timeStamp" value="20" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/project2-code-business/src/main/java/ejb/UserEJB.java</url>
-          <line>124</line>
-          <properties />
-          <option name="timeStamp" value="21" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/project2-code-business/src/main/java/ejb/UserEJB.java</url>
-          <line>131</line>
-          <properties />
-          <option name="timeStamp" value="22" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/project2-code-web/src/main/java/servlet/Account/Edit.java</url>
-          <line>28</line>
-          <properties />
-          <option name="timeStamp" value="25" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/project2-code-business/src/main/java/ejb/UserEJB.java</url>
-          <line>63</line>
-          <properties />
-          <option name="timeStamp" value="26" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/project2-code-business/src/main/java/ejb/UserEJB.java</url>
-          <line>156</line>
-          <properties />
-          <option name="timeStamp" value="28" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/project2-code-web/src/main/java/servlet/Account/Edit.java</url>
-          <line>43</line>
-          <properties />
-          <option name="timeStamp" value="29" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/project2-code-web/src/main/java/servlet/Account/Edit.java</url>
-          <line>58</line>
-          <properties />
-          <option name="timeStamp" value="30" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/project2-code-business/src/main/java/ejb/UserEJB.java</url>
-          <line>52</line>
-          <properties />
-          <option name="timeStamp" value="31" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/project2-code-web/src/main/java/servlet/Account/Edit.java</url>
-          <line>41</line>
-          <properties />
-          <option name="timeStamp" value="32" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/project2-code-business/src/main/java/ejb/UserEJB.java</url>
-          <line>36</line>
-          <properties />
-          <option name="timeStamp" value="33" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/project2-code-business/src/main/java/ejb/UserEJB.java</url>
-          <line>107</line>
-          <properties />
-          <option name="timeStamp" value="35" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/project2-code-business/src/main/java/ejb/UserEJB.java</url>
-          <line>46</line>
-          <properties />
-          <option name="timeStamp" value="37" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
-    <watches-manager>
-      <configuration name="Remote">
-        <watch expression="request.getParameter(&quot;brithDate&quot;)" />
-        <watch expression="request.getParameter(&quot;country&quot;)" />
-        <watch expression="country" />
-        <watch expression="country" />
-        <watch expression="userEntity.birthDate" />
-        <watch expression="userEntity.createdOn" />
-        <watch expression="e" />
-        <watch expression="user.getName()" />
-        <watch expression="countries" />
-        <watch expression="request.getParameter(&quot;brithDate&quot;)" />
-        <watch expression="user.country" />
-        <watch expression="user.country" language="JAVA" />
-      </configuration>
-    </watches-manager>
-  </component>
-  <component name="antWorkspaceConfiguration">
-    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
-    <option name="FILTER_TARGETS" value="false" />
-  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/project2-code-ear/pom.xml">
+    <entry file="file://$PROJECT_DIR$/project2-code-web/src/main/webapp/WEB-INF/lib/sitemesh3.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1186" />
+        <state relative-caret-position="15">
+          <caret line="1" column="35" lean-forward="true" selection-start-line="1" selection-start-column="35" selection-end-line="1" selection-end-column="45" />
+        </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/project2-code-data/_project.xml">
+    <entry file="file://$PROJECT_DIR$/project2-code-web/src/main/webapp/bootstrap/jquery/jquery.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-353" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/project2-code-ear/_classpath.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/project2-code-data/_classpath.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-302" />
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk-10.0.2/lib/src.zip!/java.base/java/lang/Object.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="244" column="18" selection-start-line="244" selection-start-column="18" selection-end-line="244" selection-end-column="18" />
+        <state relative-caret-position="-2049">
           <folding>
-            <element signature="e#10225#10226#0" expanded="true" />
-            <element signature="e#10308#10309#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/project2-code-data/src/main/java/ejbCRUD/CountryEJB.java" />
-    <entry file="file://$PROJECT_DIR$/project2-code-web/src/main/java/servlet/WatchList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="28" column="11" selection-start-line="28" selection-start-column="11" selection-end-line="28" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/project2-code-web/src/main/java/servlet/UserAdd.java" />
-    <entry file="file://$PROJECT_DIR$/project2-code-web/src/main/java/servlet/User/UserAdd.java" />
-    <entry file="file://$PROJECT_DIR$/project2-code-web/src/main/java/servlet/Auth.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/jboss/logging/jboss-logging/3.3.2.Final/jboss-logging-3.3.2.Final.jar!/org/jboss/logging/JBossLogManagerLogger.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="148">
-          <caret line="20" selection-start-line="20" selection-end-line="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/jboss/logging/jboss-logging/3.3.2.Final/jboss-logging-3.3.2.Final.jar!/org/jboss/logging/Logger.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="233">
-          <caret line="1241" selection-start-line="1241" selection-end-line="1241" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/project2-code-web/src/main/java/utils/Credentials.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/project2-code-web/src/main/java/servlet/MultimediaContent.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="160" column="56" lean-forward="true" selection-start-line="160" selection-start-column="5" selection-end-line="160" selection-end-column="56" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#getMultimediaContentByDirectorName#0;class#MultimediaContent#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/project2-code-web/src/main/java/servlet/UserManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="16" column="11" selection-start-line="16" selection-start-column="3" selection-end-line="16" selection-end-column="11" />
-          <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="n#!!doc" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/project2-code-web/src/main/java/servlet/WebflixService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="28" column="67" lean-forward="true" selection-start-line="28" selection-start-column="67" selection-end-line="28" selection-end-column="67" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="75">
+          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/project2-code-web/src/main/webapp/WEB-INF/web.xml">
+    <entry file="file://$PROJECT_DIR$/project2-code-web/src/main/java/servlet/MultimediaContent.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-272">
-          <caret line="8" selection-start-line="8" selection-end-line="8" />
+        <state relative-caret-position="75">
+          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/project2-code-web/src/main/webapp/css/Login.css">
+    <entry file="file://$PROJECT_DIR$/project2-code-web/src/main/java/servlet/Auth.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="496">
-          <caret line="70" column="1" selection-start-line="70" selection-start-column="1" selection-end-line="70" selection-end-column="1" />
+        <state relative-caret-position="90">
+          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/project2-code-web/src/main/webapp/css/Index.css">
+    <entry file="file://$PROJECT_DIR$/project2-code-web/src/main/java/servlet/HelloService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="22" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
+        <state relative-caret-position="75">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/project2-code-business/src/main/java/ejb/MultimediaContentEJB.java">
+    <entry file="file://$PROJECT_DIR$/project2-code-web/src/main/java/servlet/ApplicationConfig.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="173" selection-start-line="173" selection-end-line="181" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#deleteMultimediaContentCRUD#0;class#MultimediaContentEJB#0" />
-          </folding>
+        <state relative-caret-position="75">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/project2-code-web/_classpath.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/project2-code-web/src/main/java/utils/Utils.java">
+    <entry file="file://$PROJECT_DIR$/project2-code-web/src/main/webapp/WEB-INF/sitemesh3.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="313">
-          <caret line="29" selection-start-line="29" selection-end-line="29" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="277">
-          <caret line="202" column="25" selection-start-line="202" selection-start-column="25" selection-end-line="202" selection-end-column="25" />
+        <state relative-caret-position="30">
+          <caret line="2" column="11" selection-start-line="2" selection-start-column="11" selection-end-line="2" selection-end-column="11" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/project2-code-web/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="60" column="21" selection-start-line="60" selection-start-column="21" selection-end-line="60" selection-end-column="21" />
+        <state relative-caret-position="443">
+          <caret line="69" column="23" selection-start-line="69" selection-start-column="23" selection-end-line="69" selection-end-column="23" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/project2-code-web/src/main/webapp/Index.jsp">
+    <entry file="file://$PROJECT_DIR$/project2-code-web/src/main/webapp/WEB-INF/tags/template.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="37">
-          <caret line="43" column="15" selection-start-line="43" selection-start-column="15" selection-end-line="43" selection-end-column="15" />
+        <state relative-caret-position="210">
+          <caret line="14" column="4" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="4" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/project2-code-web/src/main/webapp/Account/Login.jsp">
+    <entry file="file://$PROJECT_DIR$/project2-code-web/src/main/webapp/css/Index.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/project2-code-web/src/main/webapp/css/Login.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/project2-code-web/src/main/java/servlet/UserManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" selection-start-line="1" selection-end-line="1" />
+        <state relative-caret-position="75">
+          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/project2-code-web/src/main/webapp/Account/Register.jsp">
+    <entry file="file://$PROJECT_DIR$/project2-code-web/src/main/java/servlet/WatchList.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="140" column="29" selection-start-line="140" selection-start-column="29" selection-end-line="143" selection-end-column="34" />
+        <state relative-caret-position="75">
+          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/project2-code-business/_classpath.xml">
+    <entry file="file://$PROJECT_DIR$/project2-code-web/src/main/java/servlet/Index.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" selection-start-line="6" selection-end-line="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/project2-code-business/src/main/java/dto/EMultimediaContentCategory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="12" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/project2-code-business/src/main/java/utils/Utils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="20" column="44" selection-start-line="20" selection-start-column="33" selection-end-line="20" selection-end-column="44" />
+        <state relative-caret-position="135">
+          <caret line="9" column="14" selection-start-line="9" selection-start-column="14" selection-end-line="9" selection-end-column="14" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/project2-code-business/src/main/java/dto/Country.java">
+    <entry file="file://$PROJECT_DIR$/project2-code-web/src/main/webapp/login.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="5" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
-          <folding>
-            <element signature="e#269#270#0" expanded="true" />
-            <element signature="e#308#309#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="300">
+          <caret line="20" selection-start-line="20" selection-end-line="20" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/project2-code-business/src/main/java/ejb/ManagerEJB.java">
+    <entry file="file://$PROJECT_DIR$/project2-code-web/src/main/java/servlet/Account/Edit.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="448">
-          <caret line="31" selection-start-line="31" selection-end-line="31" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/net/sf/dozer/dozer/5.5.1/dozer-5.5.1.jar!/org/dozer/DozerBeanMapper.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="123">
-          <caret line="88" column="5" lean-forward="true" selection-start-line="88" selection-start-column="5" selection-end-line="88" selection-end-column="5" />
-          <folding>
-            <element signature="method#map#2;class#DozerBeanMapper#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/project2-code-business/src/main/java/dto/MultimediaContent.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/project2-code-business/src/main/java/ejb/CountryEJB.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk-10.0.2/lib/src.zip!/java.base/java/lang/String.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="395">
-          <caret line="123" column="19" selection-start-line="123" selection-start-column="19" selection-end-line="123" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/project2-code-business/src/main/java/dto/Manager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="9" column="153" selection-start-line="9" selection-start-column="153" selection-end-line="9" selection-end-column="153" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/project2-code-business/src/main/java/dto/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="23" column="91" selection-start-line="23" selection-start-column="91" selection-end-line="23" selection-end-column="91" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#977#978#0" expanded="true" />
-            <element signature="e#1023#1024#0" expanded="true" />
-            <element signature="e#1066#1067#0" expanded="true" />
-            <element signature="e#1105#1106#0" expanded="true" />
-            <element signature="e#1169#1170#0" expanded="true" />
-            <element signature="e#1225#1226#0" expanded="true" />
-            <element signature="e#1278#1279#0" expanded="true" />
-            <element signature="e#1310#1311#0" expanded="true" />
-            <element signature="e#1388#1389#0" expanded="true" />
-            <element signature="e#1441#1442#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/project2-code-data/src/main/java/data/Country.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="23" column="38" selection-start-line="23" selection-start-column="38" selection-end-line="23" selection-end-column="38" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#434#435#0" expanded="true" />
-            <element signature="e#479#480#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/project2-code-data/src/main/java/data/Manager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="94" selection-start-line="12" selection-start-column="94" selection-end-line="12" selection-end-column="94" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/project2-code-web/src/main/webapp/Account/Edit.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="144" column="95" selection-start-line="144" selection-start-column="86" selection-end-line="144" selection-end-column="95" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/project2-code-data/src/main/java/data/Test.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="16" column="19" selection-start-line="16" selection-start-column="19" selection-end-line="16" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/project2-code-data/src/main/java/data/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="292">
-          <caret line="20" column="59" selection-start-line="20" selection-start-column="52" selection-end-line="20" selection-end-column="59" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#908#909#0" expanded="true" />
-            <element signature="e#947#948#0" expanded="true" />
-            <element signature="e#1011#1012#0" expanded="true" />
-            <element signature="e#1067#1068#0" expanded="true" />
-            <element signature="e#1118#1119#0" expanded="true" />
-            <element signature="e#1164#1165#0" expanded="true" />
-            <element signature="e#1366#1367#0" expanded="true" />
-            <element signature="e#1398#1399#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/project2-code-data/src/main/java/data/GenericUser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="108" column="1" selection-start-line="108" selection-start-column="1" selection-end-line="114" selection-end-column="5" />
-          <folding>
-            <element signature="e#1052#1053#0" expanded="true" />
-            <element signature="e#1077#1078#0" expanded="true" />
-            <element signature="e#1111#1112#0" expanded="true" />
-            <element signature="e#1139#1140#0" expanded="true" />
-            <element signature="e#1171#1172#0" expanded="true" />
-            <element signature="e#1199#1200#0" expanded="true" />
-            <element signature="e#1241#1242#0" expanded="true" />
-            <element signature="e#1275#1276#0" expanded="true" />
-            <element signature="e#1310#1311#0" expanded="true" />
-            <element signature="e#1341#1342#0" expanded="true" />
-            <element signature="e#1389#1390#0" expanded="true" />
-            <element signature="e#1429#1430#0" expanded="true" />
-            <element signature="e#1464#1465#0" expanded="true" />
-            <element signature="e#1496#1497#0" expanded="true" />
-            <element signature="e#1545#1546#0" expanded="true" />
-            <element signature="e#1587#1588#0" expanded="true" />
-            <element signature="e#1775#1776#0" expanded="true" />
-            <element signature="e#1803#1804#0" expanded="true" />
-            <element signature="e#1846#1847#0" expanded="true" />
-            <element signature="e#1879#1880#0" expanded="true" />
-            <element signature="e#1910#1911#0" expanded="true" />
-            <element signature="e#1937#1938#0" expanded="true" />
-            <element signature="e#1977#1978#0" expanded="true" />
-            <element signature="e#2009#2010#0" expanded="true" />
-            <element signature="e#2085#2086#0" expanded="true" />
-            <element signature="e#2112#2113#0" expanded="true" />
-            <element signature="e#2152#2153#0" expanded="true" />
-            <element signature="e#2184#2185#0" expanded="true" />
-            <element signature="e#2232#2233#0" expanded="true" />
-            <element signature="e#2262#2263#0" expanded="true" />
-            <element signature="e#2308#2309#0" expanded="true" />
-            <element signature="e#2346#2347#0" expanded="true" />
-            <element signature="e#2138#2139#0" expanded="true" />
-            <element signature="e#2170#2171#0" expanded="true" />
-            <element signature="e#2123#2124#0" expanded="true" />
-            <element signature="e#2165#2166#0" expanded="true" />
-            <element signature="e#2302#2303#0" expanded="true" />
-            <element signature="e#2334#2335#0" expanded="true" />
-            <element signature="e#2382#2383#0" expanded="true" />
-            <element signature="e#2424#2425#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/project2-code-business/src/main/java/dto/GenericUser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="71" column="28" selection-start-line="71" selection-start-column="16" selection-end-line="71" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/project2-code-web/src/main/java/servlet/Account/Register.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="174">
-          <caret line="51" selection-start-line="51" selection-end-line="51" />
+        <state relative-caret-position="360">
+          <caret line="24" column="13" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1391,52 +759,50 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/project2-code-web/src/main/java/servlet/Account/Login.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="30" selection-start-line="30" selection-end-line="30" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="510">
+          <caret line="43" lean-forward="true" selection-start-line="43" selection-end-line="43" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/project2-code-business/src/main/java/ejb/UserEJB.java">
+    <entry file="file://$PROJECT_DIR$/project2-code-web/src/main/java/servlet/Account/Register.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="70" selection-start-line="70" selection-end-line="70" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#getAllUsers#0;class#UserEJB#0" />
-            <element signature="method#updateUser#0;class#UserEJB#0" />
-            <element signature="method#deleteUser#0;class#UserEJB#0" />
-            <element signature="method#userAlreadyExists#0;class#UserEJB#0" />
-          </folding>
+        <state relative-caret-position="810">
+          <caret line="68" column="13" lean-forward="true" selection-start-line="68" selection-start-column="13" selection-end-line="68" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/project2-code-web/src/main/java/servlet/Account/Edit.java">
+    <entry file="file://$PROJECT_DIR$/project2-code-web/src/main/webapp/WEB-INF/tags/layout.tag">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="337">
-          <caret line="59" selection-start-line="59" selection-end-line="59" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="245">
+          <caret line="27" column="38" lean-forward="true" selection-start-line="27" selection-start-column="38" selection-end-line="27" selection-end-column="38" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/project2-code-data/src/main/java/data/EMultimediaContentCategory.java">
+    <entry file="file://$PROJECT_DIR$/project2-code-web/src/main/webapp/index.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="14" lean-forward="true" selection-start-line="9" selection-start-column="14" selection-end-line="9" selection-end-column="14" />
+        <state relative-caret-position="210">
+          <caret line="14" column="31" lean-forward="true" selection-start-line="14" selection-start-column="31" selection-end-line="14" selection-end-column="31" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/project2-code-data/src/main/java/data/MultimediaContent.java">
+    <entry file="file://$PROJECT_DIR$/project2-code-web/src/main/webapp/edit.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="16" column="15" selection-start-line="16" selection-start-column="15" selection-end-line="16" selection-end-column="15" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="375">
+          <caret line="25" column="37" selection-start-line="25" selection-start-column="37" selection-end-line="25" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/project2-code-web/src/main/webapp/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="21" selection-start-line="4" selection-start-column="21" selection-end-line="4" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/project2-code-web/src/main/webapp/register.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="65" lean-forward="true" selection-start-line="5" selection-start-column="65" selection-end-line="5" selection-end-column="65" />
         </state>
       </provider>
     </entry>
@@ -1451,6 +817,7 @@
             <option name="proportions">
               <list>
                 <option value="0.2" />
+                <option value="0.5" />
               </list>
             </option>
           </splitter-proportions>
@@ -1458,7 +825,7 @@
       </state>
       <state key="FacetStructureConfigurable.UI">
         <settings>
-          <last-edited>Invalid</last-edited>
+          <last-edited>EJB</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -1481,7 +848,7 @@
       </state>
       <state key="JdkListConfigurable.UI">
         <settings>
-          <last-edited>10</last-edited>
+          <last-edited>1.8</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -1493,12 +860,24 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>project2-code-data</last-edited>
+          <last-edited>project2-code-business</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
                 <option value="0.2" />
                 <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
               </list>
             </option>
           </splitter-proportions>

@@ -106,13 +106,13 @@ public class GenericUser implements Serializable {
         this.phoneNumber = phoneNumber;
     }
 
-    public Date getBirthDate() {
-        return birthDate;
-    }
+        public Date getBirthDate() {
+            return birthDate;
+        }
 
-    public void setBirthDate(Date birthDate) {
-        this.birthDate = birthDate;
-    }
+        public void setBirthDate(Date birthDate) {
+            this.birthDate = birthDate;
+        }
 
     public Country getCountry() {
         return country;

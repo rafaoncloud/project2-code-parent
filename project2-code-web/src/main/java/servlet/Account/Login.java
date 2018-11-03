@@ -11,17 +11,20 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
-@WebServlet("/Account/Login")
+@WebServlet("/account/login")
 public class Login extends HttpServlet
 {
+
     @Inject
     UserEJB urserEJB;
 
+    @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException
     {
-        request.getRequestDispatcher("Login.jsp").forward(request, response);
+        request.getRequestDispatcher("login.jsp").forward(request, response);
     }
 
+    @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException
     {
 
@@ -41,7 +44,8 @@ public class Login extends HttpServlet
 
         }
 
-        response.sendRedirect("../Index.jsp");
+        response.sendRedirect("index.jsp");
 
     }
+
 }

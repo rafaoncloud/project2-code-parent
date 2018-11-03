@@ -13,7 +13,7 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.util.List;
 
-@WebServlet("/Account/Edit")
+@WebServlet("/account/edit")
 public class Edit extends HttpServlet
 {
     @Inject
@@ -22,13 +22,14 @@ public class Edit extends HttpServlet
     @Inject
     UserEJB urserEJB;
 
+    @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException
     {
         try
         {
             if (request.getSession().getAttribute("id") == null || request.getSession().getAttribute("token") == null)
             {
-                response.sendRedirect("../Index.jsp");
+                response.sendRedirect("../index.jsp");
                 return;
             }
 
@@ -52,12 +53,12 @@ public class Edit extends HttpServlet
                 request.setAttribute("CountryId", user.getCountry().getCountryId() );
 
 
-            request.getRequestDispatcher("Edit.jsp").forward(request, response);
+            request.getRequestDispatcher("edit.jsp").forward(request, response);
 
         }
         catch (Exception e)
         {
-            response.sendRedirect("../Index.jsp");
+            response.sendRedirect("../index.jsp");
         }
     }
 
