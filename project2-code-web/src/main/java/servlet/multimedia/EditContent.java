@@ -17,7 +17,7 @@ import java.io.IOException;
 import java.util.Date;
 import java.util.List;
 
-@WebServlet("/multimedia/editContent/")
+@WebServlet("/multimedia/editContent")
 public class EditContent extends HttpServlet
 {
 
@@ -43,22 +43,22 @@ public class EditContent extends HttpServlet
             List<MultimediaContentCategory> categories  = categoryEJB.getAllMultimediaContentCategory( token ,false);
             request.setAttribute("categories",categories);
 
-            String multimediaContentId = request.getParameter("multimediaContentId");
+            String multimediaContentId = request.getParameter("id");
 
+            if(multimediaContentId == null)
+            {
+                response.sendRedirect("multimediaContent");
+                return;
+            }
 
-            dto.MultimediaContent multimediaContent = null;
-
-            if(multimediaContentId != null)
-                multimediaContent = multimediaEJB.getMultimediaContent(  token, Long.parseLong( multimediaContentId));
-            else
-                request.getRequestDispatcher("multimediaContent").forward(request, response);
+            dto.MultimediaContent multimediaContent = multimediaEJB.getMultimediaContent(  token, Long.parseLong( multimediaContentId));
 
             request.setAttribute("title",multimediaContent.getTitle());
             request.setAttribute("yearOfRelease",multimediaContent.getYearOfRelease());
             request.setAttribute("directorName",multimediaContent.getDirectorName());
             request.setAttribute("categoryId",multimediaContent.getCategory().getId());
 
-            request.getRequestDispatcher("multimediaContent.jsp").forward(request, response);
+            request.getRequestDispatcher("editContent.jsp").forward(request, response);
 
         }
         catch (Exception e)
@@ -132,15 +132,17 @@ public class EditContent extends HttpServlet
 //                    }
 //                }
 
-            String title = request.getParameter("title");
-            int yarOgRelease =  Integer.parseInt(request.getParameter("yearOfRelease"));
-            String derectorName = request.getParameter("directorName");
-            long categoryId = Long.parseLong(request.getParameter( "category" ));
+            dto.MultimediaContent multimediaContent = new MultimediaContent();
 
+            multimediaContent.setTitle( request.getParameter("title"));
+            multimediaContent.setYearOfRelease( Integer.parseInt(request.getParameter("yearOfRelease")));
+            multimediaContent.setDirectorName( request.getParameter("directorName"));
+
+            long categoryId = Long.parseLong(request.getParameter( "category" ));
 
             MultimediaContentCategory category = categoryEJB.getMultimediaContentCategory((String) request.getSession().getAttribute("token"), categoryId);
 
-            dto.MultimediaContent multimediaContent = new MultimediaContent(filePath,title,category,yarOgRelease,derectorName,new Date());
+            multimediaContent.setCategory(category );
 
             multimediaEJB.updateMultimediaContent((String)request.getSession().getAttribute("token"), multimediaContent);
 

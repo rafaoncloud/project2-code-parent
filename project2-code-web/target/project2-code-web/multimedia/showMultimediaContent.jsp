@@ -36,12 +36,11 @@
       <div class="row">
 
         <div class="col-lg-3">
-
             <%
             MultimediaContent multimediaContent = (MultimediaContent)request.getAttribute("multimediaContent");
             %>
 
-          <h1 class="my-4"><%= multimediaContent.getTitle() %></h1>
+          <h1 class="my-4">Multimedia Content</h1>
 
         </div>
         <!-- /.col-lg-3 -->
@@ -50,10 +49,8 @@
                   <div class="card h-100">
                     <img class="card-img-top" src="http://placehold.it/700x400" alt="">
                     <div class="card-body">
-                      <h4 class="card-title">
-                       <%= multimediaContent.getTitle() %>
-                      </h4>
-                      <h5>Multimedia Content</h5>
+                      <h4 class="card-title"> <%= multimediaContent.getTitle() %></h4>
+                      <h5><%= multimediaContent.getDirectorName() %></h5>
                       <p class="card-text"><%= multimediaContent.getYearOfRelease() %></p>
                       <p class="card-text"><%= multimediaContent.getCategory().getCategory() %></p>
 
@@ -64,23 +61,18 @@
                        <div class="col-lg-6">
                             <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
                         </div>
-                        <div class="col-lg-2"></div>
-                        <%if (session.getAttribute("userType") == utils.Utils.UserType.Manager)
-                        %>
-                          <div class="col-lg-2">
-                            <form id="deleteMultimediaContent" method="post" name="deleteMultimediaContent" action="${contextRoot}/multimedia/showMultimediaContent">
-                              <input type="numeric" class="form-control" name="id" id="id"  disabled placeholder="Director Name" required value="<%= multimediaContent.getId() %>"/>
-                                <button type="submit" class="dropdown-item">Delete</button>
+                        <div class="col-lg-4"></div>
+
+                          <div class="col-lg-1">
+                            <form id="deleteContent" method="post" name="deleteContent" action="${contextRoot}/multimedia/deleteContent">
+                              <button style="margin-left: -10px;"  type="submit" class="btn btn-danger">Delete</button>
+                              <input type="numeric" style="height: 0px; visibility: hidden;" disabled name="dMContentId" id="dMContentId" required value="<%= multimediaContent.getId() %>"/>
                             </form>
                            </div>
-                           <div class="col-lg-2">
-                                <form id="editMultimediaContent" method="post" name="editMultimediaContent" action="${contextRoot}/multimedia/editMultimediaContent">
-                                    <input type="numeric" class="form-control" name="id" id="id"  disabled placeholder="Director Name" required value="<%= multimediaContent.getId() %>"/>
-                                    <button type="submit" class="dropdown-item">Edit</button>
-                                </form>
+                           <div class="col-lg-1">
+                                <a href="${contextRoot}/multimedia/editContent?id=<%= multimediaContent.getId() %>" class="btn btn-secondary">Edit</a>
                            </div>
-                       <%}
-                          %>
+
                       </div>
                     </div>
                   </div>

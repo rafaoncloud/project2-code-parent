@@ -5,7 +5,7 @@
     <property name="idea.version" value="2018.2.5"/>
     <property name="java.vm.version" value="10.0.2+13"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-10.0.2\bin"/>
-    <property name="maven.multiModuleProjectDirectory" value="C:\Users\AntonioFernandes\Desktop\project2-code-parent"/>
+    <property name="maven.multiModuleProjectDirectory" value="C:\Users\AntonioFernandes\IdeaProjects\project2-code-parent"/>
     <property name="java.vm.vendor" value="&quot;Oracle Corporation&quot;"/>
     <property name="java.vendor.url" value="http://java.oracle.com/"/>
     <property name="path.separator" value=";"/>
@@ -16,7 +16,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.script" value=""/>
     <property name="sun.os.patch.level" value=""/>
-    <property name="user.dir" value="C:\Users\AntonioFernandes\Desktop\project2-code-parent"/>
+    <property name="user.dir" value="C:\Users\AntonioFernandes\IdeaProjects\project2-code-parent"/>
     <property name="java.vm.compressedOopsMode" value="32-bit"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
     <property name="java.runtime.version" value="10.0.2+13"/>

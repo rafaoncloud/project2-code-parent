@@ -88,7 +88,7 @@
                         <div class="cols-sm-10">
                             <div class="input-group">
                                 <span class="input-group-addon"><i class="fa fa-credit-card" aria-hidden="true"></i></span>
-                                 <input required  accept="video/*" type="file" class="form-control" name="file" id="file">
+                                 <input  accept="video/*" type="file" class="form-control" name="file" id="file">
                             </div>
                         </div>
                     </div>

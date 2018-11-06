@@ -42,10 +42,13 @@ public class ShowMultimediaContent extends HttpServlet
 
             dto.MultimediaContent multimediaContent = null;
 
-            if(multimediaContentId != null)
-                multimediaContent = multimediaEJB.getMultimediaContent(  token, Long.parseLong( multimediaContentId));
-            else
-                request.getRequestDispatcher("multimediaContent").forward(request, response);
+            if(multimediaContentId == null)
+            {
+                response.sendRedirect("multimediaContent.jsp");
+                return;
+            }
+
+            multimediaContent = multimediaEJB.getMultimediaContent(  token, Long.parseLong( multimediaContentId));
 
             request.setAttribute("multimediaContent",multimediaContent);
 
@@ -57,46 +60,8 @@ public class ShowMultimediaContent extends HttpServlet
         catch (Exception e)
         {
             NotificationsManager.addErrorMessage(request.getSession().getId(), e.getMessage());
-            response.sendRedirect("showMultimediaContent.jsp");
+            response.sendRedirect("multimediaContent.jsp");
         }
     }
-
-    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException
-    {
-        try
-        {
-            if (request.getSession().getAttribute("id") == null)
-            {
-                response.sendRedirect("../index.jsp");
-                return;
-            }
-
-            String token =  request.getSession().getAttribute("token").toString();
-
-
-            String multimediaContentId = request.getParameter("id");
-
-
-            dto.MultimediaContent multimediaContent = null;
-
-            if(multimediaContentId == null)
-            {
-                request.getRequestDispatcher("multimediaContent").forward(request, response);
-                return;
-            }
-
-            multimediaEJB.deleteMultimediaContent(  token, Long.parseLong( multimediaContentId));
-
-
-            request.getRequestDispatcher("multimediaContent").forward(request, response);
-
-        }
-        catch (Exception e)
-        {
-            NotificationsManager.addErrorMessage(request.getSession().getId(), e.getMessage());
-            response.sendRedirect("multimediaContent");
-        }
-    }
-
 
 }

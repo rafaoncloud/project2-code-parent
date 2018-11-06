@@ -32,7 +32,7 @@
     <div class="container">
         <div class="omb_login">
             <br /><br /><br /><br /><br /><br /><br /><br />
-            <h3 class="omb_authTitle">Login</h3>
+            <h3 class="omb_authTitle">Webflix</h3>
             <div class="row omb_row-sm-offset-3">
                 <div class="col-xs-12 col-sm-6">
                       <form class="omb_loginForm"  id="Login" name="Login" method="POST" action="${contextRoot}/account/login">
@@ -47,7 +47,7 @@
                             <input  type="password" class="form-control" name="password" placeholder="Password">
                         </div>
                         <span class="help-block">Password error</span>
-                        <button class="btn btn-lg btn-primary btn-block" type="submit">Login<i class="fa fa-sign-in"></i></button>
+                        <button class="btn btn-lg btn-danger btn-block" type="submit">Login<i class="fa fa-sign-in"></i></button>
                     </form>
                 </div>
             </div>
