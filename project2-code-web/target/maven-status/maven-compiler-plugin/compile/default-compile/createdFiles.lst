@@ -1,13 +1,1 @@
-utils/Utils.class
-servlet/Account/Edit.class
-servlet/HelloService.class
-servlet/UserManager.class
-servlet/ApplicationConfig.class
-servlet/WatchList.class
-servlet/Account/Register.class
-servlet/MultimediaContent.class
-utils/Credentials.class
-servlet/WebflixService.class
-servlet/Auth.class
-servlet/Index.class
-servlet/Account/Login.class
+servlet/CarDealerServlet.class

@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="1" failures="0" name="org.projeto2.data.AppTest" time="0.003" errors="0" skipped="0">
+<testsuite tests="1" failures="0" name="org.projeto2.data.AppTest" time="0.016" errors="0" skipped="0">
   <properties>
-    <property name="idea.version" value="2018.2.5"/>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
-    <property name="java.vm.version" value="10.0.2+13"/>
-    <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk-10.0.2.jdk/Contents/Home/lib"/>
+    <property name="java.vm.version" value="10.0.1+10"/>
+    <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk-10.0.1.jdk/Contents/Home/lib"/>
     <property name="gopherProxySet" value="false"/>
-    <property name="maven.multiModuleProjectDirectory" value="/Users/rafa/Documents/GitHub/project2-code-parent"/>
+    <property name="maven.multiModuleProjectDirectory" value="/Users/filipius/Google Drive/filipius/aulas/2018-19/IS/code/EclipseWS/project2-code-parent"/>
     <property name="java.vm.vendor" value="&quot;Oracle Corporation&quot;"/>
     <property name="java.vendor.url" value="http://java.oracle.com/"/>
     <property name="guice.disable.misplaced.annotation.check" value="true"/>
@@ -17,45 +16,46 @@
     <property name="user.country" value="PT"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
-    <property name="user.dir" value="/Users/rafa/Documents/GitHub/project2-code-parent"/>
+    <property name="user.dir" value="/Users/filipius/Google Drive/filipius/aulas/2018-19/IS/code/EclipseWS/project2-code-parent"/>
     <property name="java.vm.compressedOopsMode" value="Zero based"/>
-    <property name="java.runtime.version" value="10.0.2+13"/>
+    <property name="java.runtime.version" value="10.0.1+10"/>
     <property name="java.awt.graphicsenv" value="sun.awt.CGraphicsEnvironment"/>
     <property name="os.arch" value="x86_64"/>
-    <property name="java.io.tmpdir" value="/var/folders/nw/2w80mjt17j173dr4d3zws2h00000gn/T/"/>
+    <property name="java.io.tmpdir" value="/var/folders/pr/l0k6lmy52353pll4yt6srps80000gp/T/"/>
     <property name="line.separator" value="
 "/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="os.name" value="Mac OS X"/>
-    <property name="classworlds.conf" value="/Applications/IntelliJ IDEA.app/Contents/plugins/maven/lib/maven3/bin/m2.conf"/>
+    <property name="classworlds.conf" value="/Users/filipius/Google Drive/filipius/aulas/2018-19/IS/code/EclipseWS/.metadata/.plugins/org.eclipse.m2e.launching/launches/m2conf16165519075240881119.tmp"/>
     <property name="sun.jnu.encoding" value="UTF-8"/>
-    <property name="java.library.path" value="/Users/rafa/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
+    <property name="java.library.path" value="/Users/filipius/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
     <property name="jdk.debug" value="release"/>
     <property name="java.class.version" value="54.0"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
-    <property name="os.version" value="10.14.1"/>
+    <property name="os.version" value="10.13.6"/>
     <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
-    <property name="user.home" value="/Users/rafa"/>
+    <property name="user.home" value="/Users/filipius"/>
     <property name="user.timezone" value="Europe/Lisbon"/>
     <property name="java.awt.printerjob" value="sun.lwawt.macosx.CPrinterJob"/>
     <property name="file.encoding" value="UTF-8"/>
     <property name="java.specification.version" value="10"/>
-    <property name="user.name" value="rafa"/>
-    <property name="java.class.path" value="/Applications/IntelliJ IDEA.app/Contents/plugins/maven/lib/maven3/boot/plexus-classworlds-2.5.2.jar"/>
+    <property name="user.name" value="filipius"/>
+    <property name="java.class.path" value="/Applications/Eclipse.app/Contents/Eclipse/plugins/org.eclipse.m2e.maven.runtime_1.9.0.20180606-2035/jars/plexus-classworlds-2.5.2.jar"/>
     <property name="java.vm.specification.version" value="10"/>
     <property name="sun.arch.data.model" value="64"/>
-    <property name="sun.java.command" value="org.codehaus.classworlds.Launcher -Didea.version=2018.2.5 clean install wildfly:deploy"/>
-    <property name="java.home" value="/Library/Java/JavaVirtualMachines/jdk-10.0.2.jdk/Contents/Home"/>
-    <property name="user.language" value="en"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -B clean install wildfly:deploy"/>
+    <property name="java.home" value="/Library/Java/JavaVirtualMachines/jdk-10.0.1.jdk/Contents/Home"/>
+    <property name="user.language" value="pt"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.language.format" value="en"/>
     <property name="awt.toolkit" value="sun.lwawt.macosx.LWCToolkit"/>
     <property name="java.vm.info" value="mixed mode"/>
-    <property name="java.version" value="10.0.2"/>
+    <property name="java.version" value="10.0.1"/>
     <property name="java.vendor" value="Oracle Corporation"/>
-    <property name="maven.home" value="/Applications/IntelliJ IDEA.app/Contents/plugins/maven/lib/maven3"/>
+    <property name="maven.home" value="/Users/filipius/Google Drive/filipius/aulas/2018-19/IS/code/EclipseWS/project2-code-parent/EMBEDDED"/>
     <property name="file.separator" value="/"/>
-    <property name="java.version.date" value="2018-07-17"/>
+    <property name="java.version.date" value="2018-04-17"/>
     <property name="java.vendor.url.bug" value="http://bugreport.java.com/bugreport/"/>
     <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -64,5 +64,5 @@
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase classname="org.projeto2.data.AppTest" name="testApp" time="0.003"/>
+  <testcase classname="org.projeto2.data.AppTest" name="testApp" time="0.016"/>
 </testsuite>

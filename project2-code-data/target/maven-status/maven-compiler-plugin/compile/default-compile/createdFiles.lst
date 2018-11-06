@@ -1,7 +1,2 @@
-data/Test.class
-data/MultimediaContent.class
-data/EMultimediaContentCategory.class
+data/Car.class
 data/User.class
-data/Manager.class
-data/Country.class
-data/GenericUser.class
