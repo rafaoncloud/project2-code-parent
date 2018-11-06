@@ -8,6 +8,8 @@ import javax.ejb.Stateless;
 import javax.inject.Inject;
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
+import javax.persistence.Query;
+import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
@@ -56,6 +58,24 @@ public class ManagerEJB
         }
     }
 
+    public void addManager(dto.Manager manager) throws Exception {
+
+        try
+        {
+            data.Manager managerEntity = new data.Manager();
+            Utils.getDozerBeanMapper().map(manager,managerEntity);
+
+            addMamagerCRUD(managerEntity);
+
+            Utils.getLogger().info("User " + manager.getEmail() + " created.");
+        }
+        catch(Exception ex)
+        {
+            Utils.getLogger().error(ex.getMessage());
+            throw ex;
+        }
+    }
+
     public List<Manager> getAllManagers(String token) {
         return null;
     }
@@ -90,6 +110,67 @@ public class ManagerEJB
         }
         catch (Exception e)
         {
+            Utils.getLogger().error(e.getMessage());
+            throw e;
+        }
+    }
+    private data.Manager getManagerCRUD(long id) throws Exception {
+        // CRUD Operation
+        data.Manager manager = null;
+        try
+        {
+            manager = em.find(data.Manager.class, id);
+
+            if (manager == null) {
+                throw new Exception("Manager with " + id + " not found.");
+            }
+
+            return manager;
+        } catch (Exception e) {
+            Utils.getLogger().error(e.getMessage());
+            throw e;
+        }
+    }
+    private List<Manager> getAllManagersCRUD() throws Exception {
+        // CRUD Operation
+        try
+        {
+            String queryText = "from Manager c";
+            Query query = em.createQuery(queryText);
+
+            return query.getResultList();
+        } catch (Exception e) {
+            Utils.getLogger().error(e.getMessage());
+            throw e;
+        }
+    }
+    private void updateManagerCRUD(data.Manager manager) throws Exception {
+        // CRUD Operation
+        try
+        {
+            data.Manager managerEntity = getManagerCRUD(manager.getId());
+            Utils.getDozerBeanMapper().map(manager,managerEntity);
+
+            Utils.getLogger().info("ID " + managerEntity.getId() + " Manager was updated.");
+        } catch (Exception ex) {
+            Utils.getLogger().error(ex.getMessage());
+            throw ex;
+        }
+    }
+    private void deleteManagerCRUD(long id) throws Exception {
+        // CRUD Operation
+        try {
+            try {
+                em.remove(getManagerCRUD(id));
+
+                Utils.getLogger().info(id + " ID multimedia content deleted.");
+            } catch (Exception e) {
+                Utils.getLogger().error(e.getMessage());
+                throw e;
+            }
+
+            Utils.getLogger().info("Multimedia Content " + id + " deleted.");
+        } catch (Exception e) {
             Utils.getLogger().error(e.getMessage());
             throw e;
         }

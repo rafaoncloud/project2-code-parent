@@ -1,0 +1,571 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="64518c94-f918-46e5-ba9a-c82313aff748" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/project2_code_ear_ear_exploded.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_beanutils_commons_beanutils_1_9_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_codec_commons_codec_1_9.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_collections_commons_collections_3_2_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_fileupload_commons_fileupload_1_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_io_commons_io_2_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_logging_commons_logging_1_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_sf_dozer_dozer_5_5_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_lang3_3_2_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apiguardian_apiguardian_api_1_0_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_api_5_0_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_platform_junit_platform_commons_1_0_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_opentest4j_opentest4j_1_0_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_jcl_over_slf4j_1_7_5.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aop_4_3_9_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_beans_4_3_9_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_4_3_9_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_core_4_3_9_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_expression_4_3_9_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_web_4_3_9_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_webmvc_4_3_9_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project2-code-business/project2-code-business.iml" beforeDir="false" afterPath="$PROJECT_DIR$/project2-code-business/project2-code-business.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project2-code-business/src/main/java/ejb/ManagerEJB.java" beforeDir="false" afterPath="$PROJECT_DIR$/project2-code-business/src/main/java/ejb/ManagerEJB.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project2-code-business/src/main/java/ejb/UserEJB.java" beforeDir="false" afterPath="$PROJECT_DIR$/project2-code-business/src/main/java/ejb/UserEJB.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project2-code-business/target/classes/dto/Country.class" beforeDir="false" afterPath="$PROJECT_DIR$/project2-code-business/target/classes/dto/Country.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project2-code-business/target/classes/dto/EMultimediaContentCategory.class" beforeDir="false" afterPath="$PROJECT_DIR$/project2-code-business/target/classes/dto/EMultimediaContentCategory.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project2-code-business/target/classes/dto/GenericUser.class" beforeDir="false" afterPath="$PROJECT_DIR$/project2-code-business/target/classes/dto/GenericUser.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project2-code-business/target/classes/dto/Manager.class" beforeDir="false" afterPath="$PROJECT_DIR$/project2-code-business/target/classes/dto/Manager.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project2-code-business/target/classes/dto/MultimediaContent.class" beforeDir="false" afterPath="$PROJECT_DIR$/project2-code-business/target/classes/dto/MultimediaContent.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project2-code-business/target/classes/dto/MultimediaContentCategory.class" beforeDir="false" afterPath="$PROJECT_DIR$/project2-code-business/target/classes/dto/MultimediaContentCategory.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project2-code-business/target/classes/dto/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/project2-code-business/target/classes/dto/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project2-code-business/target/classes/ejb/CountryEJB.class" beforeDir="false" afterPath="$PROJECT_DIR$/project2-code-business/target/classes/ejb/CountryEJB.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project2-code-business/target/classes/ejb/GenericUserEJB.class" beforeDir="false" afterPath="$PROJECT_DIR$/project2-code-business/target/classes/ejb/GenericUserEJB.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project2-code-business/target/classes/ejb/ManagerEJB.class" beforeDir="false" afterPath="$PROJECT_DIR$/project2-code-business/target/classes/ejb/ManagerEJB.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project2-code-business/target/classes/ejb/MultimediaContentCategoryEJB.class" beforeDir="false" afterPath="$PROJECT_DIR$/project2-code-business/target/classes/ejb/MultimediaContentCategoryEJB.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project2-code-business/target/classes/ejb/MultimediaContentEJB.class" beforeDir="false" afterPath="$PROJECT_DIR$/project2-code-business/target/classes/ejb/MultimediaContentEJB.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project2-code-business/target/classes/ejb/UserEJB.class" beforeDir="false" afterPath="$PROJECT_DIR$/project2-code-business/target/classes/ejb/UserEJB.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project2-code-business/target/classes/utils/Utils.class" beforeDir="false" afterPath="$PROJECT_DIR$/project2-code-business/target/classes/utils/Utils.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project2-code-business/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/project2-code-business/target/maven-archiver/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project2-code-business/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/project2-code-business/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project2-code-business/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/project2-code-business/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project2-code-business/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/project2-code-business/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project2-code-business/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/project2-code-business/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project2-code-business/target/project2-code-business.jar" beforeDir="false" afterPath="$PROJECT_DIR$/project2-code-business/target/project2-code-business.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project2-code-business/target/surefire-reports/TEST-org.projeto2.business.AppTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/project2-code-business/target/surefire-reports/TEST-org.projeto2.business.AppTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project2-code-business/target/surefire-reports/org.projeto2.business.AppTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/project2-code-business/target/surefire-reports/org.projeto2.business.AppTest.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project2-code-business/target/test-classes/org/projeto2/business/AppTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/project2-code-business/target/test-classes/org/projeto2/business/AppTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project2-code-data/project2-code-data.iml" beforeDir="false" afterPath="$PROJECT_DIR$/project2-code-data/project2-code-data.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project2-code-data/target/classes/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/project2-code-data/target/classes/META-INF/persistence.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project2-code-data/target/classes/data/Country.class" beforeDir="false" afterPath="$PROJECT_DIR$/project2-code-data/target/classes/data/Country.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project2-code-data/target/classes/data/GenericUser.class" beforeDir="false" afterPath="$PROJECT_DIR$/project2-code-data/target/classes/data/GenericUser.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project2-code-data/target/classes/data/Manager.class" beforeDir="false" afterPath="$PROJECT_DIR$/project2-code-data/target/classes/data/Manager.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project2-code-data/target/classes/data/MultimediaContent.class" beforeDir="false" afterPath="$PROJECT_DIR$/project2-code-data/target/classes/data/MultimediaContent.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project2-code-data/target/classes/data/MultimediaContentCategory.class" beforeDir="false" afterPath="$PROJECT_DIR$/project2-code-data/target/classes/data/MultimediaContentCategory.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project2-code-data/target/classes/data/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/project2-code-data/target/classes/data/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project2-code-data/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/project2-code-data/target/maven-archiver/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project2-code-data/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/project2-code-data/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project2-code-data/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/project2-code-data/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project2-code-data/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/project2-code-data/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project2-code-data/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/project2-code-data/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project2-code-data/target/project2-code-data.jar" beforeDir="false" afterPath="$PROJECT_DIR$/project2-code-data/target/project2-code-data.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project2-code-data/target/surefire-reports/TEST-org.projeto2.data.AppTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/project2-code-data/target/surefire-reports/TEST-org.projeto2.data.AppTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project2-code-data/target/surefire-reports/org.projeto2.data.AppTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/project2-code-data/target/surefire-reports/org.projeto2.data.AppTest.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project2-code-data/target/test-classes/data/MultimediaContentEntityTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/project2-code-data/target/test-classes/data/MultimediaContentEntityTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project2-code-data/target/test-classes/data/UserEntityTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/project2-code-data/target/test-classes/data/UserEntityTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project2-code-data/target/test-classes/org/projeto2/data/AppTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/project2-code-data/target/test-classes/org/projeto2/data/AppTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project2-code-ear/project2-code-ear.iml" beforeDir="false" afterPath="$PROJECT_DIR$/project2-code-ear/project2-code-ear.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project2-code-ear/target/application.xml" beforeDir="false" afterPath="$PROJECT_DIR$/project2-code-ear/target/application.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project2-code-ear/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/project2-code-ear/target/maven-archiver/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project2-code-ear/target/project2-code-ear-0.0.1-SNAPSHOT/IS-project2-code-business-0.0.1-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/project2-code-ear/target/project2-code-ear-0.0.1-SNAPSHOT/IS-project2-code-business-0.0.1-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project2-code-ear/target/project2-code-ear-0.0.1-SNAPSHOT/IS-project2-code-data-0.0.1-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/project2-code-ear/target/project2-code-ear-0.0.1-SNAPSHOT/IS-project2-code-data-0.0.1-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project2-code-ear/target/project2-code-ear-0.0.1-SNAPSHOT/IS-project2-code-web-0.0.1-SNAPSHOT.war" beforeDir="false" afterPath="$PROJECT_DIR$/project2-code-ear/target/project2-code-ear-0.0.1-SNAPSHOT/IS-project2-code-web-0.0.1-SNAPSHOT.war" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project2-code-ear/target/project2-code-ear-0.0.1-SNAPSHOT/META-INF/application.xml" beforeDir="false" afterPath="$PROJECT_DIR$/project2-code-ear/target/project2-code-ear-0.0.1-SNAPSHOT/META-INF/application.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project2-code-ear/target/project2-code-ear-0.0.1-SNAPSHOT/lib/com.sun.xml.bind-jaxb-core-2.3.0.1.jar" beforeDir="false" afterPath="$PROJECT_DIR$/project2-code-ear/target/project2-code-ear-0.0.1-SNAPSHOT/lib/com.sun.xml.bind-jaxb-core-2.3.0.1.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project2-code-ear/target/project2-code-ear-0.0.1-SNAPSHOT/lib/com.sun.xml.bind-jaxb-impl-2.3.0.1.jar" beforeDir="false" afterPath="$PROJECT_DIR$/project2-code-ear/target/project2-code-ear-0.0.1-SNAPSHOT/lib/com.sun.xml.bind-jaxb-impl-2.3.0.1.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project2-code-ear/target/project2-code-ear-0.0.1-SNAPSHOT/lib/commons-beanutils-commons-beanutils-1.9.1.jar" beforeDir="false" afterPath="$PROJECT_DIR$/project2-code-ear/target/project2-code-ear-0.0.1-SNAPSHOT/lib/commons-beanutils-commons-beanutils-1.9.1.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project2-code-ear/target/project2-code-ear-0.0.1-SNAPSHOT/lib/commons-collections-commons-collections-3.2.1.jar" beforeDir="false" afterPath="$PROJECT_DIR$/project2-code-ear/target/project2-code-ear-0.0.1-SNAPSHOT/lib/commons-collections-commons-collections-3.2.1.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project2-code-ear/target/project2-code-ear-0.0.1-SNAPSHOT/lib/javax.activation-activation-1.1.1.jar" beforeDir="false" afterPath="$PROJECT_DIR$/project2-code-ear/target/project2-code-ear-0.0.1-SNAPSHOT/lib/javax.activation-activation-1.1.1.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project2-code-ear/target/project2-code-ear-0.0.1-SNAPSHOT/lib/javax.xml.bind-jaxb-api-2.3.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/project2-code-ear/target/project2-code-ear-0.0.1-SNAPSHOT/lib/javax.xml.bind-jaxb-api-2.3.0.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project2-code-ear/target/project2-code-ear-0.0.1-SNAPSHOT/lib/net.sf.dozer-dozer-5.5.1.jar" beforeDir="false" afterPath="$PROJECT_DIR$/project2-code-ear/target/project2-code-ear-0.0.1-SNAPSHOT/lib/net.sf.dozer-dozer-5.5.1.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project2-code-ear/target/project2-code-ear-0.0.1-SNAPSHOT/lib/org.apache.commons-commons-lang3-3.2.1.jar" beforeDir="false" afterPath="$PROJECT_DIR$/project2-code-ear/target/project2-code-ear-0.0.1-SNAPSHOT/lib/org.apache.commons-commons-lang3-3.2.1.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project2-code-ear/target/project2-code-ear-0.0.1-SNAPSHOT/lib/org.slf4j-jcl-over-slf4j-1.7.5.jar" beforeDir="false" afterPath="$PROJECT_DIR$/project2-code-ear/target/project2-code-ear-0.0.1-SNAPSHOT/lib/org.slf4j-jcl-over-slf4j-1.7.5.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project2-code-ear/target/project2-code-ear.ear" beforeDir="false" afterPath="$PROJECT_DIR$/project2-code-ear/target/project2-code-ear.ear" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project2-code-web/project2-code-web.iml" beforeDir="false" afterPath="$PROJECT_DIR$/project2-code-web/project2-code-web.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project2-code-web/src/main/java/net/kzn/onlineshopping/controller/PageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/project2-code-web/src/main/java/net/kzn/onlineshopping/controller/PageController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project2-code-web/src/main/webapp/multimedia/addContent.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/project2-code-web/src/main/webapp/multimedia/addContent.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project2-code-web/target/classes/net/kzn/onlineshopping/controller/PageController.class" beforeDir="false" afterPath="$PROJECT_DIR$/project2-code-web/target/classes/net/kzn/onlineshopping/controller/PageController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project2-code-web/target/classes/notifications/Message$Type.class" beforeDir="false" afterPath="$PROJECT_DIR$/project2-code-web/target/classes/notifications/Message$Type.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project2-code-web/target/classes/notifications/Message.class" beforeDir="false" afterPath="$PROJECT_DIR$/project2-code-web/target/classes/notifications/Message.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project2-code-web/target/classes/notifications/NotificationsManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/project2-code-web/target/classes/notifications/NotificationsManager.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project2-code-web/target/classes/servlet/ApplicationConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/project2-code-web/target/classes/servlet/ApplicationConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project2-code-web/target/classes/servlet/Auth.class" beforeDir="false" afterPath="$PROJECT_DIR$/project2-code-web/target/classes/servlet/Auth.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project2-code-web/target/classes/servlet/HelloService.class" beforeDir="false" afterPath="$PROJECT_DIR$/project2-code-web/target/classes/servlet/HelloService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project2-code-web/target/classes/servlet/MultimediaContent.class" beforeDir="false" afterPath="$PROJECT_DIR$/project2-code-web/target/classes/servlet/MultimediaContent.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project2-code-web/target/classes/servlet/UserManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/project2-code-web/target/classes/servlet/UserManager.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project2-code-web/target/classes/servlet/WatchList.class" beforeDir="false" afterPath="$PROJECT_DIR$/project2-code-web/target/classes/servlet/WatchList.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project2-code-web/target/classes/servlet/WebflixService.class" beforeDir="false" afterPath="$PROJECT_DIR$/project2-code-web/target/classes/servlet/WebflixService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project2-code-web/target/classes/servlet/account/Edit.class" beforeDir="false" afterPath="$PROJECT_DIR$/project2-code-web/target/classes/servlet/account/Edit.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project2-code-web/target/classes/servlet/account/Login.class" beforeDir="false" afterPath="$PROJECT_DIR$/project2-code-web/target/classes/servlet/account/Login.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project2-code-web/target/classes/servlet/account/Logout.class" beforeDir="false" afterPath="$PROJECT_DIR$/project2-code-web/target/classes/servlet/account/Logout.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project2-code-web/target/classes/servlet/account/Register.class" beforeDir="false" afterPath="$PROJECT_DIR$/project2-code-web/target/classes/servlet/account/Register.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project2-code-web/target/classes/servlet/multimedia/AddContent.class" beforeDir="false" afterPath="$PROJECT_DIR$/project2-code-web/target/classes/servlet/multimedia/AddContent.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project2-code-web/target/classes/servlet/multimedia/EditContent.class" beforeDir="false" afterPath="$PROJECT_DIR$/project2-code-web/target/classes/servlet/multimedia/EditContent.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project2-code-web/target/classes/servlet/multimedia/MultimediaContent.class" beforeDir="false" afterPath="$PROJECT_DIR$/project2-code-web/target/classes/servlet/multimedia/MultimediaContent.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project2-code-web/target/classes/servlet/multimedia/ShowMultimediaContent.class" beforeDir="false" afterPath="$PROJECT_DIR$/project2-code-web/target/classes/servlet/multimedia/ShowMultimediaContent.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project2-code-web/target/classes/utils/Credentials.class" beforeDir="false" afterPath="$PROJECT_DIR$/project2-code-web/target/classes/utils/Credentials.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project2-code-web/target/classes/utils/Utils$UserType.class" beforeDir="false" afterPath="$PROJECT_DIR$/project2-code-web/target/classes/utils/Utils$UserType.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project2-code-web/target/classes/utils/Utils.class" beforeDir="false" afterPath="$PROJECT_DIR$/project2-code-web/target/classes/utils/Utils.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project2-code-web/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/project2-code-web/target/maven-archiver/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project2-code-web/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/project2-code-web/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project2-code-web/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/project2-code-web/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project2-code-web/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/project2-code-web/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project2-code-web/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/project2-code-web/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project2-code-web/target/project2-code-web.war" beforeDir="false" afterPath="$PROJECT_DIR$/project2-code-web/target/project2-code-web.war" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project2-code-web/target/project2-code-web/WEB-INF/classes/net/kzn/onlineshopping/controller/PageController.class" beforeDir="false" afterPath="$PROJECT_DIR$/project2-code-web/target/project2-code-web/WEB-INF/classes/net/kzn/onlineshopping/controller/PageController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project2-code-web/target/project2-code-web/WEB-INF/classes/notifications/Message$Type.class" beforeDir="false" afterPath="$PROJECT_DIR$/project2-code-web/target/project2-code-web/WEB-INF/classes/notifications/Message$Type.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project2-code-web/target/project2-code-web/WEB-INF/classes/notifications/Message.class" beforeDir="false" afterPath="$PROJECT_DIR$/project2-code-web/target/project2-code-web/WEB-INF/classes/notifications/Message.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project2-code-web/target/project2-code-web/WEB-INF/classes/notifications/NotificationsManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/project2-code-web/target/project2-code-web/WEB-INF/classes/notifications/NotificationsManager.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project2-code-web/target/project2-code-web/WEB-INF/classes/servlet/ApplicationConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/project2-code-web/target/project2-code-web/WEB-INF/classes/servlet/ApplicationConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project2-code-web/target/project2-code-web/WEB-INF/classes/servlet/Auth.class" beforeDir="false" afterPath="$PROJECT_DIR$/project2-code-web/target/project2-code-web/WEB-INF/classes/servlet/Auth.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project2-code-web/target/project2-code-web/WEB-INF/classes/servlet/HelloService.class" beforeDir="false" afterPath="$PROJECT_DIR$/project2-code-web/target/project2-code-web/WEB-INF/classes/servlet/HelloService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project2-code-web/target/project2-code-web/WEB-INF/classes/servlet/MultimediaContent.class" beforeDir="false" afterPath="$PROJECT_DIR$/project2-code-web/target/project2-code-web/WEB-INF/classes/servlet/MultimediaContent.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project2-code-web/target/project2-code-web/WEB-INF/classes/servlet/UserManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/project2-code-web/target/project2-code-web/WEB-INF/classes/servlet/UserManager.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project2-code-web/target/project2-code-web/WEB-INF/classes/servlet/WatchList.class" beforeDir="false" afterPath="$PROJECT_DIR$/project2-code-web/target/project2-code-web/WEB-INF/classes/servlet/WatchList.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project2-code-web/target/project2-code-web/WEB-INF/classes/servlet/WebflixService.class" beforeDir="false" afterPath="$PROJECT_DIR$/project2-code-web/target/project2-code-web/WEB-INF/classes/servlet/WebflixService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project2-code-web/target/project2-code-web/WEB-INF/classes/servlet/account/Edit.class" beforeDir="false" afterPath="$PROJECT_DIR$/project2-code-web/target/project2-code-web/WEB-INF/classes/servlet/account/Edit.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project2-code-web/target/project2-code-web/WEB-INF/classes/servlet/account/Login.class" beforeDir="false" afterPath="$PROJECT_DIR$/project2-code-web/target/project2-code-web/WEB-INF/classes/servlet/account/Login.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project2-code-web/target/project2-code-web/WEB-INF/classes/servlet/account/Logout.class" beforeDir="false" afterPath="$PROJECT_DIR$/project2-code-web/target/project2-code-web/WEB-INF/classes/servlet/account/Logout.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project2-code-web/target/project2-code-web/WEB-INF/classes/servlet/account/Register.class" beforeDir="false" afterPath="$PROJECT_DIR$/project2-code-web/target/project2-code-web/WEB-INF/classes/servlet/account/Register.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project2-code-web/target/project2-code-web/WEB-INF/classes/servlet/multimedia/AddContent.class" beforeDir="false" afterPath="$PROJECT_DIR$/project2-code-web/target/project2-code-web/WEB-INF/classes/servlet/multimedia/AddContent.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project2-code-web/target/project2-code-web/WEB-INF/classes/servlet/multimedia/EditContent.class" beforeDir="false" afterPath="$PROJECT_DIR$/project2-code-web/target/project2-code-web/WEB-INF/classes/servlet/multimedia/EditContent.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project2-code-web/target/project2-code-web/WEB-INF/classes/servlet/multimedia/MultimediaContent.class" beforeDir="false" afterPath="$PROJECT_DIR$/project2-code-web/target/project2-code-web/WEB-INF/classes/servlet/multimedia/MultimediaContent.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project2-code-web/target/project2-code-web/WEB-INF/classes/servlet/multimedia/ShowMultimediaContent.class" beforeDir="false" afterPath="$PROJECT_DIR$/project2-code-web/target/project2-code-web/WEB-INF/classes/servlet/multimedia/ShowMultimediaContent.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project2-code-web/target/project2-code-web/WEB-INF/classes/utils/Credentials.class" beforeDir="false" afterPath="$PROJECT_DIR$/project2-code-web/target/project2-code-web/WEB-INF/classes/utils/Credentials.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project2-code-web/target/project2-code-web/WEB-INF/classes/utils/Utils$UserType.class" beforeDir="false" afterPath="$PROJECT_DIR$/project2-code-web/target/project2-code-web/WEB-INF/classes/utils/Utils$UserType.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project2-code-web/target/project2-code-web/WEB-INF/classes/utils/Utils.class" beforeDir="false" afterPath="$PROJECT_DIR$/project2-code-web/target/project2-code-web/WEB-INF/classes/utils/Utils.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project2-code-web/target/project2-code-web/WEB-INF/lib/activation-1.1.1.jar" beforeDir="false" afterPath="$PROJECT_DIR$/project2-code-web/target/project2-code-web/WEB-INF/lib/activation-1.1.1.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project2-code-web/target/project2-code-web/WEB-INF/lib/commons-beanutils-1.9.1.jar" beforeDir="false" afterPath="$PROJECT_DIR$/project2-code-web/target/project2-code-web/WEB-INF/lib/commons-beanutils-1.9.1.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project2-code-web/target/project2-code-web/WEB-INF/lib/commons-codec-1.9.jar" beforeDir="false" afterPath="$PROJECT_DIR$/project2-code-web/target/project2-code-web/WEB-INF/lib/commons-codec-1.9.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project2-code-web/target/project2-code-web/WEB-INF/lib/commons-collections-3.2.1.jar" beforeDir="false" afterPath="$PROJECT_DIR$/project2-code-web/target/project2-code-web/WEB-INF/lib/commons-collections-3.2.1.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project2-code-web/target/project2-code-web/WEB-INF/lib/commons-fileupload-1.3.jar" beforeDir="false" afterPath="$PROJECT_DIR$/project2-code-web/target/project2-code-web/WEB-INF/lib/commons-fileupload-1.3.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project2-code-web/target/project2-code-web/WEB-INF/lib/commons-io-2.2.jar" beforeDir="false" afterPath="$PROJECT_DIR$/project2-code-web/target/project2-code-web/WEB-INF/lib/commons-io-2.2.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project2-code-web/target/project2-code-web/WEB-INF/lib/commons-lang3-3.2.1.jar" beforeDir="false" afterPath="$PROJECT_DIR$/project2-code-web/target/project2-code-web/WEB-INF/lib/commons-lang3-3.2.1.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project2-code-web/target/project2-code-web/WEB-INF/lib/commons-logging-1.2.jar" beforeDir="false" afterPath="$PROJECT_DIR$/project2-code-web/target/project2-code-web/WEB-INF/lib/commons-logging-1.2.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project2-code-web/target/project2-code-web/WEB-INF/lib/dozer-5.5.1.jar" beforeDir="false" afterPath="$PROJECT_DIR$/project2-code-web/target/project2-code-web/WEB-INF/lib/dozer-5.5.1.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project2-code-web/target/project2-code-web/WEB-INF/lib/jaxb-api-2.3.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/project2-code-web/target/project2-code-web/WEB-INF/lib/jaxb-api-2.3.0.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project2-code-web/target/project2-code-web/WEB-INF/lib/jaxb-core-2.3.0.1.jar" beforeDir="false" afterPath="$PROJECT_DIR$/project2-code-web/target/project2-code-web/WEB-INF/lib/jaxb-core-2.3.0.1.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project2-code-web/target/project2-code-web/WEB-INF/lib/jaxb-impl-2.3.0.1.jar" beforeDir="false" afterPath="$PROJECT_DIR$/project2-code-web/target/project2-code-web/WEB-INF/lib/jaxb-impl-2.3.0.1.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project2-code-web/target/project2-code-web/WEB-INF/lib/jcl-over-slf4j-1.7.5.jar" beforeDir="false" afterPath="$PROJECT_DIR$/project2-code-web/target/project2-code-web/WEB-INF/lib/jcl-over-slf4j-1.7.5.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project2-code-web/target/project2-code-web/WEB-INF/lib/project2-code-business-0.0.1-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/project2-code-web/target/project2-code-web/WEB-INF/lib/project2-code-business-0.0.1-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project2-code-web/target/project2-code-web/WEB-INF/lib/project2-code-data-0.0.1-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/project2-code-web/target/project2-code-web/WEB-INF/lib/project2-code-data-0.0.1-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project2-code-web/target/project2-code-web/WEB-INF/lib/spring-aop-4.3.9.RELEASE.jar" beforeDir="false" afterPath="$PROJECT_DIR$/project2-code-web/target/project2-code-web/WEB-INF/lib/spring-aop-4.3.9.RELEASE.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project2-code-web/target/project2-code-web/WEB-INF/lib/spring-beans-4.3.9.RELEASE.jar" beforeDir="false" afterPath="$PROJECT_DIR$/project2-code-web/target/project2-code-web/WEB-INF/lib/spring-beans-4.3.9.RELEASE.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project2-code-web/target/project2-code-web/WEB-INF/lib/spring-context-4.3.9.RELEASE.jar" beforeDir="false" afterPath="$PROJECT_DIR$/project2-code-web/target/project2-code-web/WEB-INF/lib/spring-context-4.3.9.RELEASE.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project2-code-web/target/project2-code-web/WEB-INF/lib/spring-core-4.3.9.RELEASE.jar" beforeDir="false" afterPath="$PROJECT_DIR$/project2-code-web/target/project2-code-web/WEB-INF/lib/spring-core-4.3.9.RELEASE.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project2-code-web/target/project2-code-web/WEB-INF/lib/spring-expression-4.3.9.RELEASE.jar" beforeDir="false" afterPath="$PROJECT_DIR$/project2-code-web/target/project2-code-web/WEB-INF/lib/spring-expression-4.3.9.RELEASE.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project2-code-web/target/project2-code-web/WEB-INF/lib/spring-web-4.3.9.RELEASE.jar" beforeDir="false" afterPath="$PROJECT_DIR$/project2-code-web/target/project2-code-web/WEB-INF/lib/spring-web-4.3.9.RELEASE.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project2-code-web/target/project2-code-web/WEB-INF/lib/spring-webmvc-4.3.9.RELEASE.jar" beforeDir="false" afterPath="$PROJECT_DIR$/project2-code-web/target/project2-code-web/WEB-INF/lib/spring-webmvc-4.3.9.RELEASE.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project2-code-web/target/project2-code-web/multimedia/addContent.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/project2-code-web/target/project2-code-web/multimedia/addContent.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project2-code-web/target/surefire-reports/TEST-org.projeto2.web.AppTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/project2-code-web/target/surefire-reports/TEST-org.projeto2.web.AppTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project2-code-web/target/surefire-reports/org.projeto2.web.AppTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/project2-code-web/target/surefire-reports/org.projeto2.web.AppTest.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project2-code-web/target/test-classes/org/projeto2/web/AppTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/project2-code-web/target/test-classes/org/projeto2/web/AppTest.class" afterDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/project2-code-web/target/" />
+    <ignored path="$PROJECT_DIR$/project2-code-ear/target/" />
+    <ignored path="$PROJECT_DIR$/project2-code-data/target/" />
+    <ignored path="$PROJECT_DIR$/project2-code-business/target/" />
+    <ignored path="$PROJECT_DIR$/target/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FUSProjectUsageTrigger">
+    <session id="896953635">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.open.time.4" value="1" />
+          <entry key="project.opened" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="java" value="10" />
+          <entry key="jsp" value="1" />
+          <entry key="xml" value="2" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="JAVA" value="10" />
+          <entry key="JSP" value="1" />
+          <entry key="XML" value="2" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="java" value="730" />
+          <entry key="jsp" value="13" />
+          <entry key="txt" value="22" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="JAVA" value="730" />
+          <entry key="JSP" value="13" />
+          <entry key="PLAIN_TEXT" value="22" />
+        </counts>
+      </usages-collector>
+    </session>
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/project2-code-business/src/main/java/ejb/ManagerEJB.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="193">
+              <caret line="153" column="12" selection-start-line="153" selection-start-column="12" selection-end-line="153" selection-end-column="92" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/project2-code-business/src/main/java/ejb/UserEJB.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="250">
+              <caret line="139" column="61" selection-start-line="139" selection-start-column="61" selection-end-line="139" selection-end-column="61" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>delete</find>
+      <find>getAll</find>
+      <find>update</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GradleLocalSettings">
+    <option name="projectSyncType">
+      <map>
+        <entry key="$PROJECT_DIR$/../../Traineship Mac/Code Generated/Break-Squeeze-Swagger-v6/client/restlet-JavaSDK/AndroidSDK" value="PREVIEW" />
+      </map>
+    </option>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/project2-code-web/src/main/java/net/kzn/onlineshopping/controller/PageController.java" />
+        <option value="$PROJECT_DIR$/project2-code-web/src/main/webapp/multimedia/addContent.jsp" />
+        <option value="$PROJECT_DIR$/project2-code-business/src/main/java/ejb/ManagerEJB.java" />
+        <option value="$PROJECT_DIR$/project2-code-business/src/main/java/ejb/UserEJB.java" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="y" value="23" />
+    <option name="width" value="1280" />
+    <option name="height" value="777" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="PackagesPane" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="project2-code-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="project2-code-parent" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="project2-code-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="project2-code-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="project2-code-business" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="project2-code-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="project2-code-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="project2-code-business" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="project2-code-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="project2-code-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="project2-code-business" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="project2-code-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="project2-code-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="project2-code-business" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="project2-code-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="project2-code-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="project2-code-business" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="ejb" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1541533981967" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Maven.Deploy to Wildfly">
+    <configuration default="true" type="Application" factoryName="Application">
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Deploy to Wildfly" type="MavenRunConfiguration" factoryName="Maven">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings" />
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list>
+                <option value="clean" />
+                <option value="install" />
+                <option value="wildfly:deploy" />
+              </list>
+            </option>
+            <option name="pomFileName" />
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="$PROJECT_DIR$" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+      <method v="2" />
+    </configuration>
+    <configuration name="Debug" type="Remote" factoryName="Remote">
+      <option name="USE_SOCKET_TRANSPORT" value="true" />
+      <option name="SERVER_MODE" value="false" />
+      <option name="SHMEM_ADDRESS" />
+      <option name="HOST" value="localhost" />
+      <option name="PORT" value="8787" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="TestNG" factoryName="TestNG">
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Maven.Deploy to Wildfly" />
+      <item itemvalue="Remote.Debug" />
+    </list>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="64518c94-f918-46e5-ba9a-c82313aff748" name="Default Changelist" comment="" />
+      <created>1541531404648</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1541531404648</updated>
+      <workItem from="1541531408285" duration="2467000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="2467000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="23" width="1280" height="777" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Persistence" side_tool="true" />
+      <window_info id="Designer" />
+      <window_info id="Image Layers" />
+      <window_info id="UI Designer" />
+      <window_info id="Favorites" side_tool="true" />
+      <window_info id="Capture Tool" />
+      <window_info id="Learn" />
+      <window_info id="EJB" side_tool="true" />
+      <window_info id="JavaEE:App" side_tool="true" />
+      <window_info id="Web" side_tool="true" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24959612" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Spring" />
+      <window_info anchor="bottom" id="Terminal" weight="0.7591241" />
+      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info anchor="bottom" id="Java Enterprise" />
+      <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.36642337" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.329927" />
+      <window_info anchor="right" id="Palette" />
+      <window_info anchor="right" id="JSF" />
+      <window_info anchor="right" id="Capture Analysis" />
+      <window_info anchor="right" id="CDI" />
+      <window_info anchor="right" id="Database" />
+      <window_info anchor="right" id="Maven Projects" />
+      <window_info anchor="right" id="Palette&#9;" />
+      <window_info anchor="right" id="Theme Preview" />
+      <window_info anchor="right" id="Bean Validation" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/project2-code-web/src/main/java/net/kzn/onlineshopping/controller/PageController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="29" selection-start-line="29" selection-end-line="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/project2-code-web/src/main/webapp/multimedia/addContent.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="44">
+          <caret line="3" column="54" selection-start-line="3" selection-start-column="50" selection-end-line="3" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/project2-code-web/pom.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/project2-code-business/src/main/java/ejb/MultimediaContentCategoryEJB.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="34" lean-forward="true" selection-start-line="34" selection-end-line="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/project2-code-business/src/main/java/ejb/GenericUserEJB.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="376">
+          <caret line="116" lean-forward="true" selection-start-line="116" selection-end-line="116" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/project2-code-business/src/main/java/ejb/MultimediaContentEJB.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="155">
+          <caret line="381" column="7" selection-start-line="381" selection-start-column="7" selection-end-line="381" selection-end-column="120" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/project2-code-business/src/main/java/ejb/ManagerEJB.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="193">
+          <caret line="153" column="12" selection-start-line="153" selection-start-column="12" selection-end-line="153" selection-end-column="92" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/project2-code-business/src/main/java/ejb/UserEJB.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="139" column="61" selection-start-line="139" selection-start-column="61" selection-end-line="139" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

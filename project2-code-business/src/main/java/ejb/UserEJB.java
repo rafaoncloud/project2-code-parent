@@ -131,7 +131,17 @@ public class UserEJB /*implements IUserRemote, IUserLocal*/ {
         }
     }
 
+    private void updateUserSubscriptionCRUD(long id, boolean isSubscribed) throws Exception {
+        try{
 
+            data.User user = em.find(data.User.class , id);
+
+            user.setHasSubscriptionUpToDate(isSubscribed);
+            Utils.getLogger().info("ID " + user.getId() + " subscription updated.");
+        }catch (Exception e){
+            throw e;
+        }
+    }
 
     private void updateUserCRUD(String token, data.User user) throws Exception {
 
@@ -146,9 +156,9 @@ public class UserEJB /*implements IUserRemote, IUserLocal*/ {
 
             em.persist( editUser  );
 
-        }catch (Exception ex)
+        }catch (Exception e)
         {
-            throw ex;
+            throw e;
         }
 
     }
