@@ -1,7 +1,14 @@
-/Users/filipius/Google Drive/filipius/aulas/2018-19/IS/code/EclipseWS/project2-code-parent/project2-code-business/src/main/java/ejb/UserBean.java
-/Users/filipius/Google Drive/filipius/aulas/2018-19/IS/code/EclipseWS/project2-code-parent/project2-code-business/src/main/java/ejb/TimerBean.java
-/Users/filipius/Google Drive/filipius/aulas/2018-19/IS/code/EclipseWS/project2-code-parent/project2-code-business/src/main/java/ejb/ReceiveCars.java
-/Users/filipius/Google Drive/filipius/aulas/2018-19/IS/code/EclipseWS/project2-code-parent/project2-code-business/src/main/java/ejb/MailerBean.java
-/Users/filipius/Google Drive/filipius/aulas/2018-19/IS/code/EclipseWS/project2-code-parent/project2-code-business/src/main/java/ejb/CarDTO.java
-/Users/filipius/Google Drive/filipius/aulas/2018-19/IS/code/EclipseWS/project2-code-parent/project2-code-business/src/main/java/ejb/UserBeanInterface.java
-/Users/filipius/Google Drive/filipius/aulas/2018-19/IS/code/EclipseWS/project2-code-parent/project2-code-business/src/main/java/ejb/AuthenticationFailureException.java
+C:\Users\AntonioFernandes\Desktop\project2-code-parent\project2-code-business\src\main\java\dto\MultimediaContentCategory.java
+C:\Users\AntonioFernandes\Desktop\project2-code-parent\project2-code-business\src\main\java\ejb\MultimediaContentCategoryEJB.java
+C:\Users\AntonioFernandes\Desktop\project2-code-parent\project2-code-business\src\main\java\utils\Utils.java
+C:\Users\AntonioFernandes\Desktop\project2-code-parent\project2-code-business\src\main\java\dto\User.java
+C:\Users\AntonioFernandes\Desktop\project2-code-parent\project2-code-business\src\main\java\ejb\CountryEJB.java
+C:\Users\AntonioFernandes\Desktop\project2-code-parent\project2-code-business\src\main\java\ejb\ManagerEJB.java
+C:\Users\AntonioFernandes\Desktop\project2-code-parent\project2-code-business\src\main\java\ejb\GenericUserEJB.java
+C:\Users\AntonioFernandes\Desktop\project2-code-parent\project2-code-business\src\main\java\dto\EMultimediaContentCategory.java
+C:\Users\AntonioFernandes\Desktop\project2-code-parent\project2-code-business\src\main\java\dto\MultimediaContent.java
+C:\Users\AntonioFernandes\Desktop\project2-code-parent\project2-code-business\src\main\java\ejb\UserEJB.java
+C:\Users\AntonioFernandes\Desktop\project2-code-parent\project2-code-business\src\main\java\dto\Manager.java
+C:\Users\AntonioFernandes\Desktop\project2-code-parent\project2-code-business\src\main\java\ejb\MultimediaContentEJB.java
+C:\Users\AntonioFernandes\Desktop\project2-code-parent\project2-code-business\src\main\java\dto\Country.java
+C:\Users\AntonioFernandes\Desktop\project2-code-parent\project2-code-business\src\main\java\dto\GenericUser.java

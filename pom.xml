@@ -9,7 +9,7 @@
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>pom</packaging>
 
-	<name>project2-code-parent</name>
+	<name>webflix</name>
 	<url>http://maven.apache.org</url>
 
 	<!-- 2. Definir modulos associados a este pom "pai" -->
@@ -26,7 +26,7 @@
 		<!-- encoding -->
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<!--java version -->
-		<java-version>10</java-version>		
+		<java-version>10</java-version>
 
 		<!-- plugin versions -->
 		<ejb-plugin-version>3.0.1</ejb-plugin-version>
@@ -201,7 +201,6 @@
 				<artifactId>activation</artifactId>
 				<version>${activation}</version>
 			</dependency>
-
 
 		</dependencies>
 	</dependencyManagement>

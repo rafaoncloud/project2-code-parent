@@ -1,0 +1,18 @@
+        body {
+          padding-top: 54px;
+        }
+
+
+        @media (min-width: 992px) {
+          body {
+            padding-top: 56px;
+          }
+        }
+
+footer {
+
+    width: 100% !important;
+    margin-bottom: 0px!important;
+    bottom: 0 !important;
+    position: fixed;
+}
