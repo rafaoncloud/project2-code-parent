@@ -3,6 +3,12 @@
   <display-name>project2-code-ear</display-name>
   <module>
     <web>
+      <web-uri>IS-admin-0.0.1-SNAPSHOT.war</web-uri>
+      <context-root>/admin</context-root>
+    </web>
+  </module>
+  <module>
+    <web>
       <web-uri>IS-project2-code-web-0.0.1-SNAPSHOT.war</web-uri>
       <context-root>/project2-code-web</context-root>
     </web>

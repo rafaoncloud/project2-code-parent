@@ -1,5 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+<<<<<<< HEAD
+=======
+  <component name="FrameworkDetectionExcludesConfiguration">
+    <file type="ejb" url="file://$PROJECT_DIR$/project2-code-admin" />
+    <file type="ejb" url="file://$PROJECT_DIR$/project2-code-business" />
+    <file type="ejb" url="file://$PROJECT_DIR$/project2-code-data" />
+    <file type="javaeeApplication" url="file://$PROJECT_DIR$/project2-code-ear" />
+    <file type="web" url="file://$PROJECT_DIR$/admin" />
+    <file type="web" url="file://$PROJECT_DIR$/project2-code-admin" />
+    <file type="web" url="file://$PROJECT_DIR$/project2-code-web" />
+  </component>
+>>>>>>> origin/master
   <component name="MavenProjectsManager">
     <option name="originalFiles">
       <list>

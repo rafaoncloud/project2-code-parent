@@ -18,6 +18,7 @@
 		<module>project2-code-business</module>
 		<module>project2-code-data</module>
 		<module>project2-code-ear</module>
+		<module>admin</module>
 	</modules>
 
 	<!-- 3. Definir propriedades, por exemplo variáveis com as versoes de API 
@@ -241,6 +242,10 @@
 							</manifest>
 						</archive>
 						<modules>
+							<webModule>
+								<groupId>IS</groupId>
+								<artifactId>admin</artifactId>
+							</webModule>
 							<webModule>
 								<groupId>IS</groupId>
 								<artifactId>project2-code-web</artifactId>

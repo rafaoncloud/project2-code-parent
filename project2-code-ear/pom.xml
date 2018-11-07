@@ -25,6 +25,13 @@
 
 		<dependency>
 			<groupId>IS</groupId>
+			<artifactId>admin</artifactId>
+			<version>${project.version}</version>
+			<type>war</type>
+		</dependency>
+
+		<dependency>
+			<groupId>IS</groupId>
 			<artifactId>project2-code-web</artifactId>
 			<version>${project.version}</version>
 			<type>war</type>
