@@ -15,6 +15,7 @@ utils\Utils$UserType.class
 net\kzn\onlineshopping\controller\PageController.class
 servlet\WebflixService.class
 notifications\Message.class
+servlet\account\delete.class
 utils\Credentials.class
 servlet\account\Login.class
 servlet\account\Logout.class

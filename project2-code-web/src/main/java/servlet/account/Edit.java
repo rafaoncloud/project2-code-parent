@@ -54,13 +54,14 @@ public class Edit extends HttpServlet
             request.setAttribute("email",user.getEmail());
             request.setAttribute("password",user.getPassword());
             request.setAttribute("address",user.getAddress());
-            request.setAttribute("phoneNumber", Long.parseLong(user.getPhoneNumber()));
-            request.setAttribute("crediCardNumber", Long.parseLong(user.getCreditCardNumber()) );
+            request.setAttribute("phoneNumber", user.getPhoneNumber());
+            request.setAttribute("crediCardNumber", user.getCreditCardNumber());
             request.setAttribute("birthDate", new SimpleDateFormat("yyyy-MM-dd").format(user.getBirthDate()));
-            request.setAttribute("hasSubscriptionUpToDate", user.getHasSubscriptionUpToDate() == true ? "checked" :  "");
+            if (request.getSession().getAttribute("userType").equals( Utils.UserType.Manager))
+                request.setAttribute("hasSubscriptionUpToDate", user.getHasSubscriptionUpToDate() == true ? "checked" :  "");
             request.getSession().setAttribute("hasSubscriptionUpToDate", user.getHasSubscriptionUpToDate());
 
-            String.valueOf(23);
+
             if(user.getCountry() != null)
                 request.setAttribute("countryId", user.getCountry().getCountryId() );
 

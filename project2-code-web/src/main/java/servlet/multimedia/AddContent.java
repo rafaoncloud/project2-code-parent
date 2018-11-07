@@ -39,7 +39,7 @@ public class AddContent extends HttpServlet
     {
         try
         {
-            if (request.getSession().getAttribute("id") == null)
+            if (request.getSession().getAttribute("id") == null || !request.getSession().getAttribute("userType").equals( Utils.UserType.Manager))
             {
                 response.sendRedirect("../index.jsp");
                 return;
@@ -68,7 +68,7 @@ public class AddContent extends HttpServlet
 
         try
         {
-            if (request.getSession().getAttribute("id") == null)
+            if (request.getSession().getAttribute("id") == null || !request.getSession().getAttribute("userType").equals( Utils.UserType.Manager))
             {
                 response.sendRedirect("../index.jsp");
                 return;

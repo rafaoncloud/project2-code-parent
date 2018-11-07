@@ -52,13 +52,14 @@
                  <br />
                  <br />
                  <br />
-                <form id="AddContentForm" name="AddContentForm" method="post" action="${contextRoot}/multimedia/addContent">
+                <form id="editContent" name="editContent" method="post" action="${contextRoot}/multimedia/editContent">
+                    <input type="hidden" name="id" value="<%= request.getParameter("id")%>"/>
                     <div class="form-group">
                         <label for="name" class="cols-sm-2 control-label">Title</label>
                         <div class="cols-sm-10">
                             <div class="input-group">
                                 <span class="input-group-addon"><i class="fa fa-user fa" aria-hidden="true"></i></span>
-                                <input type="text" class="form-control" name="title" id="title"  placeholder="Title" required/>
+                                <input type="text" class="form-control" name="title" id="title"  value='<%=request.getAttribute("title")%>' placeholder="Title" required/>
                             </div>
                         </div>
                     </div>
@@ -68,7 +69,7 @@
                         <div class="cols-sm-10">
                             <div class="input-group">
                                 <span class="input-group-addon"><i class="fa fa-envelope fa" aria-hidden="true"></i></span>
-                                <input type="text" class="form-control" name="directorName" id="directorName"  placeholder="Director Name" required/>
+                                <input type="text" class="form-control" name="directorName" id="directorName" value='<%=request.getAttribute("directorName")%>' placeholder="Director Name" required/>
                             </div>
                         </div>
                     </div>
@@ -78,7 +79,7 @@
                         <div class="cols-sm-10">
                             <div class="input-group">
                                 <span class="input-group-addon"><i class="fa fa-credit-card" aria-hidden="true"></i></span>
-                                <input type="number"  min="1000" max="2019" class="form-control" name="yearOfRelease" id="yearOfRelease"  placeholder="Year Of Release" required/>
+                                <input type="number"  min="1000" max="2019" class="form-control" name="yearOfRelease" id="yearOfRelease"  value='<%=request.getAttribute("yearOfRelease")%>' placeholder="Year Of Release" required/>
                             </div>
                         </div>
                     </div>
@@ -106,7 +107,7 @@
                     </div>
 
                     <div class="form-group ">
-                        <button type="submit" class="btn btn-primary btn-lg btn-block login-button">Submit</button>
+                        <button type="submit" class="btn btn-primary btn-lg btn-block login-button">Save</button>
                     </div>
                 </form>
                 <br />

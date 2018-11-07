@@ -38,6 +38,7 @@
 
         <div class="col-lg-3">
 
+
           <h1 class="my-4">Categories</h1>
           <div class="list-group">
             <%
@@ -50,6 +51,16 @@
             %>
           </div>
 
+          <h1 class="my-4">Yar</h1>
+          <div class="list-group">
+            <input type="number" class="form-control" name="minYear" id="minYear"  placeholder="Min Year"/>
+            <input type="number" class="form-control" name="maxYear" id="maxYear"  placeholder="Max Year"/>
+          </div>
+
+          <h1 class="my-4">Title</h1>
+               <div class="list-group">
+                 <input type="text" class="form-control" name="title" id="title"  placeholder="Title"/>
+               </div>
         </div>
         <!-- /.col-lg-3 -->
 

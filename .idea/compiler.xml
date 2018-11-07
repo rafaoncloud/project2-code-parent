@@ -6,6 +6,7 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="admin" />
         <module name="project2-code-business" />
         <module name="project2-code-data" />
         <module name="project2-code-ear" />
@@ -13,6 +14,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="admin" target="10" />
       <module name="project2-code-business" target="10" />
       <module name="project2-code-data" target="10" />
       <module name="project2-code-ear" target="1.5" />

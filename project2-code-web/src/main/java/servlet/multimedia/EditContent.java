@@ -32,7 +32,7 @@ public class EditContent extends HttpServlet
     {
         try
         {
-            if (request.getSession().getAttribute("id") == null)
+            if (request.getSession().getAttribute("id") == null || !request.getSession().getAttribute("userType").equals( Utils.UserType.Manager))
             {
                 response.sendRedirect("../index.jsp");
                 return;
@@ -47,12 +47,13 @@ public class EditContent extends HttpServlet
 
             if(multimediaContentId == null)
             {
-                response.sendRedirect("multimediaContent");
+                response.sendRedirect("multimediaContent.jsp");
                 return;
             }
 
             dto.MultimediaContent multimediaContent = multimediaEJB.getMultimediaContent(  token, Long.parseLong( multimediaContentId));
 
+            request.setAttribute("id",multimediaContent.getId());
             request.setAttribute("title",multimediaContent.getTitle());
             request.setAttribute("yearOfRelease",multimediaContent.getYearOfRelease());
             request.setAttribute("directorName",multimediaContent.getDirectorName());
@@ -70,70 +71,17 @@ public class EditContent extends HttpServlet
 
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException
     {
-        String name = null;
-        //String categoryId = null;
-        String filePath = null;
-        long fileSize = 0;
-
         try
         {
-            if (request.getSession().getAttribute("id") == null)
-            {
-                response.sendRedirect("../index.jsp");
-                return;
-            }
-
             if (request.getSession().getAttribute("id") == null || !request.getSession().getAttribute("userType").equals( Utils.UserType.Manager))
             {
                 response.sendRedirect("../index.jsp");
                 return;
             }
 
-//            boolean isMultipart = ServletFileUpload.isMultipartContent(request);
-//
-//            if (isMultipart)
-//            {
-//                FileItemFactory diskFileItemFactory = new DiskFileItemFactory();
-//
-//                ServletFileUpload servletFileUpload = new ServletFileUpload(diskFileItemFactory);
-//
-//                List items = servletFileUpload.parseRequest(request);
-//
-//                Iterator iterator = items.iterator();
-//
-//                while (iterator.hasNext())
-//                {
-//                    FileItem item = (FileItem) iterator.next();
-//
-//                    if (!item.isFormField())
-//                    {
-//                        String fileName = item.getName();
-//
-//                        String rootPath = getServletContext().getRealPath("/");
-//
-//                        File completePath = new File(rootPath + "/multimedia/" + categoryId);
-//
-//                        if (!completePath.exists())
-//                            completePath.mkdirs();
-//
-//                        File newFile = new File(completePath + "/" + fileName);
-//
-//                        filePath = "multimedia/" + categoryId + "/" + fileName;
-//                        fileSize = item.getSize();
-//
-//                        item.write(newFile);
-//                    }
-//                    else
-//                    {
-//                        if (item.getFieldName().equals("courseID"))
-//                            categoryId = new String(item.get());
-//                        else if (item.getFieldName().equals("name"))
-//                            name = new String(item.get());
-//                    }
-//                }
+            dto.MultimediaContent multimediaContent = new dto.MultimediaContent();
 
-            dto.MultimediaContent multimediaContent = new MultimediaContent();
-
+            multimediaContent.setId( Long.parseLong(request.getParameter("id")));
             multimediaContent.setTitle( request.getParameter("title"));
             multimediaContent.setYearOfRelease( Integer.parseInt(request.getParameter("yearOfRelease")));
             multimediaContent.setDirectorName( request.getParameter("directorName"));
@@ -147,10 +95,9 @@ public class EditContent extends HttpServlet
             multimediaEJB.updateMultimediaContent((String)request.getSession().getAttribute("token"), multimediaContent);
 
             NotificationsManager.addSuccessMessage(request.getSession().getId(), "Multimedia Content updated successfully.");
-            //}
 
 
-            response.sendRedirect("multimediaContent?categoryId=" + categoryId);
+            response.sendRedirect("multimediaContent");
         }
         catch (Exception e)
         {

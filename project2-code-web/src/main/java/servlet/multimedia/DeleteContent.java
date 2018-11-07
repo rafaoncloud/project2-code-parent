@@ -2,6 +2,7 @@ package servlet.multimedia;
 
 import ejb.MultimediaContentEJB;
 import notifications.NotificationsManager;
+import utils.Utils;
 
 import javax.inject.Inject;
 import javax.servlet.ServletException;
@@ -22,7 +23,7 @@ public class DeleteContent extends HttpServlet
     {
         try
         {
-            if (request.getSession().getAttribute("id") == null)
+            if (request.getSession().getAttribute("id") == null || !request.getSession().getAttribute("userType").equals( Utils.UserType.Manager))
             {
                 response.sendRedirect("../index.jsp");
                 return;
@@ -45,13 +46,13 @@ public class DeleteContent extends HttpServlet
             multimediaEJB.deleteMultimediaContent(  token, Long.parseLong( multimediaContentId));
 
 
-            request.getRequestDispatcher("multimediaContent.jsp").forward(request, response);
+            request.getRequestDispatcher("multimediaContent").forward(request, response);
 
         }
         catch (Exception e)
         {
             NotificationsManager.addErrorMessage(request.getSession().getId(), e.getMessage());
-            response.sendRedirect("multimediaContent.jsp");
+            response.sendRedirect("multimediaContent");
         }
     }
 }

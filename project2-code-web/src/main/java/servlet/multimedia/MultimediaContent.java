@@ -47,7 +47,7 @@ public class MultimediaContent extends HttpServlet
 //            }
 //            else
 //            {
-            List<dto.MultimediaContent> multimediaContent = multimediaContent = multimediaEJB.getTopMultimediaContent(  token,6,false);
+            List<dto.MultimediaContent> multimediaContent = multimediaContent = multimediaEJB.getTopMultimediaContent(  token,10,false);
 
 
             request.setAttribute("lstMultimediaContent",multimediaContent);
@@ -58,7 +58,7 @@ public class MultimediaContent extends HttpServlet
         catch (Exception e)
         {
             NotificationsManager.addErrorMessage(request.getSession().getId(), e.getMessage());
-            response.sendRedirect("multimediaContent.jsp");
+            response.sendRedirect("multimediaContent");
         }
     }
 

@@ -1,5 +1,6 @@
 <%@ page import="dto.MultimediaContentCategory" %>
 <%@ page import="dto.MultimediaContent" %>
+<%@ page import="utils.Utils" %>
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1" pageEncoding="ISO-8859-1"%>
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 
@@ -63,15 +64,22 @@
                         </div>
                         <div class="col-lg-4"></div>
 
+  <%
+                               if(session.getAttribute("userType") == utils.Utils.UserType.Manager)
+                                {
+                                %>
                           <div class="col-lg-1">
                             <form id="deleteContent" method="post" name="deleteContent" action="${contextRoot}/multimedia/deleteContent">
                               <button style="margin-left: -10px;"  type="submit" class="btn btn-danger">Delete</button>
-                              <input type="numeric" style="height: 0px; visibility: hidden;" disabled name="dMContentId" id="dMContentId" required value="<%= multimediaContent.getId() %>"/>
+                              <input type="hidden" name="dMContentId" value="<%= multimediaContent.getId() %>"/>
                             </form>
                            </div>
                            <div class="col-lg-1">
                                 <a href="${contextRoot}/multimedia/editContent?id=<%= multimediaContent.getId() %>" class="btn btn-secondary">Edit</a>
                            </div>
+        <%
+                                }
+                                %>
 
                       </div>
                     </div>
