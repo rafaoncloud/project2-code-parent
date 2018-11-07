@@ -6,6 +6,9 @@
       <element id="directory" name="META-INF">
         <element id="file-copy" path="$PROJECT_DIR$/project2-code-ear/target/project2-code-ear-0.0.1-SNAPSHOT/META-INF/MANIFEST.MF" />
       </element>
+      <element id="archive" name="admin-0.0.1-SNAPSHOT.war">
+        <element id="artifact" artifact-name="admin:war exploded" />
+      </element>
       <element id="archive" name="project2-code-web-0.0.1-SNAPSHOT.war">
         <element id="artifact" artifact-name="project2-code-web:war exploded" />
       </element>

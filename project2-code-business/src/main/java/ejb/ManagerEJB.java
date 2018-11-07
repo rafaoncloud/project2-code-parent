@@ -76,20 +76,65 @@ public class ManagerEJB
         }
     }
 
-    public List<Manager> getAllManagers(String token) {
-        return null;
+    public List<dto.Manager> getAllManagers(String token) throws Exception {
+        try{
+            List<data.Manager> managersEntities = getAllManagersCRUD();
+
+            List<dto.Manager> managers = new ArrayList<>();
+
+            for(data.Manager managerEntity : managersEntities){
+                dto.Manager manager = new dto.Manager();
+                Utils.getDozerBeanMapper().map(managerEntity, manager);
+                managers.add(manager);
+            }
+
+            return managers;
+        }catch (Exception e){
+            Utils.getLogger().error(e.getMessage());
+            throw e;
+        }
     }
 
-    public Manager getManager(long id) {
-        return null;
+    public dto.Manager getManager(long id) throws Exception{
+        try
+        {
+            data.Manager managerEntity = getManagerCRUD(id);
+            dto.Manager manager = new dto.Manager();
+            Utils.getDozerBeanMapper().map(managerEntity,manager);
+
+            return manager;
+        } catch (Exception e) {
+            Utils.getLogger().error(e.getMessage());
+            throw e;
+        }
     }
 
-    public void updateManager(String token, Manager manager) {
+    public void updateManager(String token, Manager manager) throws Exception{
+        try
+        {
+            if(!genericUserEJB.isTokenValid( token ))
+                throw new Exception("Authentication Fail.");
 
+            data.Manager managerEntity = new data.Manager();
+            Utils.getDozerBeanMapper().map(manager, managerEntity);
+            updateManagerCRUD(managerEntity);
+
+            Utils.getLogger().info("Manager " + managerEntity.getId() + " edited.");
+        }catch(Exception e){
+            Utils.getLogger().error(e.getMessage());
+            throw e;
+        }
     }
 
-    public void deleteManager(String token, long id) {
-
+    public void deleteManager(String token, long id) throws Exception{
+        try
+        {
+            deleteManagerCRUD(id);
+            Utils.getLogger().info("Manager " + id + " deleted.");
+        }catch (Exception e){
+            Utils.getLogger().error(e.getMessage());
+            throw e;
+        }
     }
 
 

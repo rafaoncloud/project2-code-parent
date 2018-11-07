@@ -222,6 +222,25 @@ public class MultimediaContentEJB /*implements IMultimediaContentRemote/*, IMult
         }
     }
 
+    public void adminOnlyAddMultimediaContent(List<MultimediaContent> multimediaContent) throws Exception {
+
+        for(dto.MultimediaContent content : multimediaContent) {
+            try {
+                content.setId(null);
+                data.MultimediaContent multimediaContentEntity = new data.MultimediaContent();
+
+                Utils.getDozerBeanMapper().map(content, multimediaContentEntity);
+
+                adminOnlyAddMultimediaContentCRUD(multimediaContentEntity);
+
+                Utils.getLogger().info("Multimedia Content " + content.getTitle() + " added.");
+            } catch (Exception e) {
+                Utils.getLogger().error(e.getMessage());
+                throw e;
+            }
+        }
+    }
+
     //
     // CRUD Operations
     //
@@ -233,6 +252,19 @@ public class MultimediaContentEJB /*implements IMultimediaContentRemote/*, IMult
             if(!genericUserEJB.isTokenValid( token ))
                 throw new Exception("Authentication Fail.");
 
+            em.persist(multimediaContent);
+
+            Utils.getLogger().info(multimediaContent.getTitle() + "multimedia content created.");
+        } catch (Exception e) {
+            Utils.getLogger().error(e.getMessage());
+            throw e;
+        }
+    }
+    private void adminOnlyAddMultimediaContentCRUD(data.MultimediaContent multimediaContent) throws Exception
+    {
+        // CRUD Operation
+        try
+        {
             em.persist(multimediaContent);
 
             Utils.getLogger().info(multimediaContent.getTitle() + "multimedia content created.");
@@ -268,7 +300,6 @@ public class MultimediaContentEJB /*implements IMultimediaContentRemote/*, IMult
     private List<data.MultimediaContent> getAllMultimediaContentCRUD(String token, boolean ascend) throws Exception
     {
         // CRUD Operation
-
         try
         {
             if(!genericUserEJB.isTokenValid( token ))
@@ -397,7 +428,6 @@ public class MultimediaContentEJB /*implements IMultimediaContentRemote/*, IMult
 
     private void deleteMultimediaContentCRUD(String token, long id) throws Exception
     {
-
         // CRUD Operation
         try
         {

@@ -107,8 +107,8 @@ public class MultimediaContentCategoryEJB {
     {
         try
         {
-            if(!genericUserEJB.isTokenValid( token ))
-                throw new Exception("Authentication Fail.");
+            /*if(!genericUserEJB.isTokenValid( token ))
+                throw new Exception("Authentication Fail.");*/
 
             String queryText = "from MultimediaContentCategory c order by c.category";
 

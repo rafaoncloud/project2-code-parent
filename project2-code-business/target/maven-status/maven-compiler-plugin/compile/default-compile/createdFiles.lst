@@ -8,7 +8,9 @@ dto/MultimediaContent.class
 ejb/UserEJB.class
 ejb/GenericUserEJB.class
 dto/Manager.class
+email/SendEmail.class
 dto/MultimediaContentCategory.class
 ejb/ManagerEJB.class
 ejb/CountryEJB.class
+email/SendEmail$1.class
 dto/EMultimediaContentCategory.class
