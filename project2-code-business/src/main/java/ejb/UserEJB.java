@@ -164,7 +164,7 @@ public class UserEJB /*implements IUserRemote, IUserLocal*/ {
 
     private List<data.User> getAllUsersCRUD() throws Exception {
         try {
-            String queryText = "from User";
+            String queryText = "from User u";
             Query query = em.createQuery(queryText);
 
             return query.getResultList();

@@ -28,6 +28,9 @@ public class MultimediaContentEJB /*implements IMultimediaContentRemote/*, IMult
     @Inject
     MultimediaContentCategoryEJB multimediaContentCategoryEJB;
 
+    @Inject
+    UserEJB userEJB;
+
     public MultimediaContentEJB() {
     }
 
@@ -213,7 +216,6 @@ public class MultimediaContentEJB /*implements IMultimediaContentRemote/*, IMult
     }
     public void updateMultimediaContent(String token, MultimediaContent multimediaContent) throws Exception
     {
-
         try
         {
             if(!genericUserEJB.isTokenValid( token ))
@@ -249,6 +251,9 @@ public class MultimediaContentEJB /*implements IMultimediaContentRemote/*, IMult
     }
 
     public void adminOnlyAddMultimediaContent(List<MultimediaContent> multimediaContent) throws Exception {
+
+        if(adminOnlyGetAllMultimediaContentCRUD().size() > 0)
+            throw new Exception("Database already populated with Multimedia Content!");
 
         for(dto.MultimediaContent content : multimediaContent) {
             try {
@@ -295,6 +300,20 @@ public class MultimediaContentEJB /*implements IMultimediaContentRemote/*, IMult
 
             Utils.getLogger().info(multimediaContent.getTitle() + "multimedia content created.");
         } catch (Exception e) {
+            Utils.getLogger().error(e.getMessage());
+            throw e;
+        }
+    }
+
+    private List<dto.MultimediaContent> adminOnlyGetAllMultimediaContentCRUD() throws Exception {
+        // CRUD Operation
+        try{
+            String isAsc = Utils.ascOrDesc(true);
+            String queryText = "from MultimediaContent c order by c.title " + isAsc;
+            Query query = em.createQuery(queryText);
+
+            return query.getResultList();
+        }catch (Exception e){
             Utils.getLogger().error(e.getMessage());
             throw e;
         }
@@ -489,7 +508,20 @@ public class MultimediaContentEJB /*implements IMultimediaContentRemote/*, IMult
             if(!genericUserEJB.isTokenValid( token ))
                 throw new Exception("Authentication Fail.");
 
-            em.remove(getMultimediaContentCRUD(token, id));
+            data.MultimediaContent content = getMultimediaContentCRUD(token, id);
+            List<data.User> users = null;
+
+            String queryText = "from User u";
+            Query query = em.createQuery(queryText);
+            users = query.getResultList();
+
+            for(data.User user : users){
+                user.removeMultimediaContentFromUserWatchList(id);
+            }
+
+            content.setUsers(null);
+
+            em.remove(content);
 
             Utils.getLogger().info(id + " ID multimedia content deleted.");
         } catch (Exception e) {
