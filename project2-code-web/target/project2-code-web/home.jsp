@@ -12,14 +12,14 @@
               <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
             </ol>
             <div class="carousel-inner" role="listbox">
+                <div class="carousel-item">
+                  <img class="d-block img-fluid" src="${contextRoot}/images/elysium-wallpapers.jpg" alt="Elysium">
+                </div>
               <div class="carousel-item active">
-                <img class="d-block img-fluid" src="http://placehold.it/900x350" alt="First slide">
+                <img class="d-block img-fluid" src="${contextRoot}/images/TheTwoTowers.jpg" alt="The Lord of the Rings: The Two Towers">
               </div>
               <div class="carousel-item">
-                <img class="d-block img-fluid" src="http://placehold.it/900x350" alt="Second slide">
-              </div>
-              <div class="carousel-item">
-                <img class="d-block img-fluid" src="http://placehold.it/900x350" alt="Third slide">
+                <img class="d-block img-fluid" src="${contextRoot}/images/TheReturnoftheKingQuotes.jpg" alt="The Returnofthe KingQuotes">
               </div>
             </div>
             <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">

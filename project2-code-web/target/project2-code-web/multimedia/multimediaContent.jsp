@@ -41,6 +41,9 @@
 
             <h1 class="my-4">Categories</h1>
             <div class="list-group">
+                <a href="../multimedia/multimediaContent"
+                    class="list-group-item">ALL
+                </a>
                 <%
                     for (MultimediaContentCategory c : (List<MultimediaContentCategory>) request.getAttribute("categories")) {
                 %>
@@ -66,10 +69,21 @@
                 <div class="list-group">
                     <form id="searchByDirectorName" method="GET" name="searchByDirectorName"
                           action="${contextRoot}/multimedia/multimediaContent">
-                        <input type="text" class="form-control" name="directorName" id="directorName" placeholder="Title"/>
+                        <input type="text" class="form-control" name="directorName" id="directorName" placeholder="Director Name"/>
                         <button type="submit" class="btn btn-danger">Search</button>
                     </form>
                 </div>
+
+                <h1 class="my-4">Title</h1>
+                <div class="list-group">
+                    <form id="searchByDirectorName" method="GET" name="searchByDirectorName"
+                          action="${contextRoot}/multimedia/multimediaContent">
+                        <input type="text" class="form-control" name="title" id="title" placeholder="Title"/>
+                        <button type="submit" class="btn btn-danger">Search</button>
+                    </form>
+                </div>
+                <br/><br/><br/><br/><br/>
+                <br/><br/><br/><br/><br/>
         </div>
         <!-- /.col-lg-3 -->
 
@@ -81,17 +95,17 @@
                     <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
                     <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
                 </ol>
-                <div class="carousel-inner" role="listbox">
-                    <div class="carousel-item active">
-                        <img class="d-block img-fluid" src="http://placehold.it/900x350" alt="First slide">
-                    </div>
-                    <div class="carousel-item">
-                        <img class="d-block img-fluid" src="http://placehold.it/900x350" alt="Second slide">
-                    </div>
-                    <div class="carousel-item">
-                        <img class="d-block img-fluid" src="http://placehold.it/900x350" alt="Third slide">
-                    </div>
+            <div class="carousel-inner" role="listbox">
+                <div class="carousel-item">
+                  <img class="d-block img-fluid" src="${contextRoot}/images/elysium-wallpapers.jpg" alt="Elysium">
                 </div>
+              <div class="carousel-item active">
+                <img class="d-block img-fluid" src="${contextRoot}/images/TheTwoTowers.jpg" alt="The Lord of the Rings: The Two Towers">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block img-fluid" src="${contextRoot}/images/TheReturnoftheKingQuotes.jpg" alt="The Returnofthe KingQuotes">
+              </div>
+            </div>
                 <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                     <span class="sr-only">Previous</span>
@@ -153,7 +167,9 @@
 
         </div>
         <!-- /.col-lg-9 -->
-
+    <br/><br/><br/><br/><br/>
+    <br/><br/><br/><br/><br/>
+    <br/><br/><br/><br/><br/>
     </div>
     <!-- /.row -->
 
