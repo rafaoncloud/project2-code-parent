@@ -31,11 +31,7 @@ public class DeleteContent extends HttpServlet
             }
 
             String token =  request.getSession().getAttribute("token").toString();
-
-
             String multimediaContentId = request.getParameter("dMContentId");
-
-
             dto.MultimediaContent multimediaContent = null;
 
             if(multimediaContentId == null)
@@ -52,8 +48,10 @@ public class DeleteContent extends HttpServlet
         }
         catch (Exception e)
         {
-            NotificationsManager.addErrorMessage(request.getSession().getId(), e.getMessage());
-            response.sendRedirect("/multimedia/multimediaContent");
+            //NotificationsManager.addErrorMessage(request.getSession().getId(), e.getMessage());
+            //response.sendRedirect("/multimedia/multimediaContent");
+            e.printStackTrace();
+            response.sendRedirect("../multimedia/multimediaContent");
         }
     }
 }

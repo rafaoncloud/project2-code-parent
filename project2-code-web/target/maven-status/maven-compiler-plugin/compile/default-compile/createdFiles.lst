@@ -4,6 +4,7 @@ notifications/Message.class
 servlet/UserManager.class
 servlet/ApplicationConfig.class
 servlet/multimedia/DeleteContent.class
+servlet/watchlist/deleteFromWatchList.class
 servlet/multimedia/AddContent.class
 servlet/WebflixService.class
 servlet/account/Register.class

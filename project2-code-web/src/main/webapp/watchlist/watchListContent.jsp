@@ -92,6 +92,19 @@
                             </p>
                             <p class="card-text"><%= mc.getCategory().getCategory() %>
                             </p>
+                            <%
+                                if (session.getAttribute("userType") == Utils.UserType.User) {
+                            %>
+                            <div class="col-lg-1">
+                                <form id="addToWatchList" method="POST" name="addToWatchList"
+                                      action="${contextRoot}/watchlist/delete">
+                                    <button style="margin-left: -10px;" type="submit" class="btn btn-primary">Remove</button>
+                                    <input type="hidden" name="dMContentId" value="<%= mc.getId() %>"/>
+                                </form>
+                            </div>
+                            <%
+                                }
+                            %>
                         </div>
                         <div class="card-footer">
                             <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
