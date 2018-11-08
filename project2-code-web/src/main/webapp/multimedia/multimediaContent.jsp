@@ -41,6 +41,9 @@
 
             <h1 class="my-4">Categories</h1>
             <div class="list-group">
+                <a href="../multimedia/multimediaContent"
+                    class="list-group-item">ALL
+                </a>
                 <%
                     for (MultimediaContentCategory c : (List<MultimediaContentCategory>) request.getAttribute("categories")) {
                 %>
@@ -66,10 +69,21 @@
                 <div class="list-group">
                     <form id="searchByDirectorName" method="GET" name="searchByDirectorName"
                           action="${contextRoot}/multimedia/multimediaContent">
-                        <input type="text" class="form-control" name="directorName" id="directorName" placeholder="Title"/>
+                        <input type="text" class="form-control" name="directorName" id="directorName" placeholder="Director Name"/>
                         <button type="submit" class="btn btn-danger">Search</button>
                     </form>
                 </div>
+
+                <h1 class="my-4">Title</h1>
+                <div class="list-group">
+                    <form id="searchByDirectorName" method="GET" name="searchByDirectorName"
+                          action="${contextRoot}/multimedia/multimediaContent">
+                        <input type="text" class="form-control" name="title" id="title" placeholder="Title"/>
+                        <button type="submit" class="btn btn-danger">Search</button>
+                    </form>
+                </div>
+                <br/><br/><br/><br/><br/>
+                <br/><br/><br/><br/><br/>
         </div>
         <!-- /.col-lg-3 -->
 
@@ -153,7 +167,9 @@
 
         </div>
         <!-- /.col-lg-9 -->
-
+    <br/><br/><br/><br/><br/>
+    <br/><br/><br/><br/><br/>
+    <br/><br/><br/><br/><br/>
     </div>
     <!-- /.row -->
 

@@ -48,6 +48,8 @@ public class MultimediaContent extends HttpServlet
                                 Integer.parseInt(request.getParameter("maxYear")),true);
             }else if(request.getParameter("directorName") != null){
                 multimediaContent = multimediaEJB.getMultimediaContentFromDirector(token,request.getParameter("directorName"),true);
+            }else if(request.getParameter("title") != null){
+                multimediaContent = multimediaEJB.getMultimediaContentFromTitle(token,request.getParameter("title"),true);
             }else{
                 multimediaContent = multimediaEJB.getTopMultimediaContent(  token,10,false);
 

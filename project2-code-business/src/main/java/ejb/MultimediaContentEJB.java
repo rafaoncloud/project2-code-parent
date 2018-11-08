@@ -143,6 +143,29 @@ public class MultimediaContentEJB /*implements IMultimediaContentRemote/*, IMult
         }
     }
 
+    public List<MultimediaContent> getMultimediaContentFromTitle(String token, String title, boolean ascend) throws Exception
+    {
+        try
+        {
+            if(!genericUserEJB.isTokenValid( token ))
+                throw new Exception("Authentication Fail.");
+
+            List<data.MultimediaContent> multimediaContentEntities = getAllMultimediaContentByTitleCRUD(token,title,ascend);
+
+            List<MultimediaContent> multimediaContents = new ArrayList<>();
+
+            for(data.MultimediaContent contentEntity : multimediaContentEntities){
+                MultimediaContent content = new MultimediaContent();
+                Utils.getDozerBeanMapper().map(contentEntity, content);
+                multimediaContents.add(content);
+            }
+            return multimediaContents;
+        } catch (Exception e) {
+            Utils.getLogger().error(e.getMessage());
+            throw e;
+        }
+    }
+
     public List<MultimediaContent> getMultimediaContentBetweenYearsRange(String token, int minYear, int maxYear, boolean ascend) throws Exception
     {
         try
@@ -353,10 +376,34 @@ public class MultimediaContentEJB /*implements IMultimediaContentRemote/*, IMult
 
 
             String isAsc = Utils.ascOrDesc(ascend);
-            String queryText = "from MultimediaContent c where c.directorName = :directorName order by c.title " + isAsc;
+            //String queryText = "from MultimediaContent c where c.directorName = :directorName order by c.title " + isAsc;
+            String queryText = "from MultimediaContent c where c.directorName LIKE CONCAT('%',:directorName,'%') order by c.title " + isAsc;
 
             Query query = em.createQuery(queryText);
             query.setParameter("directorName", directorName);
+
+            return query.getResultList();
+        } catch (Exception e) {
+            Utils.getLogger().error(e.getMessage());
+            throw e;
+        }
+    }
+
+    private List<data.MultimediaContent> getAllMultimediaContentByTitleCRUD(String token, String title, boolean ascend) throws Exception
+    {
+        // CRUD Operation
+        try
+        {
+            if(!genericUserEJB.isTokenValid( token ))
+                throw new Exception("Authentication Fail.");
+
+
+
+            String isAsc = Utils.ascOrDesc(ascend);
+            String queryText = "from MultimediaContent c where c.title  LIKE CONCAT('%',:title,'%') order by c.title " + isAsc;
+
+            Query query = em.createQuery(queryText);
+            query.setParameter("title", title);
 
             return query.getResultList();
         } catch (Exception e) {
