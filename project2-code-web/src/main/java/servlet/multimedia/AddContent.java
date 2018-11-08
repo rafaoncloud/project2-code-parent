@@ -74,12 +74,6 @@ public class AddContent extends HttpServlet
                 return;
             }
 
-            if (request.getSession().getAttribute("id") == null || !request.getSession().getAttribute("userType").equals( Utils.UserType.Manager))
-            {
-                response.sendRedirect("../index.jsp");
-                return;
-            }
-
 //            boolean isMultipart = ServletFileUpload.isMultipartContent(request);
 //
 //            if (isMultipart)

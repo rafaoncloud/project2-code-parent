@@ -25,6 +25,9 @@ public class MultimediaContentEJB /*implements IMultimediaContentRemote/*, IMult
     @Inject
     GenericUserEJB genericUserEJB;
 
+    @Inject
+    MultimediaContentCategoryEJB multimediaContentCategoryEJB;
+
     public MultimediaContentEJB() {
     }
 
@@ -286,10 +289,6 @@ public class MultimediaContentEJB /*implements IMultimediaContentRemote/*, IMult
 
             content = em.find(data.MultimediaContent.class, id);
 
-            if (content == null) {
-                throw new Exception("Multimedia Content with " + id + " not found.");
-            }
-
             return content;
         } catch (Exception e) {
             Utils.getLogger().error(e.getMessage());
@@ -324,19 +323,26 @@ public class MultimediaContentEJB /*implements IMultimediaContentRemote/*, IMult
                 throw new Exception("Authentication Fail.");
 
             String isAsc = Utils.ascOrDesc(ascend);
-            String queryText = "from MultimediaContent c where c.categoryId = :categoryId order by c.title " + isAsc;
+            String queryText = "from MultimediaContent c order by c.title " + isAsc;
 
             Query query = em.createQuery(queryText);
-            query.setParameter("categoryId", categoryId);
+            //query.setParameter("categoryEntity", categoryId);
 
-            return query.getResultList();
+            List<data.MultimediaContent> multimediaContents = new ArrayList<>();
+
+            for(data.MultimediaContent content : (List<data.MultimediaContent>)query.getResultList()){
+                if(content.getCategory().getId() == categoryId)
+                multimediaContents.add(content);
+            }
+
+            return multimediaContents;
         } catch (Exception e) {
             Utils.getLogger().error(e.getMessage());
             throw e;
         }
     }
 
-    private List<data.MultimediaContent> getAllMultimediaContentByDirectorNameCRUD(String token, String dirName, boolean ascend) throws Exception
+    private List<data.MultimediaContent> getAllMultimediaContentByDirectorNameCRUD(String token, String directorName, boolean ascend) throws Exception
     {
         // CRUD Operation
         try
@@ -344,11 +350,13 @@ public class MultimediaContentEJB /*implements IMultimediaContentRemote/*, IMult
             if(!genericUserEJB.isTokenValid( token ))
                 throw new Exception("Authentication Fail.");
 
+
+
             String isAsc = Utils.ascOrDesc(ascend);
             String queryText = "from MultimediaContent c where c.directorName = :directorName order by c.title " + isAsc;
 
             Query query = em.createQuery(queryText);
-            query.setParameter("directorName", dirName);
+            query.setParameter("directorName", directorName);
 
             return query.getResultList();
         } catch (Exception e) {
@@ -366,7 +374,7 @@ public class MultimediaContentEJB /*implements IMultimediaContentRemote/*, IMult
                 throw new Exception("Authentication Fail.");
 
             String isAsc = Utils.ascOrDesc(ascend);
-            String queryText = "from MultimediaContent c where c.minYear >= :minYear, c.maxYear <= :maxYear order by c.title " + isAsc;
+            String queryText = "from MultimediaContent c where c.yearOfRelease >= :minYear AND c.yearOfRelease <= :maxYear order by c.title " + isAsc;
             Query query = em.createQuery(queryText);
 
             query.setParameter("minYear",minYear);

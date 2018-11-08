@@ -30,6 +30,8 @@ public class MultimediaContentCategoryEJB {
     {
         try
         {
+            if(getAllCategoryCRUD("",false).size() > 0)
+                return;
 
             for (EMultimediaContentCategory c : EMultimediaContentCategory.values()) {
 

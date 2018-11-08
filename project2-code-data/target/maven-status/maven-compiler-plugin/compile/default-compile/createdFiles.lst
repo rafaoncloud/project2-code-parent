@@ -1,6 +1,6 @@
-data\Country.class
-data\Manager.class
-data\MultimediaContent.class
-data\GenericUser.class
-data\User.class
-data\MultimediaContentCategory.class
+data/MultimediaContent.class
+data/MultimediaContentCategory.class
+data/User.class
+data/Manager.class
+data/Country.class
+data/GenericUser.class

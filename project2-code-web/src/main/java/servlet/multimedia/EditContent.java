@@ -79,17 +79,15 @@ public class EditContent extends HttpServlet
                 return;
             }
 
-            dto.MultimediaContent multimediaContent = new dto.MultimediaContent();
+            String token = (String)request.getSession().getAttribute("token");
+            dto.MultimediaContent multimediaContent = multimediaEJB.getMultimediaContent(  token, Long.parseLong(request.getParameter("id")));
 
-            multimediaContent.setId( Long.parseLong(request.getParameter("id")));
             multimediaContent.setTitle( request.getParameter("title"));
             multimediaContent.setYearOfRelease( Integer.parseInt(request.getParameter("yearOfRelease")));
             multimediaContent.setDirectorName( request.getParameter("directorName"));
 
             long categoryId = Long.parseLong(request.getParameter( "category" ));
-
             MultimediaContentCategory category = categoryEJB.getMultimediaContentCategory((String) request.getSession().getAttribute("token"), categoryId);
-
             multimediaContent.setCategory(category );
 
             multimediaEJB.updateMultimediaContent((String)request.getSession().getAttribute("token"), multimediaContent);

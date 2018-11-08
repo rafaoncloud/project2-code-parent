@@ -19,6 +19,7 @@ public class DeleteContent extends HttpServlet
     @Inject
     MultimediaContentEJB multimediaEJB;
 
+    @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException
     {
         try
@@ -39,20 +40,20 @@ public class DeleteContent extends HttpServlet
 
             if(multimediaContentId == null)
             {
-                response.sendRedirect("multimediaContent");
+                response.sendRedirect("/multimedia/multimediaContent");
                 return;
             }
 
             multimediaEJB.deleteMultimediaContent(  token, Long.parseLong( multimediaContentId));
 
 
-            request.getRequestDispatcher("multimediaContent").forward(request, response);
-
+            //request.getServletContext().getRequestDispatcher("/multimedia/multimediaContent").forward(request, response);
+            response.sendRedirect("multimediaContent");
         }
         catch (Exception e)
         {
             NotificationsManager.addErrorMessage(request.getSession().getId(), e.getMessage());
-            response.sendRedirect("multimediaContent");
+            response.sendRedirect("/multimedia/multimediaContent");
         }
     }
 }

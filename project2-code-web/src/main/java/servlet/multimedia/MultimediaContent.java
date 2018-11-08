@@ -39,21 +39,21 @@ public class MultimediaContent extends HttpServlet
             List<MultimediaContentCategory> categories  = categoryEJB.getAllMultimediaContentCategory( token ,false);
             request.setAttribute("categories",categories);
 
-            //String categoryId = request.getParameter("categoryId");
+            List<dto.MultimediaContent> multimediaContent =  null;
+            if(request.getParameter("categoryId") != null){
+                multimediaContent = multimediaEJB.getMultimediaContentFromCategory(token,Long.parseLong(request.getParameter("categoryId")),true);
+            }else if(request.getParameter("minYear") != null && request.getParameter("maxYear") != null) {
+                multimediaContent = multimediaEJB.getMultimediaContentBetweenYearsRange(token,
+                        Integer.parseInt(request.getParameter("minYear")),
+                                Integer.parseInt(request.getParameter("maxYear")),true);
+            }else if(request.getParameter("directorName") != null){
+                multimediaContent = multimediaEJB.getMultimediaContentFromDirector(token,request.getParameter("directorName"),true);
+            }else{
+                multimediaContent = multimediaEJB.getTopMultimediaContent(  token,10,false);
 
-//            if(categoryId != null) {
-//                multimediaContent = multimediaEJB.getMultimediaContentFromCategory( token, Long.parseLong( categoryId ), false );
-//                categoryId = "?categoryId=" + categoryId;
-//            }
-//            else
-//            {
-            List<dto.MultimediaContent> multimediaContent = multimediaContent = multimediaEJB.getTopMultimediaContent(  token,10,false);
-
-
+            }
             request.setAttribute("lstMultimediaContent",multimediaContent);
-
             request.getRequestDispatcher("multimediaContent.jsp").forward(request, response);
-
         }
         catch (Exception e)
         {

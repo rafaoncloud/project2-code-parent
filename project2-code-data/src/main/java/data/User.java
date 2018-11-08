@@ -41,13 +41,29 @@ public class User extends GenericUser implements Serializable {
         this.hasSubscriptionUpToDate = hasSubscriptionUpToDate;
     }
 
+    public boolean addContentToWatchList(MultimediaContent content){
+        for(MultimediaContent contentInWatchList : watchList){
+            if(content.getId() == contentInWatchList.getId()){
+                return false;
+            }
+        }
+        watchList.add(content);
+        return true;
+    }
+
     public List<MultimediaContent> getWatchList() {
         return watchList;
     }
 
-    public void removeMultimediaContentFromUserWatchList(int index) {
-        MultimediaContent multimediaContent =  this.watchList.get(index);
-        multimediaContent.removeUser(this);
+    public boolean removeMultimediaContentFromUserWatchList(long contentId) {
+        for(MultimediaContent content : watchList){
+            if(contentId == content.getId()){
+                content.removeUser(this);
+                watchList.remove(content);
+                return true;
+            }
+        }
+        return false;
     }
 
 }

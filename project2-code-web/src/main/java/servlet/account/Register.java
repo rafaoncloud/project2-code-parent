@@ -25,7 +25,7 @@ public class Register extends HttpServlet
     CountryEJB countryEJB;
 
     @Inject
-    UserEJB urserEJB;
+    UserEJB userEJB;
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException
     {
@@ -66,7 +66,7 @@ public class Register extends HttpServlet
                 Country country = countryEJB.getCountry( "", Long.parseLong(request.getParameter( "country" ) ));
                 user.setCountry( country );
             }
-            urserEJB.addUser(user);
+            userEJB.addUser(user);
 
         }
         catch (Exception e)
