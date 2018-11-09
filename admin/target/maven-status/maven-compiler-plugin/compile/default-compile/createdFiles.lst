@@ -1,5 +1,5 @@
-admin\AdminController.class
+admin/archive/Main.class
+admin/ApplicationConfig.class
+admin/AdminController.class
 Utils.class
-admin\ApplicationConfig.class
-admin\archive\Main.class
-admin\ActivateEJBs.class
+admin/ActivateEJBs.class

@@ -36,12 +36,6 @@ public class Edit extends HttpServlet
                 return;
             }
 
-            if (request.getSession().getAttribute("id") == null || request.getSession().getAttribute("token") == null)
-            {
-                response.sendRedirect("../index.jsp");
-                return;
-            }
-
             long userId = Long.parseLong(request.getSession().getAttribute("id").toString());
             String token =  request.getSession().getAttribute("token").toString();
 
@@ -56,7 +50,8 @@ public class Edit extends HttpServlet
             request.setAttribute("address",user.getAddress());
             request.setAttribute("phoneNumber", user.getPhoneNumber());
             request.setAttribute("crediCardNumber", user.getCreditCardNumber());
-            request.setAttribute("birthDate", new SimpleDateFormat("yyyy-MM-dd").format(user.getBirthDate()));
+            SimpleDateFormat date = new SimpleDateFormat("yyyy-MM-dd");
+            request.setAttribute("birthDate", date.format(user.getBirthDate()));
             if (request.getSession().getAttribute("userType").equals( Utils.UserType.Manager))
                 request.setAttribute("hasSubscriptionUpToDate", user.getHasSubscriptionUpToDate() == true ? "checked" :  "");
             request.getSession().setAttribute("hasSubscriptionUpToDate", user.getHasSubscriptionUpToDate());
