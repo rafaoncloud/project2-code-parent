@@ -43,6 +43,8 @@ public class DeleteContent extends HttpServlet
             multimediaEJB.deleteMultimediaContent(  token, Long.parseLong( multimediaContentId));
 
 
+            NotificationsManager.addSuccessMessage(request.getSession().getId(), "Multimedia Content deleted successfully.");
+
             //request.getServletContext().getRequestDispatcher("/multimedia/multimediaContent").forward(request, response);
             response.sendRedirect("multimediaContent");
         }
@@ -50,6 +52,7 @@ public class DeleteContent extends HttpServlet
         {
             //NotificationsManager.addErrorMessage(request.getSession().getId(), e.getMessage());
             //response.sendRedirect("/multimedia/multimediaContent");
+            NotificationsManager.addErrorMessage(request.getSession().getId(), e.getMessage());
             e.printStackTrace();
             response.sendRedirect("../multimedia/multimediaContent");
         }

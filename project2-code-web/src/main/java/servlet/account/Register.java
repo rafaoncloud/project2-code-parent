@@ -58,7 +58,7 @@ public class Register extends HttpServlet
             if(request.getParameter("phoneNumber").length() > 0)
                 user.setPhoneNumber( request.getParameter("phoneNumber"));
 
-            user.setCreditCardNumber( request.getParameter("crediCardNumber"));
+            user.setCreditCardNumber( request.getParameter("creditCardNumber"));
             user.setCreateDate( new Date() );
 
             if(request.getParameter("country") != null && Utils.isNumeric(request.getParameter("country")))
@@ -68,9 +68,11 @@ public class Register extends HttpServlet
             }
             userEJB.addUser(user);
 
+            NotificationsManager.addSuccessMessage(request.getSession().getId(), "New account created successfully.");
         }
         catch (Exception e)
         {
+            NotificationsManager.addErrorMessage(request.getSession().getId(), e.getMessage());
             response.sendRedirect("../index.jsp");
         }
 

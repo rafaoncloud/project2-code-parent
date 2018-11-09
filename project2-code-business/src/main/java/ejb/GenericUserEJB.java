@@ -127,6 +127,7 @@ public class GenericUserEJB
                     return users.get( 0 );
                 }
             }
+
         }
         catch (Exception ex)
         {

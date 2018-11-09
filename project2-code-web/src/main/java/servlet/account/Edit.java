@@ -4,6 +4,7 @@ import dto.Country;
 import dto.User;
 import ejb.CountryEJB;
 import ejb.UserEJB;
+import notifications.NotificationsManager;
 import utils.Utils;
 
 import javax.inject.Inject;
@@ -55,7 +56,7 @@ public class Edit extends HttpServlet
             request.setAttribute("password",user.getPassword());
             request.setAttribute("address",user.getAddress());
             request.setAttribute("phoneNumber", user.getPhoneNumber());
-            request.setAttribute("crediCardNumber", user.getCreditCardNumber());
+            request.setAttribute("creditCardNumber", user.getCreditCardNumber());
             request.setAttribute("birthDate", new SimpleDateFormat("yyyy-MM-dd").format(user.getBirthDate()));
             if (request.getSession().getAttribute("userType").equals( Utils.UserType.Manager))
                 request.setAttribute("hasSubscriptionUpToDate", user.getHasSubscriptionUpToDate() == true ? "checked" :  "");
@@ -71,6 +72,7 @@ public class Edit extends HttpServlet
         }
         catch (Exception e)
         {
+            NotificationsManager.addErrorMessage(request.getSession().getId(), e.getMessage());
             response.sendRedirect("../index.jsp");
         }
     }
@@ -91,6 +93,7 @@ public class Edit extends HttpServlet
             User user = new User();
 
             user.setId(userId);
+            user.setToken( token);
             user.setName( request.getParameter("name"));
             user.setEmail( request.getParameter("email"));
             user.setPassword( request.getParameter("password"));
@@ -102,7 +105,7 @@ public class Edit extends HttpServlet
             if(request.getParameter("phoneNumber").length() > 0)
                 user.setPhoneNumber( request.getParameter("phoneNumber"));
 
-            user.setCreditCardNumber( request.getParameter("crediCardNumber"));
+            user.setCreditCardNumber( request.getParameter("creditCardNumber"));
 
             if(request.getParameter("country") != null && Utils.isNumeric(request.getParameter("country")))
             {
@@ -112,9 +115,12 @@ public class Edit extends HttpServlet
 
             urserEJB.updateUser(token, user);
 
+
+            NotificationsManager.addSuccessMessage(request.getSession().getId(), "Account edited successfully.");
         }
         catch (Exception e)
         {
+            NotificationsManager.addErrorMessage(request.getSession().getId(), e.getMessage());
             response.sendRedirect("../index.jsp");
         }
 

@@ -16,8 +16,9 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Webflix - ${title}</title>
+    <title>Webflix - Home</title>
 
+    <link href="css/toastr.min.css" rel="stylesheet"/>
     <!-- Bootstrap core CSS -->
     <link href="bootstrap/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
@@ -48,6 +49,7 @@
     <script src="bootstrap/jquery/jquery.min.js"></script>
     <script src="bootstrap/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script type="text/javascript" src="javascript/script.js" charset="ISO-8859-1"></script>
+   <script src="js/toastr.min.js"></script>
    <script type="application/javascript">
             $(function()
             {

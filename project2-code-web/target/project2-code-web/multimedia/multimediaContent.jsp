@@ -1,6 +1,9 @@
 <%@ page import="java.util.List" %>
 <%@ page import="dto.MultimediaContentCategory" %>
 <%@ page import="dto.MultimediaContent" %>
+<%@ page import="utils.Utils" %>
+<%@ page import="notifications.Message" %>
+<%@ page import="notifications.NotificationsManager" %>
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1" pageEncoding="ISO-8859-1" %>
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 
@@ -16,8 +19,9 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Webflix - ${title}</title>
+    <title>Webflix - Multimedia Content</title>
 
+    <link href="../css/toastr.min.css" rel="stylesheet"/>
     <!-- Bootstrap core CSS -->
     <link href="../bootstrap/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
@@ -138,10 +142,18 @@
                             </p>
                             <p class="card-text"><%= mc.getCategory().getCategory() %>
                             </p>
+
+                        </div>
+                        <div class="card-footer">
+                            <div class="row">
+                                 <div class="col-lg-5">
+                                    <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
+                                </div>
+                            </div>
                             <%
                                 if (session.getAttribute("userType") == Utils.UserType.User) {
                             %>
-                            <div class="col-lg-1">
+                            <div class="col-lg-7">
                                 <form id="addToWatchList" method="POST" name="addToWatchList"
                                       action="${contextRoot}/watchlist/add">
                                     <button style="margin-left: -10px;" type="submit" class="btn btn-primary">Add to Watch List</button>
@@ -151,9 +163,6 @@
                             <%
                                 }
                             %>
-                        </div>
-                        <div class="card-footer">
-                            <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
                         </div>
                     </div>
                 </div>
@@ -181,8 +190,54 @@
 
 
 <!-- Bootstrap core JavaScript -->
-<script src="../bootstrap/jquery/jquery.min.js"></script>
-<script src="../bootstrap/bootstrap/js/bootstrap.bundle.min.js"></script>
-<script type="text/javascript" src="javascript/script.js" charset="ISO-8859-1"></script>
+    <script src="../bootstrap/jquery/jquery.min.js"></script>
+    <script src="../bootstrap/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="../javascript/script.js" charset="ISO-8859-1"></script>
+   <script src="../js/toastr.min.js"></script>
+   <script type="application/javascript">
+            $(function()
+            {
+                toastr.options = {
+                    "closeButton": false,
+                    "debug": false,
+                    "newestOnTop": false,
+                    "progressBar": false,
+                    "positionClass": "toast-bottom-right",
+                    "preventDuplicates": false,
+                    "onclick": null,
+                    "showDuration": "300",
+                    "hideDuration": "1000",
+                    "timeOut": "5000",
+                    "extendedTimeOut": "1000",
+                    "showEasing": "swing",
+                    "hideEasing": "linear",
+                    "showMethod": "fadeIn",
+                    "hideMethod": "fadeOut"
+                };
+
+                <%
+                String userId = request.getSession().getId();
+
+                if (userId != null)
+                {
+                    while (true)
+                    {
+                        Message m = NotificationsManager.pollMessage(userId);
+
+                        if (m == null)
+                            break;
+
+                        if (m.getType() == Message.Type.Success)
+                        {%>
+                            toastr.success("<%= m.getMessage()%>", "");
+                        <%}
+                        else if (m.getType() == Message.Type.Error)
+                        {%>
+                            toastr.error("<%= m.getMessage()%>", "");
+                        <%}
+                    }
+                }%>
+            });
+        </script>
 </body>
 </html>

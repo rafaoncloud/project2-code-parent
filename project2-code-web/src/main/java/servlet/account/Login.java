@@ -36,6 +36,13 @@ public class Login extends HttpServlet
 
             GenericUser user = genericUserEJB.login( email, password);
 
+            if(user  == null)
+            {
+                NotificationsManager.addErrorMessage(request.getSession().getId(), "Email or password incorrect!");
+                response.sendRedirect("../index.jsp");
+                return;
+            }
+
             Utils.UserType type = null;
 
             if (user instanceof Manager)
@@ -47,6 +54,7 @@ public class Login extends HttpServlet
             request.getSession().setAttribute("id", user.getId());
             request.getSession().setAttribute("name", user.getName());
             request.getSession().setAttribute("userType", type);
+
         }
         catch (Exception e)
         {

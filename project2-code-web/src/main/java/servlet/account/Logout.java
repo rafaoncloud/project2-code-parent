@@ -32,6 +32,7 @@ public class Logout  extends HttpServlet
             String token =  request.getSession().getAttribute("token").toString();
             genericUserEJB.logout(token);
 
+            NotificationsManager.addSuccessMessage(request.getSession().getId(), "End of session.");
             request.getSession().invalidate();
 
         }
